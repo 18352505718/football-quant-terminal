@@ -1,0 +1,10 @@
+*.exe
+*.old
+*.log
+__pycache__/
+*.pyc
+.cache_footystats/
+.saiyanshuju_token.json
+.saiyanshuju_device.json
+web_dashboard/*.exe
+web_dashboard/watchdog.log

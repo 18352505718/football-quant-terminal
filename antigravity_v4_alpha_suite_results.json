@@ -1,0 +1,85 @@
+{
+  "latency_alerts": [],
+  "derivative_gems": [],
+  "ren9_ticket": {
+    "selected_matches_count": 9,
+    "num_singles": 4,
+    "num_doubles": 5,
+    "total_combinations": 32,
+    "cost_yuan": 64,
+    "ticket_legs": [
+      {
+        "match_num": "周三009",
+        "match": "维京 vs 萨巴赫",
+        "league": "欧冠",
+        "picks": "3",
+        "leg_type": "单选",
+        "top_prob": 0.729
+      },
+      {
+        "match_num": "周三011",
+        "match": "布拉格斯拉维亚 vs 阿森纳",
+        "league": "欧冠",
+        "picks": "0",
+        "leg_type": "单选",
+        "top_prob": 0.722
+      },
+      {
+        "match_num": "周三005",
+        "match": "莱比锡红牛 vs 曼彻斯特城",
+        "league": "欧冠",
+        "picks": "0",
+        "leg_type": "单选",
+        "top_prob": 0.613
+      },
+      {
+        "match_num": "周三004",
+        "match": "费内巴切 vs 利物浦",
+        "league": "欧冠",
+        "picks": "0",
+        "leg_type": "单选",
+        "top_prob": 0.595
+      },
+      {
+        "match_num": "周三008",
+        "match": "多特蒙德 vs 皇家贝蒂斯",
+        "league": "欧冠",
+        "picks": "1/3",
+        "leg_type": "双选防冷",
+        "top_prob": 0.578
+      },
+      {
+        "match_num": "周三007",
+        "match": "PSV埃因霍温 vs 布鲁日",
+        "league": "欧冠",
+        "picks": "0/3",
+        "leg_type": "双选防冷",
+        "top_prob": 0.521
+      },
+      {
+        "match_num": "周三003",
+        "match": "雷恩 vs 奥林匹亚科斯",
+        "league": "欧罗巴",
+        "picks": "0/1",
+        "leg_type": "双选防冷",
+        "top_prob": 0.464
+      },
+      {
+        "match_num": "周三006",
+        "match": "波尔图 vs 那不勒斯",
+        "league": "欧冠",
+        "picks": "0/3",
+        "leg_type": "双选防冷",
+        "top_prob": 0.457
+      },
+      {
+        "match_num": "周三010",
+        "match": "朗斯 vs 科莫",
+        "league": "欧冠",
+        "picks": "0/3",
+        "leg_type": "双选防冷",
+        "top_prob": 0.374
+      }
+    ]
+  }
+}

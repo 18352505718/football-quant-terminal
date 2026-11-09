@@ -1,0 +1,289 @@
+{
+  "all_edges": [
+    {
+      "num": "周二007",
+      "match": "费耶诺德 vs 国际米兰",
+      "market": "HAD",
+      "opt": "主胜",
+      "sp": 3.94,
+      "prob": 0.47190651255694716,
+      "ev": 0.8593116594743717,
+      "clv": {
+        "clv_status": "VETO",
+        "reason": "主力客胜 CLV 暴跌 -0.0335 (聪明钱出逃)"
+      }
+    },
+    {
+      "num": "周二010",
+      "match": "比利亚雷亚尔 vs 巴黎圣日尔曼",
+      "market": "HAD",
+      "opt": "主胜",
+      "sp": 4.55,
+      "prob": 0.34144580864523133,
+      "ev": 0.5535784293358026,
+      "clv": {
+        "clv_status": "CAUTION",
+        "reason": "主力客胜 CLV +0.028，但伤停缺登贝莱与克瓦拉茨赫利亚"
+      }
+    },
+    {
+      "num": "周二007",
+      "match": "费耶诺德 vs 国际米兰",
+      "market": "HHAD(+1)",
+      "opt": "让胜",
+      "sp": 2.04,
+      "prob": 0.6965568476777557,
+      "ev": 0.4209759692626216,
+      "clv": {
+        "clv_status": "VETO",
+        "reason": "主力客胜 CLV 暴跌 -0.0335 (聪明钱出逃)"
+      }
+    },
+    {
+      "num": "周二004",
+      "match": "加拉塔萨雷 vs 斯图加特",
+      "market": "HHAD(-1)",
+      "opt": "让胜",
+      "sp": 3.57,
+      "prob": 0.38084213529285216,
+      "ev": 0.35960642299548207,
+      "clv": {
+        "clv_status": "NORMAL",
+        "reason": "无显著异动"
+      }
+    },
+    {
+      "num": "周二010",
+      "match": "比利亚雷亚尔 vs 巴黎圣日尔曼",
+      "market": "HHAD(+1)",
+      "opt": "让胜",
+      "sp": 2.35,
+      "prob": 0.5667276874486138,
+      "ev": 0.3318100655042424,
+      "clv": {
+        "clv_status": "CAUTION",
+        "reason": "主力客胜 CLV +0.028，但伤停缺登贝莱与克瓦拉茨赫利亚"
+      }
+    },
+    {
+      "num": "周二004",
+      "match": "加拉塔萨雷 vs 斯图加特",
+      "market": "HAD",
+      "opt": "主胜",
+      "sp": 1.9,
+      "prob": 0.590076729250091,
+      "ev": 0.12114578557517297,
+      "clv": {
+        "clv_status": "NORMAL",
+        "reason": "无显著异动"
+      }
+    },
+    {
+      "num": "周二005",
+      "match": "马德里竞技 vs 拜仁慕尼黑",
+      "market": "HHAD(+1)",
+      "opt": "让负",
+      "sp": 4.05,
+      "prob": 0.27437581908531394,
+      "ev": 0.11122206729552153,
+      "clv": {
+        "clv_status": "VETO",
+        "reason": "主力客胜 CLV 暴跌 -0.0906 (聪明钱出逃)"
+      }
+    },
+    {
+      "num": "周二010",
+      "match": "比利亚雷亚尔 vs 巴黎圣日尔曼",
+      "market": "HAD",
+      "opt": "平局",
+      "sp": 4.75,
+      "prob": 0.2252818788033825,
+      "ev": 0.07008892431606673,
+      "clv": {
+        "clv_status": "CAUTION",
+        "reason": "主力客胜 CLV +0.028，但伤停缺登贝莱与克瓦拉茨赫利亚"
+      }
+    },
+    {
+      "num": "周二009",
+      "match": "巴塞罗那 vs 阿斯顿维拉",
+      "market": "HHAD(-2)",
+      "opt": "让负",
+      "sp": 2.25,
+      "prob": 0.4604847584788612,
+      "ev": 0.03609070657743785,
+      "clv": {
+        "clv_status": "NORMAL",
+        "reason": "无显著异动"
+      }
+    },
+    {
+      "num": "周二006",
+      "match": "LASK林茨 vs 布拉迪斯拉发",
+      "market": "HHAD(-1)",
+      "opt": "让负",
+      "sp": 3.35,
+      "prob": 0.30177582095843314,
+      "ev": 0.01094900021075107,
+      "clv": {
+        "clv_status": "PASS",
+        "reason": "CLV +0.064，盘口坚挺"
+      }
+    }
+  ],
+  "parlays": [
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-主胜 @4.55",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HHAD(-1)-让胜 @3.57",
+      "comb_odds": 16.243499999999997,
+      "comb_prob": 0.1300369508512445,
+      "comb_ev": 1.1122552111521897,
+      "suggested_stake_pct": 1.0944880222575426,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HHAD(+1)-让胜 @2.35",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HHAD(-1)-让胜 @3.57",
+      "comb_odds": 8.3895,
+      "comb_prob": 0.2158337826175102,
+      "comb_ev": 0.8107375192696018,
+      "suggested_stake_pct": 1.6457220094788587,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-主胜 @4.55",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HAD-主胜 @1.9",
+      "comb_odds": 8.645,
+      "comb_prob": 0.20147922598153056,
+      "comb_ev": 0.7417879086103316,
+      "suggested_stake_pct": 1.455437361563764,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-主胜 @4.55",
+      "leg2": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "comb_odds": 10.237499999999999,
+      "comb_prob": 0.1572305907276188,
+      "comb_ev": 0.6096481725739973,
+      "suggested_stake_pct": 0.9899564371972893,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-主胜 @4.55",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 15.2425,
+      "comb_prob": 0.10304008921673075,
+      "comb_ev": 0.5705885598860183,
+      "suggested_stake_pct": 0.6009358187319834,
+      "clv_safety": "CAUTION + PASS"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HHAD(+1)-让胜 @2.35",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HAD-主胜 @1.9",
+      "comb_odds": 4.465,
+      "comb_prob": 0.3344128201851459,
+      "comb_ev": 0.49315324212667644,
+      "suggested_stake_pct": 2.134862520028902,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-平局 @4.75",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HHAD(-1)-让胜 @3.57",
+      "comb_odds": 16.9575,
+      "comb_prob": 0.08579683176626572,
+      "comb_ev": 0.45489977467645093,
+      "suggested_stake_pct": 0.4276043628479877,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二004] 加拉塔萨雷 vs 斯图加特 HHAD(-1)-让胜 @3.57",
+      "leg2": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "comb_odds": 8.032499999999999,
+      "comb_prob": 0.17537199868890282,
+      "comb_ev": 0.40867557946861166,
+      "suggested_stake_pct": 0.8716862697517492,
+      "clv_safety": "NORMAL + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HHAD(+1)-让胜 @2.35",
+      "leg2": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "comb_odds": 5.2875000000000005,
+      "comb_prob": 0.26096946227805845,
+      "comb_ev": 0.3798760317952341,
+      "suggested_stake_pct": 1.3290123561349296,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二004] 加拉塔萨雷 vs 斯图加特 HHAD(-1)-让胜 @3.57",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 11.9595,
+      "comb_prob": 0.11492894803356313,
+      "comb_ev": 0.37449275400739834,
+      "suggested_stake_pct": 0.51255908664729,
+      "clv_safety": "NORMAL + PASS"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HHAD(+1)-让胜 @2.35",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 7.8725000000000005,
+      "comb_prob": 0.17102471313967973,
+      "comb_ev": 0.3463920541921288,
+      "suggested_stake_pct": 0.7560394052938424,
+      "clv_safety": "CAUTION + PASS"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-平局 @4.75",
+      "leg2": "[周二004] 加拉塔萨雷 vs 斯图加特 HAD-主胜 @1.9",
+      "comb_odds": 9.025,
+      "comb_prob": 0.13293359420361536,
+      "comb_ev": 0.19972568768762877,
+      "suggested_stake_pct": 0.3733190424067827,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二004] 加拉塔萨雷 vs 斯图加特 HAD-主胜 @1.9",
+      "leg2": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "comb_odds": 4.2749999999999995,
+      "comb_prob": 0.27172134015272453,
+      "comb_ev": 0.16160872915289715,
+      "suggested_stake_pct": 0.7401926526086894,
+      "clv_safety": "NORMAL + NORMAL"
+    },
+    {
+      "leg1": "[周二004] 加拉塔萨雷 vs 斯图加特 HAD-主胜 @1.9",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 6.365,
+      "comb_prob": 0.1780708893979133,
+      "comb_ev": 0.1334212110177182,
+      "suggested_stake_pct": 0.3730322768435737,
+      "clv_safety": "NORMAL + PASS"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-平局 @4.75",
+      "leg2": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "comb_odds": 10.6875,
+      "comb_prob": 0.10373887155043968,
+      "comb_ev": 0.10870918969532406,
+      "suggested_stake_pct": 0.1683239066250179,
+      "clv_safety": "CAUTION + NORMAL"
+    },
+    {
+      "leg1": "[周二010] 比利亚雷亚尔 vs 巴黎圣日尔曼 HAD-平局 @4.75",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 15.9125,
+      "comb_prob": 0.06798462392294899,
+      "comb_ev": 0.08180532817392572,
+      "suggested_stake_pct": 0.08228532590839134,
+      "clv_safety": "CAUTION + PASS"
+    },
+    {
+      "leg1": "[周二009] 巴塞罗那 vs 阿斯顿维拉 HHAD(-2)-让负 @2.25",
+      "leg2": "[周二006] LASK林茨 vs 布拉迪斯拉发 HHAD(-1)-让负 @3.35",
+      "comb_odds": 7.5375000000000005,
+      "comb_prob": 0.13896316602880415,
+      "comb_ev": 0.04743486394211138,
+      "suggested_stake_pct": 0.10883716392071444,
+      "clv_safety": "NORMAL + PASS"
+    }
+  ]
+}

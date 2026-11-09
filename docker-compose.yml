@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  football-quant:
+    build: .
+    container_name: football_quant_terminal
+    restart: always
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./web_dashboard/daily_pipeline_cache.json:/app/web_dashboard/daily_pipeline_cache.json
+    environment:
+      - TZ=Asia/Shanghai
