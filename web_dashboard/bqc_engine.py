@@ -185,8 +185,9 @@ def batch_compute_bqc(matches):
         h_xg = m.get("h_xg", 1.25)
         a_xg = m.get("a_xg", 1.10)
         had_sp = m.get("had_sp", [2.0, 3.2, 3.5])
+        official_bqc_sp = m.get("official_bqc_sp")
         
-        bqc_obj = compute_match_bqc(home, away, h_xg, a_xg, league, num, had_sp)
+        bqc_obj = compute_match_bqc(home, away, h_xg, a_xg, league, num, had_sp, official_bqc_sp)
         results.append(bqc_obj)
     return results
 

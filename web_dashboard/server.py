@@ -58,8 +58,42 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
             except Exception as e:
                 resp_data = {"status": "error", "message": f"刷新失败: {e}"}
             self.wfile.write(json.dumps(resp_data, ensure_ascii=False).encode("utf-8"))
+        elif self.path.startswith("/api/diag"):
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            diag = daily_updater.diagnose_connectivity() if hasattr(daily_updater, "diagnose_connectivity") else {}
+            self.wfile.write(json.dumps(diag, ensure_ascii=False).encode("utf-8"))
         else:
             super().do_GET()
+
+    def do_POST(self):
+        if self.path.startswith("/api/push_cache"):
+            token = self.headers.get("X-Sync-Token", "")
+            if token != "cybereye_sync_2026":
+                self.send_response(403)
+                self.end_headers()
+                self.wfile.write(b'{"status":"forbidden"}')
+                return
+            try:
+                content_len = int(self.headers.get("Content-Length", 0))
+                raw_body = self.rfile.read(content_len)
+                payload = json.loads(raw_body.decode("utf-8"))
+                cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "daily_pipeline_cache.json")
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump(payload, f, ensure_ascii=False, indent=2)
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "ok", "matches": len(payload.get("active_matches", []))}, ensure_ascii=False).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "error", "msg": str(e)}).encode("utf-8"))
+        else:
+            self.send_response(404)
+            self.end_headers()
 
     def get_quant_payload(self):
         v3_path = os.path.join(BASE_DIR, "antigravity_v3_production_results.json")
@@ -199,7 +233,7 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
             "matches": enriched_reports,
             "parlays": parlays,
             "ren9_ticket": ren9_ticket,
-            "dual_agent_review": cache_data.get("dual_agent_review") or daily_updater.get_dual_agent_review_data(),
+            "dual_agent_review": cache_data.get("dual_agent_review") or daily_updater.get_dual_agent_review_data(enriched_reports),
             "parlays": cache_data.get("active_parlays", parlays),
             "bqc_predictions": cache_data.get("bqc_predictions") or bqc_engine.batch_compute_bqc(enriched_reports),
             "derivative_gems": [],
@@ -238,6 +272,10 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
                     card_hhad = m.get("intel", {}).get("hhad_pred", {})
                     card_hhad["primary"] = pick
                     card_hhad["line"] = f"({line})"
+                    hhad_sp = m.get("hhad_sp", [])
+                    if len(hhad_sp) >= 4:
+                        sp_idx = {"让胜": 1, "让平": 2, "让负": 3}.get(pick, 1)
+                        card_hhad["sp"] = hhad_sp[sp_idx]
 
         # 2. 强制让球线与官方体彩挂牌完全对齐
         for m in payload.get("matches", []):
