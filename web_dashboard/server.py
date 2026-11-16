@@ -7,11 +7,14 @@ import re
 import time
 import threading
 import importlib
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import HTTPServer, ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
+if CURRENT_DIR not in sys.path:
+    sys.path.append(CURRENT_DIR)
 
 from bivariate_nb_model import BivariateNBModel
 from enrich_saiyan_intel import MATCH_INTEL_MAP
@@ -231,10 +234,11 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
                 "yesterday_review": cache_data.get("yesterday_review", {})
             },
             "matches": enriched_reports,
-            "parlays": parlays,
-            "ren9_ticket": ren9_ticket,
-            "dual_agent_review": cache_data.get("dual_agent_review") or daily_updater.get_dual_agent_review_data(enriched_reports),
             "parlays": cache_data.get("active_parlays", parlays),
+            "ren9_ticket": cache_data.get("active_ren9") or ren9_ticket,
+            "ren9_scheme": cache_data.get("active_ren9") or ren9_ticket,
+            "yesterday_review": cache_data.get("yesterday_review", {}),
+            "dual_agent_review": cache_data.get("dual_agent_review") or daily_updater.get_dual_agent_review_data(enriched_reports),
             "bqc_predictions": cache_data.get("bqc_predictions") or bqc_engine.batch_compute_bqc(enriched_reports),
             "derivative_gems": [],
             "latency_alerts": v4_data.get("latency_alerts", [])
@@ -300,6 +304,12 @@ def start_background_updater():
     """后台独立守护线程，每 15 分钟自动探测并更新中国竞彩官方最新赛程"""
     def loop():
         print("[AutoUpdater] 每日全自动守护线程已启动，轮询周期: 15 分钟")
+        # 开机 5 秒后在后台异步执行一次探测，绝不阻塞前端即时响应
+        time.sleep(5)
+        try:
+            daily_updater.run_update_now()
+        except Exception as e:
+            print(f"[AutoUpdater] 首次后台同步探测跳过: {e}")
         while True:
             time.sleep(900)  # 15分钟
             try:
@@ -316,20 +326,15 @@ def run_server(port=8888):
     web_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(web_dir)
     
-    # 启动时先做一次探测以确保缓存最新
-    try:
-        daily_updater.run_update_now()
-    except Exception as e:
-        print(f"[Init] 首次日常更新探测跳过: {e}")
-        
+    # 后台异步启动自动探测，绝对不在启动主流程中同步阻塞（保证 0.05 秒极速开机，杜绝云端 502/冷启动超时）
     start_background_updater()
     
     server_address = ("0.0.0.0", port)
     lan_ip = get_lan_ip()
-    httpd = HTTPServer(server_address, QuantDashboardHandler)
+    httpd = ThreadingHTTPServer(server_address, QuantDashboardHandler)
     print(f"=========================================================================")
     print(f"  赛博天眼 · 黑核全维智算矩阵 (CYBER-EYE QUANTUM TERMINAL) 已启动！")
-    print(f"  全自动每日更新引擎: 已激活 (后台自动轮询 + 手动即时刷新)")
+    print(f"  全自动每日更新引擎: 已激活 (多线程并发 + 后台异步轮询)")
     print(f"  电脑本机访问: http://127.0.0.1:{port}")
     print(f"  手机/局域网访问: http://{lan_ip}:{port}")
     print(f"=========================================================================")
