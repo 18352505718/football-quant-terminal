@@ -1,5 +1,5 @@
 {
-  "last_update_time": "2026-11-18 15:27:12",
+  "last_update_time": "2026-11-18 15:42:13",
   "today_date": "2026-11-18",
   "yesterday_results": [
     {
@@ -1831,12 +1831,12 @@
         "胜胜": 2.7,
         "胜平": 15.0,
         "胜负": 34.0,
-        "平胜": 4.4,
+        "平胜": 4.2,
         "平平": 5.25,
         "平负": 9.25,
         "负胜": 20.0,
         "负平": 15.0,
-        "负负": 6.9
+        "负负": 7.4
       },
       "heatmap_matrix": [
         [
@@ -2098,15 +2098,15 @@
         1.53
       ],
       "official_bqc_sp": {
-        "胜胜": 3.6,
+        "胜胜": 3.65,
         "胜平": 13.0,
         "胜负": 25.0,
-        "平胜": 5.35,
-        "平平": 5.4,
+        "平胜": 5.0,
+        "平平": 5.2,
         "平负": 7.0,
         "负胜": 21.0,
         "负平": 13.0,
-        "负负": 4.55
+        "负负": 4.9
       },
       "heatmap_matrix": [
         [
@@ -2340,7 +2340,7 @@
         },
         "half_full_pred": {
           "primary": "胜/胜",
-          "secondary": "平/胜"
+          "secondary": "平/负"
         }
       }
     },
@@ -3698,9 +3698,9 @@
         "prob": 0.2041,
         "prob_pct": 20.4,
         "fair_sp": 4.9,
-        "market_sp": 6.9,
-        "ev": 0.4083,
-        "ev_pct": 40.8
+        "market_sp": 7.4,
+        "ev": 0.5104,
+        "ev_pct": 51.0
       },
       "matrix": [
         {
@@ -3739,9 +3739,9 @@
           "prob": 0.1408,
           "prob_pct": 14.1,
           "fair_sp": 7.1,
-          "market_sp": 4.4,
-          "ev": -0.3805,
-          "ev_pct": -38.0
+          "market_sp": 4.2,
+          "ev": -0.4086,
+          "ev_pct": -40.9
         },
         {
           "key": "平平",
@@ -3789,9 +3789,9 @@
           "prob": 0.2041,
           "prob_pct": 20.4,
           "fair_sp": 4.9,
-          "market_sp": 6.9,
-          "ev": 0.4083,
-          "ev_pct": 40.8
+          "market_sp": 7.4,
+          "ev": 0.5104,
+          "ev_pct": 51.0
         }
       ],
       "has_reversal_alert": false,
@@ -3812,19 +3812,19 @@
         "prob": 0.2156,
         "prob_pct": 21.6,
         "fair_sp": 4.64,
-        "market_sp": 3.6,
-        "ev": -0.224,
-        "ev_pct": -22.4
+        "market_sp": 3.65,
+        "ev": -0.2132,
+        "ev_pct": -21.3
       },
       "value_hedge_pick": {
-        "key": "平胜",
-        "name": "平胜",
-        "prob": 0.1861,
-        "prob_pct": 18.6,
-        "fair_sp": 5.37,
-        "market_sp": 5.35,
-        "ev": -0.0044,
-        "ev_pct": -0.4
+        "key": "平负",
+        "name": "平负",
+        "prob": 0.1389,
+        "prob_pct": 13.9,
+        "fair_sp": 7.2,
+        "market_sp": 7.0,
+        "ev": -0.0276,
+        "ev_pct": -2.8
       },
       "matrix": [
         {
@@ -3833,9 +3833,9 @@
           "prob": 0.2156,
           "prob_pct": 21.6,
           "fair_sp": 4.64,
-          "market_sp": 3.6,
-          "ev": -0.224,
-          "ev_pct": -22.4
+          "market_sp": 3.65,
+          "ev": -0.2132,
+          "ev_pct": -21.3
         },
         {
           "key": "胜平",
@@ -3863,9 +3863,9 @@
           "prob": 0.1861,
           "prob_pct": 18.6,
           "fair_sp": 5.37,
-          "market_sp": 5.35,
-          "ev": -0.0044,
-          "ev_pct": -0.4
+          "market_sp": 5.0,
+          "ev": -0.0696,
+          "ev_pct": -7.0
         },
         {
           "key": "平平",
@@ -3873,9 +3873,9 @@
           "prob": 0.1816,
           "prob_pct": 18.2,
           "fair_sp": 5.51,
-          "market_sp": 5.4,
-          "ev": -0.0193,
-          "ev_pct": -1.9
+          "market_sp": 5.2,
+          "ev": -0.0556,
+          "ev_pct": -5.6
         },
         {
           "key": "平负",
@@ -3913,14 +3913,14 @@
           "prob": 0.1463,
           "prob_pct": 14.6,
           "fair_sp": 6.83,
-          "market_sp": 4.55,
-          "ev": -0.3341,
-          "ev_pct": -33.4
+          "market_sp": 4.9,
+          "ev": -0.2829,
+          "ev_pct": -28.3
         }
       ],
       "has_reversal_alert": false,
       "reversal_info": null,
-      "rationale": "主队整体战力呈碾压态势(xG 1.38:1.12)，抢开局意图强烈，上半场奠定领先概率达 27.9%，正路首选【胜胜 @3.6】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @5.35】实现双重防线覆盖。"
+      "rationale": "主队整体战力呈碾压态势(xG 1.38:1.12)，抢开局意图强烈，上半场奠定领先概率达 27.9%，正路首选【胜胜 @3.65】。"
     },
     {
       "num": "周四001",
@@ -4572,7 +4572,7 @@
   },
   "dual_agent_review": {
     "status": "APPROVED_WITH_DIVERGENCE_RESOLVED",
-    "timestamp": "2026-11-18 15:27:13",
+    "timestamp": "2026-11-18 15:42:14",
     "summary": {
       "total_matches": 8,
       "consensus_count": 4,

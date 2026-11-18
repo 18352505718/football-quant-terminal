@@ -47,11 +47,21 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         clean_path = self.path.split("?")[0]
-        # 针对首页使用极速 gzip 压缩返回，缩减 80% 传输体积
+        # 针对首页使用极速 gzip 压缩返回，并直接注入全量量化数据（SSR 直出），手机端首屏 0 秒瞬间渲染
         if clean_path in ("", "/", "/index.html"):
             index_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
-            with open(index_path, "rb") as f:
-                html_bytes = f.read()
+            try:
+                with open(index_path, "r", encoding="utf-8") as f:
+                    html_text = f.read()
+                data = self.get_quant_payload()
+                json_str = json.dumps(data, ensure_ascii=False)
+                inline_script = f"<script>window.__INITIAL_DATA__ = {json_str};</script>\n</head>"
+                html_text = html_text.replace("</head>", inline_script, 1)
+                html_bytes = html_text.encode("utf-8")
+            except Exception as e:
+                print(f"[Server] SSR 数据注入异常: {e}")
+                with open(index_path, "rb") as f:
+                    html_bytes = f.read()
             self._send_compressed(html_bytes, "text/html; charset=utf-8", "no-cache, must-revalidate")
             return
 

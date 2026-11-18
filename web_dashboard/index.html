@@ -3240,15 +3240,8 @@
       `;
     }
 
-    async function init() {
-      try {
-        const resp = await fetch('/api/data?t=' + Date.now());
-        rawData = await resp.json();
-      } catch (err) {
-        console.error('API Load failed:', err);
-        return;
-      }
-
+    function renderInitialViews() {
+      if (!rawData) return;
       const safeRun = (name, fn) => {
         try {
           if (typeof fn === 'function') fn();
@@ -3257,13 +3250,41 @@
         }
       };
 
+      // 仅渲染当前首屏可见板块（状态横幅 + 比赛列表），保证手机端首屏 0 延迟秒开
       safeRun('renderDailyStatusBanner', renderDailyStatusBanner);
       safeRun('renderMatches', renderMatches);
-      safeRun('renderYesterdayReview', renderYesterdayReview);
-      safeRun('renderParlays', renderParlays);
-      safeRun('renderRen9', renderRen9);
-      safeRun('renderBqcPredictions', renderBqcPredictions);
-      safeRun('renderDualAgentComparison', renderDualAgentComparison);
+
+      // 更新导航栏徽章
+      const yr = (rawData.daily_status && rawData.daily_status.yesterday_review) || rawData.yesterday_review;
+      const badge = document.getElementById('yesterday-summary-badge');
+      if (badge && yr) badge.innerText = yr.summary_badge || '完场结算已对账';
+
+      const r9 = (rawData.ren9_ticket || rawData.ren9_scheme || {});
+      const navR9 = document.getElementById('nav-ren9-issue');
+      if (navR9 && r9.issue) navR9.innerText = '第' + r9.issue + '期';
+    }
+
+    async function init() {
+      // 1. 若服务端已通过 SSR 直出 window.__INITIAL_DATA__，耗时 0 毫秒直接完成首屏渲染
+      if (typeof window !== 'undefined' && window.__INITIAL_DATA__) {
+        rawData = window.__INITIAL_DATA__;
+        renderInitialViews();
+      }
+
+      // 2. 异步静默检测更新，绝不卡死手机端主线程
+      try {
+        const resp = await fetch('/api/data?t=' + Date.now());
+        const fresh = await resp.json();
+        if (fresh && fresh.system_status) {
+          const isNew = !rawData || !rawData.system_status || (fresh.system_status.timestamp !== rawData.system_status.timestamp);
+          if (isNew) {
+            rawData = fresh;
+            renderInitialViews();
+          }
+        }
+      } catch (err) {
+        console.warn('Silent data sync error:', err);
+      }
     }
 
     function renderDailyStatusBanner() {
