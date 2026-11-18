@@ -96,9 +96,7 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
         if self.path.startswith("/api/push_cache"):
             token = self.headers.get("X-Sync-Token", "")
             if token != "cybereye_sync_2026":
-                self.send_response(403)
-                self.end_headers()
-                self.wfile.write(b'{"status":"forbidden"}')
+                self._send_compressed(b'{"status":"forbidden"}', "application/json; charset=utf-8")
                 return
             try:
                 content_len = int(self.headers.get("Content-Length", 0))
@@ -107,14 +105,11 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
                 cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "daily_pipeline_cache.json")
                 with open(cache_path, "w", encoding="utf-8") as f:
                     json.dump(payload, f, ensure_ascii=False, indent=2)
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.end_headers()
-                self.wfile.write(json.dumps({"status": "ok", "matches": len(payload.get("active_matches", []))}, ensure_ascii=False).encode("utf-8"))
+                resp_bytes = json.dumps({"status": "ok", "matches": len(payload.get("active_matches", []))}, ensure_ascii=False).encode("utf-8")
+                self._send_compressed(resp_bytes, "application/json; charset=utf-8")
             except Exception as e:
-                self.send_response(500)
-                self.end_headers()
-                self.wfile.write(json.dumps({"status": "error", "msg": str(e)}).encode("utf-8"))
+                err_bytes = json.dumps({"status": "error", "msg": str(e)}).encode("utf-8")
+                self._send_compressed(err_bytes, "application/json; charset=utf-8")
         else:
             self.send_response(404)
             self.end_headers()
