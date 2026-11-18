@@ -10,9 +10,9 @@
 
   <title>赛博天眼 · 黑核全维智算矩阵 (CYBER-EYE QUANTUM TERMINAL)</title>
 
-  <!-- ECharts 5.5.0 CDN -->
+  <!-- ECharts 5.5.0 CDN (异步加载，彻底消除首屏白屏阻塞) -->
 
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script defer src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js'"></script>
 
   <style>
 
@@ -4875,15 +4875,13 @@
 
       document.getElementById('heatmap-modal').classList.add('open');
 
-      setTimeout(() => {
-
+      const renderHeatmap = () => {
         const dom = document.getElementById('heatmap-container');
-
-        if (!chartInstance) {
-
+        if (!dom) return;
+        if (!chartInstance && typeof echarts !== 'undefined') {
           chartInstance = echarts.init(dom);
-
         }
+        if (!chartInstance) return;
 
         const goals = ['0', '1', '2', '3', '4', '5'];
 
@@ -4987,7 +4985,24 @@
 
         chartInstance.resize();
 
-      }, 50);
+      };
+
+      if (typeof echarts === 'undefined') {
+        const dom = document.getElementById('heatmap-container');
+        if (dom) dom.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);font-size:0.85rem;">⏳ 正在载入图表引擎...</div>';
+        const s = document.createElement('script');
+        s.src = 'https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js';
+        s.onload = () => { if (dom) dom.innerHTML = ''; renderHeatmap(); };
+        s.onerror = () => {
+          const s2 = document.createElement('script');
+          s2.src = 'https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js';
+          s2.onload = () => { if (dom) dom.innerHTML = ''; renderHeatmap(); };
+          document.head.appendChild(s2);
+        };
+        document.head.appendChild(s);
+      } else {
+        setTimeout(renderHeatmap, 50);
+      }
 
     }
 

@@ -24,29 +24,44 @@ import bqc_engine
 nb_model = BivariateNBModel(dispersion_r=6.0)
 
 class QuantDashboardHandler(SimpleHTTPRequestHandler):
-    def end_headers(self):
-        # 强制禁用所有静态与动态资源的 HTTP 客户端缓存，确保前端每次刷新必拿到最新数据
-        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-        self.send_header("Pragma", "no-cache")
-        self.send_header("Expires", "0")
-        super().end_headers()
+    def _send_compressed(self, content_bytes, content_type="text/html; charset=utf-8", cache_control="no-cache, must-revalidate"):
+        accept_encoding = self.headers.get("Accept-Encoding", "")
+        if "gzip" in accept_encoding and len(content_bytes) > 256:
+            compressed = gzip.compress(content_bytes, compresslevel=6)
+            self.send_response(200)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Content-Encoding", "gzip")
+            self.send_header("Content-Length", str(len(compressed)))
+            self.send_header("Cache-Control", cache_control)
+            self.send_header("Access-Control-Allow-Origin", "*")
+            super().end_headers()
+            self.wfile.write(compressed)
+        else:
+            self.send_response(200)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Content-Length", str(len(content_bytes)))
+            self.send_header("Cache-Control", cache_control)
+            self.send_header("Access-Control-Allow-Origin", "*")
+            super().end_headers()
+            self.wfile.write(content_bytes)
 
     def do_GET(self):
+        clean_path = self.path.split("?")[0]
+        # 针对首页使用极速 gzip 压缩返回，缩减 80% 传输体积
+        if clean_path in ("", "/", "/index.html"):
+            index_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
+            with open(index_path, "rb") as f:
+                html_bytes = f.read()
+            self._send_compressed(html_bytes, "text/html; charset=utf-8", "no-cache, must-revalidate")
+            return
+
         if self.path.startswith("/api/data"):
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            
             data = self.get_quant_payload()
-            self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+            json_bytes = json.dumps(data, ensure_ascii=False).encode("utf-8")
+            self._send_compressed(json_bytes, "application/json; charset=utf-8", "no-cache, must-revalidate")
+            return
             
         elif self.path.startswith("/api/refresh"):
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            
             try:
                 importlib.reload(daily_updater)
                 cache = daily_updater.run_update_now()
@@ -60,14 +75,10 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
                 }
             except Exception as e:
                 resp_data = {"status": "error", "message": f"刷新失败: {e}"}
-            self.wfile.write(json.dumps(resp_data, ensure_ascii=False).encode("utf-8"))
+            self._send_compressed(json.dumps(resp_data, ensure_ascii=False).encode("utf-8"), "application/json; charset=utf-8")
         elif self.path.startswith("/api/diag"):
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
             diag = daily_updater.diagnose_connectivity() if hasattr(daily_updater, "diagnose_connectivity") else {}
-            self.wfile.write(json.dumps(diag, ensure_ascii=False).encode("utf-8"))
+            self._send_compressed(json.dumps(diag, ensure_ascii=False).encode("utf-8"), "application/json; charset=utf-8")
         else:
             super().do_GET()
 
