@@ -2552,9 +2552,9 @@
 
     <button class="nav-item" onclick="switchTab('parlays')">🎯 2串1 凯利实战单 (动态滑块算本金)</button>
 
-    <button class="nav-item" onclick="switchTab('ren9')" id="nav-ren9-btn">🏆 传足任九 64元方案 (今日第26161期)</button>
+    <button class="nav-item" onclick="switchTab('ren9')" id="nav-ren9-btn">🏆 传足任九 64元方案 (<span id="nav-ren9-issue">最新期次</span>)</button>
 
-    <button class="nav-item" onclick="switchTab('yesterday')">📋 昨日复盘全量对账 (<span id="yesterday-summary-badge">周日双2串1全红</span>)</button>
+    <button class="nav-item" onclick="switchTab('yesterday')">📋 昨日复盘全量对账 (<span id="yesterday-summary-badge">完场结算已对账</span>)</button>
 
     <button class="nav-item" onclick="switchTab('dual-agent')">🤖 双模型技术比对 (Antigravity × Open)</button>
         <button class="nav-item" onclick="switchTab('bqc')">⚡ 半全场胜平负预测 (HT-FT)</button>
@@ -3555,6 +3555,10 @@
             ${yr.ren9_summary || '成本 64 元（4 场单选基石 + 5 场双选防冷）。9 场比赛精准命中 7 场，稳健收获正向收益。'}
           </p>
 
+      `;
+
+      if (ren9.legs && ren9.legs.length > 0) {
+        html += `
           <div class="review-table-container">
             <table class="review-table">
               <thead>
@@ -3570,29 +3574,44 @@
                 </tr>
               </thead>
               <tbody>
-      `;
-
-      (ren9.legs || []).forEach(leg => {
-        html += `
-          <tr>
-            <td><span class="match-badge-num">${leg.num}</span></td>
-            <td><span class="match-badge-league">${leg.league}</span></td>
-            <td style="font-weight: 800; color: #fff;">${leg.match}</td>
-            <td><span style="background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); font-weight: 900; padding: 0.15rem 0.5rem; border-radius: 4px;">[ ${leg.ticket_pick} ]</span></td>
-            <td style="font-size: 0.78rem; color: #94a3b8;">${leg.type}</td>
-            <td style="font-weight: 900; font-size: 1rem; color: #38bdf8;">${leg.score}</td>
-            <td style="font-weight: 800; color: #fff;">${leg.actual}</td>
-            <td>
-              ${leg.hit ? '<span class="badge-hit">✅ 命中红单</span>' : '<span class="badge-miss">❌ 爆冷失利</span>'}
-            </td>
-          </tr>
         `;
-      });
 
-      html += `
+        (ren9.legs || []).forEach(leg => {
+          html += `
+            <tr>
+              <td><span class="match-badge-num">${leg.num}</span></td>
+              <td><span class="match-badge-league">${leg.league}</span></td>
+              <td style="font-weight: 800; color: #fff;">${leg.match}</td>
+              <td><span style="background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); font-weight: 900; padding: 0.15rem 0.5rem; border-radius: 4px;">[ ${leg.ticket_pick} ]</span></td>
+              <td style="font-size: 0.78rem; color: #94a3b8;">${leg.type}</td>
+              <td style="font-weight: 900; font-size: 1rem; color: #38bdf8;">${leg.score}</td>
+              <td style="font-weight: 800; color: #fff;">${leg.actual}</td>
+              <td>
+                ${leg.hit ? '<span class="badge-hit">✅ 命中红单</span>' : '<span class="badge-miss">❌ 爆冷失利</span>'}
+              </td>
+            </tr>
+          `;
+        });
+
+        html += `
               </tbody>
             </table>
           </div>
+        `;
+      } else {
+        html += `
+          <div style="background: #080e1e; border: 1px dashed rgba(255,255,255,0.12); border-radius: 8px; padding: 1.25rem 1rem; text-align: center;">
+            <div style="font-size: 0.92rem; font-weight: 800; color: #cbd5e1; margin-bottom: 0.4rem;">
+              📅 昨日为竞彩单场赛事日 · 传统足彩任九（14场周中期）未设开奖对阵
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0; line-height: 1.55;">
+              昨日体彩官方开售 10 场国家队/欧国联竞彩单场已全部完场结算（详见下方逐场对账大盘）。体彩官方上期（第 <b>${yr.card3_label ? yr.card3_label.replace(/[^0-9]/g, '') : '26165'}</b> 期）全国派奖 <b>${yr.card3_val || '72,091 注'}</b>。当前最新期次正火热开售中。
+            </p>
+          </div>
+        `;
+      }
+
+      html += `
         </div>
 
         <!-- ========================================== -->
