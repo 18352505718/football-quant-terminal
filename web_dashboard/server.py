@@ -47,6 +47,21 @@ class QuantDashboardHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         clean_path = self.path.split("?")[0]
+
+        # 微信域名所有权校验文件支持
+        if clean_path.endswith(".txt"):
+            fname = clean_path.lstrip("/")
+            for candidate_dir in [os.path.dirname(os.path.abspath(__file__)), BASE_DIR, os.getcwd()]:
+                target_f = os.path.join(candidate_dir, fname)
+                if os.path.exists(target_f):
+                    with open(target_f, "rb") as f:
+                        txt_bytes = f.read()
+                    self._send_compressed(txt_bytes, "text/plain; charset=utf-8", "no-cache")
+                    return
+            if fname == "4b1387a36a34c7a4ec7639bcbcc3705a.txt":
+                self._send_compressed(b"4faffd42bff02fc10510b10f463346856cd16f9e", "text/plain; charset=utf-8", "no-cache")
+                return
+
         # 针对首页使用极速 gzip 压缩返回，并直接注入全量量化数据（SSR 直出），手机端首屏 0 秒瞬间渲染
         if clean_path in ("", "/", "/index.html"):
             index_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")

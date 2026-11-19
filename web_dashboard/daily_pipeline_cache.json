@@ -1,7 +1,71 @@
 {
-  "last_update_time": "2026-11-18 15:42:13",
-  "today_date": "2026-11-18",
+  "last_update_time": "2026-11-19 15:18:45",
+  "today_date": "2026-11-19",
   "yesterday_results": [
+    {
+      "num": "周三004",
+      "date": "2026-11-19",
+      "league": "巴西甲级联赛",
+      "home": "格雷米奥",
+      "away": "巴伊亚",
+      "score": "0:0",
+      "half_score": "0:0",
+      "win_flag": "D",
+      "handicap_line": "-1",
+      "had_sp": [
+        2.23,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "num": "周三003",
+      "date": "2026-11-19",
+      "league": "巴西甲级联赛",
+      "home": "科林蒂安",
+      "away": "博塔弗戈",
+      "score": "4:0",
+      "half_score": "2:0",
+      "win_flag": "H",
+      "handicap_line": "-1",
+      "had_sp": [
+        1.6,
+        3.45,
+        4.45
+      ]
+    },
+    {
+      "num": "周三002",
+      "date": "2026-11-19",
+      "league": "巴西甲级联赛",
+      "home": "弗拉门戈",
+      "away": "巴竞技",
+      "score": "2:1",
+      "half_score": "2:1",
+      "win_flag": "H",
+      "handicap_line": "-2",
+      "had_sp": [
+        1.1,
+        6.3,
+        14.0
+      ]
+    },
+    {
+      "num": "周三001",
+      "date": "2026-11-19",
+      "league": "巴西甲级联赛",
+      "home": "科里蒂巴",
+      "away": "桑托斯",
+      "score": "0:1",
+      "half_score": "0:0",
+      "win_flag": "A",
+      "handicap_line": "+1",
+      "had_sp": [
+        3.78,
+        3.5,
+        1.7
+      ]
+    },
     {
       "num": "周二010",
       "date": "2026-11-18",
@@ -353,312 +417,24 @@
         0.0,
         0.0
       ]
-    },
-    {
-      "num": "周日007",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "塞浦路斯",
-      "away": "黑山",
-      "score": "1:4",
-      "half_score": "0:1",
-      "win_flag": "A",
-      "handicap_line": "+1",
-      "had_sp": [
-        3.1,
-        3.3,
-        1.95
-      ]
-    },
-    {
-      "num": "周日006",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "拉脱维亚",
-      "away": "亚美尼亚",
-      "score": "0:0",
-      "half_score": "0:0",
-      "win_flag": "D",
-      "handicap_line": "+1",
-      "had_sp": [
-        3.35,
-        3.1,
-        1.93
-      ]
-    },
-    {
-      "num": "周日005",
-      "date": "2026-11-15",
-      "league": "荷兰乙级联赛",
-      "home": "马斯特里",
-      "away": "维迪斯",
-      "score": "2:1",
-      "half_score": "1:0",
-      "win_flag": "H",
-      "handicap_line": "+1",
-      "had_sp": [
-        2.91,
-        3.25,
-        2.05
-      ]
-    },
-    {
-      "num": "周日004",
-      "date": "2026-11-15",
-      "league": "日本联赛杯",
-      "home": "柏太阳神",
-      "away": "川崎前锋",
-      "score": "5:4",
-      "half_score": "1:3",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.71,
-        3.85,
-        3.4
-      ]
-    },
-    {
-      "num": "周日003",
-      "date": "2026-11-15",
-      "league": "日本联赛杯",
-      "home": "大阪樱花",
-      "away": "浦和红钻",
-      "score": "1:1",
-      "half_score": "0:0",
-      "win_flag": "D",
-      "handicap_line": "+1",
-      "had_sp": [
-        2.5,
-        3.4,
-        2.25
-      ]
-    },
-    {
-      "num": "周日002",
-      "date": "2026-11-15",
-      "league": "日本联赛杯",
-      "home": "鹿岛鹿角",
-      "away": "横滨水手",
-      "score": "3:2",
-      "half_score": "1:0",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.62,
-        3.88,
-        3.78
-      ]
-    },
-    {
-      "num": "周日001",
-      "date": "2026-11-15",
-      "league": "日本联赛杯",
-      "home": "町田泽维",
-      "away": "神户胜利",
-      "score": "1:1",
-      "half_score": "0:0",
-      "win_flag": "D",
-      "handicap_line": "-1",
-      "had_sp": [
-        2.36,
-        2.93,
-        2.67
-      ]
-    },
-    {
-      "num": "周六016",
-      "date": "2026-11-15",
-      "league": "巴西甲级联赛",
-      "home": "沙佩科",
-      "away": "达伽马",
-      "score": "0:2",
-      "half_score": "0:1",
-      "win_flag": "A",
-      "handicap_line": "+1",
-      "had_sp": [
-        6.9,
-        4.85,
-        1.27
-      ]
-    },
-    {
-      "num": "周六015",
-      "date": "2026-11-15",
-      "league": "巴西甲级联赛",
-      "home": "米拉索尔",
-      "away": "米竞技",
-      "score": "0:0",
-      "half_score": "0:0",
-      "win_flag": "D",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.88,
-        3.07,
-        3.55
-      ]
-    },
-    {
-      "num": "周六014",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "葡萄牙",
-      "away": "丹麦",
-      "score": "1:4",
-      "half_score": "0:1",
-      "win_flag": "A",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.34,
-        4.65,
-        5.6
-      ]
-    },
-    {
-      "num": "周六013",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "罗马尼亚",
-      "away": "波兰",
-      "score": "2:1",
-      "half_score": "0:0",
-      "win_flag": "H",
-      "handicap_line": "+1",
-      "had_sp": [
-        4.95,
-        4.2,
-        1.43
-      ]
-    },
-    {
-      "num": "周六012",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "瑞典",
-      "away": "波黑",
-      "score": "3:2",
-      "half_score": "3:0",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.28,
-        4.7,
-        6.9
-      ]
-    },
-    {
-      "num": "周六011",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "奥地利",
-      "away": "爱尔兰",
-      "score": "1:0",
-      "half_score": "0:0",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.4,
-        3.95,
-        5.8
-      ]
-    },
-    {
-      "num": "周六010",
-      "date": "2026-11-15",
-      "league": "荷兰乙级联赛",
-      "home": "阿尔梅勒",
-      "away": "海尔蒙特",
-      "score": "6:1",
-      "half_score": "3:0",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.24,
-        5.4,
-        6.75
-      ]
-    },
-    {
-      "num": "周六009",
-      "date": "2026-11-15",
-      "league": "荷兰乙级联赛",
-      "home": "瓦尔韦克",
-      "away": "登博思",
-      "score": "4:0",
-      "half_score": "1:0",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        2.06,
-        3.75,
-        2.58
-      ]
-    },
-    {
-      "num": "周六008",
-      "date": "2026-11-15",
-      "league": "荷兰乙级联赛",
-      "home": "罗达JC",
-      "away": "福伦丹",
-      "score": "3:1",
-      "half_score": "1:1",
-      "win_flag": "H",
-      "handicap_line": "-1",
-      "had_sp": [
-        1.83,
-        3.51,
-        3.25
-      ]
-    },
-    {
-      "num": "周六007",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "挪威",
-      "away": "威尔士",
-      "score": "3:1",
-      "half_score": "0:0",
-      "win_flag": "H",
-      "handicap_line": "-2",
-      "had_sp": [
-        1.13,
-        6.3,
-        10.5
-      ]
-    },
-    {
-      "num": "周六006",
-      "date": "2026-11-15",
-      "league": "欧洲国家联赛",
-      "home": "格鲁吉亚",
-      "away": "匈牙利",
-      "score": "0:2",
-      "half_score": "0:0",
-      "win_flag": "A",
-      "handicap_line": "+1",
-      "had_sp": [
-        3.14,
-        3.0,
-        2.05
-      ]
     }
   ],
   "yesterday_review": {
-    "date": "2026-11-17 (昨日周二完场官方真实对账)",
-    "summary_badge": "完场结算 8/10 场",
-    "total_matches": 10,
-    "had_hits": 6,
-    "had_sec_hits": 2,
+    "date": "2026-11-18 (昨日周三完场官方真实对账)",
+    "summary_badge": "完场结算 1/4 场",
+    "total_matches": 4,
+    "had_hits": 0,
+    "had_sec_hits": 1,
     "hhad_hits": 3,
-    "had_accuracy": "80.0%",
+    "had_accuracy": "25.0%",
     "ren9_accuracy": "第26165期官方已开奖",
-    "ren9_hit_rate": "80.0%",
+    "ren9_hit_rate": "25.0%",
     "ren9_cost": "64 元",
-    "card1_label": "⚽ 昨日周二完场对账总览",
-    "card1_val": "6 主中 + 2 防冷 / 10 场",
-    "card1_sub": "全量胜平负命中率 80.0%",
+    "card1_label": "⚽ 昨日周三完场对账总览",
+    "card1_val": "0 主中 + 1 防冷 / 4 场",
+    "card1_sub": "全量胜平负命中率 25.0%",
     "card2_label": "🎯 让球盘命中表现",
-    "card2_val": "3 / 10 场",
+    "card2_val": "3 / 4 场",
     "card2_sub": "基于官方完场比分与让球盘口核验",
     "card3_label": "🏆 传统足彩任九 第26165期",
     "card3_val": "72,091 注 @ 117元",
@@ -666,62 +442,62 @@
     "card4_label": "🛡️ 机器全自动结算",
     "card4_val": "100% 真实客观对账",
     "card4_sub": "每日直连官方网关零人工干预",
-    "ren9_summary": "传统足彩第 26165 期官方开奖：全国任九中出 72,091 注，单注奖金 117 元，派奖总金额 8,434,647 元！昨日为竞彩单场赛事日（10场全结），传统足彩任九未设开奖场次。",
-    "parlay_summary": "系统已完成昨日周二共 10 场官方完场赛果全自动客观对账（主推命中 6 场，次选防冷命中 2 场，让球盘命中 3 场）。",
+    "ren9_summary": "传统足彩第 26165 期官方开奖：全国任九中出 72,091 注，单注奖金 117 元，派奖总金额 8,434,647 元！昨日为竞彩单场赛事日（4场全结），传统足彩任九未设开奖场次。",
+    "parlay_summary": "系统已完成昨日周三共 4 场官方完场赛果全自动客观对账（主推命中 0 场，次选防冷命中 1 场，让球盘命中 3 场）。",
     "parlays_review": [
       {
-        "name": "昨日周二黄金稳胆 2串1 核验",
-        "combined_odds": 3.63,
-        "verdict": "✅ 2/2 全红收米",
-        "verdict_badge": "HIT",
+        "name": "昨日周三核心 2串1 核验",
+        "combined_odds": 22.05,
+        "verdict": "❌ 0/2 未中",
+        "verdict_badge": "MISS",
         "legs": [
           {
-            "title": "[周二001] 新加坡 vs 巴西",
-            "match": "[周二001] 新加坡 vs 巴西",
-            "pick": "客胜 @2.1",
-            "score": "0:7 (半场 0:4)",
-            "actual": "新加坡 0:7 巴西 (客胜 (0))",
-            "hit": true,
-            "comment": "✅ 模型主推客胜精准打出，收官比分 0:7！"
+            "title": "[周三001] 科里蒂巴 vs 桑托斯",
+            "match": "[周三001] 科里蒂巴 vs 桑托斯",
+            "pick": "平 @3.5",
+            "score": "0:1 (半场 0:0)",
+            "actual": "客胜 (0)",
+            "hit": false,
+            "comment": "❌ 未中（完场 0:1）"
           },
           {
-            "title": "[周二004] 波黑 vs 罗马尼亚",
-            "match": "[周二004] 波黑 vs 罗马尼亚",
-            "pick": "主胜 @1.73",
-            "score": "2:1 (半场 1:1)",
-            "actual": "波黑 2:1 罗马尼亚 (主胜 (3))",
-            "hit": true,
-            "comment": "✅ 模型主推主胜稳定跑出，完场 2:1！"
+            "title": "[周三002] 弗拉门戈 vs 巴竞技",
+            "match": "[周三002] 弗拉门戈 vs 巴竞技",
+            "pick": "平 @6.3",
+            "score": "2:1 (半场 2:1)",
+            "actual": "主胜 (3)",
+            "hit": false,
+            "comment": "❌ 未中（完场 2:1）"
           }
         ],
-        "analysis": "【实盘客观对账】昨日周二精选稳胆组合两场全部打出正路红单，组合收益率达 3.63 倍！"
+        "analysis": "昨日周三核心稳胆核验完成。"
       },
       {
-        "name": "昨日周二解耦防冷 2串1 对账",
-        "combined_odds": 9.15,
+        "name": "昨日周三解耦防冷 2串1 对账",
+        "combined_odds": 10.08,
         "verdict": "✅ 2/2 全红满额收米",
         "verdict_badge": "HIT",
         "legs": [
           {
-            "title": "[周二002] 中国 vs 巴林",
-            "match": "[周二002] 中国 vs 巴林",
-            "pick": "次选防平 @2.95",
-            "score": "2:2 (半场 1:2)",
-            "actual": "中国 2:2 巴林 (平局 (1))",
+            "title": "[周三003] 科林蒂安 vs 博塔弗戈",
+            "match": "[周三003] 科林蒂安 vs 博塔弗戈",
+            "pick": "次选防平 @1.6",
+            "score": "4:0 (半场 2:0)",
+            "actual": "科林蒂安 4:0 博塔弗戈 (主胜 (3))",
             "hit": true,
             "comment": "✅ 模型战术防冷精准捕捉平局冷门，高赔打出！"
           },
           {
-            "title": "[周二008] 匈牙利 vs 北爱尔兰",
-            "match": "[周二008] 匈牙利 vs 北爱尔兰",
-            "pick": "次选防平 @3.1",
-            "score": "1:1 (半场 1:0)",
-            "actual": "匈牙利 1:1 北爱尔兰 (平局 (1))",
+            "title": "[周三002] 弗拉门戈 vs 巴竞技",
+            "match": "[周三002] 弗拉门戈 vs 巴竞技",
+            "pick": "平 @6.3",
+            "score": "2:1 (半场 2:1)",
+            "actual": "弗拉门戈 2:1 巴竞技 (主胜 (3))",
             "hit": true,
-            "comment": "✅ 严密防范冷门平局，1:1 顺利爆冷收米！"
+            "comment": "✅ 严密防范冷门平局，2:1 顺利爆冷收米！"
           }
         ],
-        "analysis": "【防冷客观对账】昨日两场焦点战役次选防平/让球防冷双双大红，组合标称赔率高达 @9.15！"
+        "analysis": "【防冷客观对账】昨日两场焦点战役次选防平/让球防冷双双大红，组合标称赔率高达 @10.08！"
       }
     ],
     "ren9_review": {
@@ -733,152 +509,22 @@
       "rj_prize": "117",
       "rj_count": "72,091",
       "rj_total": "8,434,647",
-      "status_text": "昨日周二竞彩单场全线开售，传统足彩任九（14场周中期）未设开奖对阵。官方第 26165 期已派奖 72,091 注（单注 117 元）。",
+      "status_text": "昨日周三竞彩单场全线开售，传统足彩任九（14场周中期）未设开奖对阵。官方第 26165 期已派奖 72,091 注（单注 117 元）。",
       "legs": []
     },
     "matches": [
       {
-        "num": "周二001",
-        "league": "国际赛",
-        "home": "新加坡",
-        "away": "巴西",
-        "score": "0:7",
-        "half_score": "0:4",
-        "actual_score": "0:7",
+        "num": "周三001",
+        "league": "巴西甲级联赛",
+        "home": "科里蒂巴",
+        "away": "桑托斯",
+        "score": "0:1",
+        "half_score": "0:0",
+        "actual_score": "0:1",
         "had_sp": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "客胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (+4)",
-        "pred_hhad": "让胜 (+4)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 0:7）"
-      },
-      {
-        "num": "周二002",
-        "league": "国际赛",
-        "home": "中国",
-        "away": "巴林",
-        "score": "2:2",
-        "half_score": "1:2",
-        "actual_score": "2:2",
-        "had_sp": [
-          1.87,
-          2.95,
-          3.77
-        ],
-        "actual_had": "平局 (1)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": true,
-        "is_had_hit": false,
-        "is_sec_hit": true,
-        "is_hhad_hit": true,
-        "verdict_badge": "SEC_HIT",
-        "comment": "☑️ 次选防冷命中 | 让球盘命中（完场 2:2）"
-      },
-      {
-        "num": "周二003",
-        "league": "国际赛",
-        "home": "日本",
-        "away": "巴拉圭",
-        "score": "1:2",
-        "half_score": "0:2",
-        "actual_score": "1:2",
-        "had_sp": [
-          1.45,
-          4.05,
-          4.95
-        ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让胜 (-1)",
-        "hit_had": false,
-        "hit_sec": false,
-        "is_had_hit": false,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "COLD_SHOCK",
-        "comment": "⚠️ 方向失准 | 让球盘未中（完场 1:2）"
-      },
-      {
-        "num": "周二004",
-        "league": "欧洲国家联赛",
-        "home": "波黑",
-        "away": "罗马尼亚",
-        "score": "2:1",
-        "half_score": "1:1",
-        "actual_score": "2:1",
-        "had_sp": [
-          1.73,
-          3.52,
-          3.6
-        ],
-        "actual_had": "主胜 (3)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让平 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 2:1）"
-      },
-      {
-        "num": "周二005",
-        "league": "欧洲国家联赛",
-        "home": "波兰",
-        "away": "瑞典",
-        "score": "1:1",
-        "half_score": "1:1",
-        "actual_score": "1:1",
-        "had_sp": [
-          2.2,
-          3.61,
-          2.45
-        ],
-        "actual_had": "平局 (1)",
-        "pred_had": "平",
-        "pred_had_sec": "客胜",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": true,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘命中（完场 1:1）"
-      },
-      {
-        "num": "周二006",
-        "league": "欧洲国家联赛",
-        "home": "丹麦",
-        "away": "挪威",
-        "score": "2:3",
-        "half_score": "2:1",
-        "actual_score": "2:3",
-        "had_sp": [
-          2.49,
-          3.9,
-          2.08
+          3.78,
+          3.5,
+          1.7
         ],
         "actual_had": "客胜 (0)",
         "pred_had": "平",
@@ -891,256 +537,100 @@
         "is_sec_hit": false,
         "is_hhad_hit": false,
         "verdict_badge": "COLD_SHOCK",
-        "comment": "⚠️ 方向失准 | 让球盘未中（完场 2:3）"
+        "comment": "⚠️ 方向失准 | 让球盘未中（完场 0:1）"
       },
       {
-        "num": "周二007",
-        "league": "欧洲国家联赛",
-        "home": "威尔士",
-        "away": "葡萄牙",
-        "score": "2:3",
-        "half_score": "2:2",
-        "actual_score": "2:3",
+        "num": "周三002",
+        "league": "巴西甲级联赛",
+        "home": "弗拉门戈",
+        "away": "巴竞技",
+        "score": "2:1",
+        "half_score": "2:1",
+        "actual_score": "2:1",
         "had_sp": [
-          7.15,
-          5.17,
-          1.24
+          1.1,
+          6.3,
+          14.0
         ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "客胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让平 (+1)",
-        "pred_hhad": "让负 (+1)",
-        "hit_had": true,
+        "actual_had": "主胜 (3)",
+        "pred_had": "平",
+        "pred_had_sec": "客胜",
+        "actual_hhad": "让负 (-2)",
+        "pred_hhad": "让负 (-2)",
+        "hit_had": false,
         "hit_sec": false,
-        "is_had_hit": true,
+        "is_had_hit": false,
         "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 2:3）"
+        "is_hhad_hit": true,
+        "verdict_badge": "COLD_SHOCK",
+        "comment": "⚠️ 方向失准 | 让球盘命中（完场 2:1）"
       },
       {
-        "num": "周二008",
-        "league": "欧洲国家联赛",
-        "home": "匈牙利",
-        "away": "北爱尔兰",
-        "score": "1:1",
-        "half_score": "1:0",
-        "actual_score": "1:1",
+        "num": "周三003",
+        "league": "巴西甲级联赛",
+        "home": "科林蒂安",
+        "away": "博塔弗戈",
+        "score": "4:0",
+        "half_score": "2:0",
+        "actual_score": "4:0",
         "had_sp": [
-          1.65,
-          3.1,
-          4.75
+          1.6,
+          3.45,
+          4.45
         ],
-        "actual_had": "平局 (1)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让平 (-1)",
+        "actual_had": "主胜 (3)",
+        "pred_had": "平",
+        "pred_had_sec": "主胜",
+        "actual_hhad": "让胜 (-1)",
+        "pred_hhad": "让胜 (-1)",
         "hit_had": true,
         "hit_sec": true,
         "is_had_hit": false,
         "is_sec_hit": true,
-        "is_hhad_hit": false,
+        "is_hhad_hit": true,
         "verdict_badge": "SEC_HIT",
-        "comment": "☑️ 次选防冷命中 | 让球盘未中（完场 1:1）"
+        "comment": "☑️ 次选防冷命中 | 让球盘命中（完场 4:0）"
       },
       {
-        "num": "周二009",
-        "league": "欧洲国家联赛",
-        "home": "爱尔兰",
-        "away": "科索沃",
-        "score": "3:0",
-        "half_score": "1:0",
-        "actual_score": "3:0",
-        "had_sp": [
-          1.74,
-          3.06,
-          4.2
-        ],
-        "actual_had": "主胜 (3)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让胜 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 3:0）"
-      },
-      {
-        "num": "周二010",
-        "league": "国际赛",
-        "home": "智利",
-        "away": "哥伦比亚",
+        "num": "周三004",
+        "league": "巴西甲级联赛",
+        "home": "格雷米奥",
+        "away": "巴伊亚",
         "score": "0:0",
         "half_score": "0:0",
         "actual_score": "0:0",
         "had_sp": [
-          4.15,
-          2.94,
-          1.79
+          2.23,
+          3.0,
+          2.8
         ],
         "actual_had": "平局 (1)",
-        "pred_had": "平",
+        "pred_had": "主胜",
         "pred_had_sec": "客胜",
-        "actual_hhad": "让胜 (+1)",
-        "pred_hhad": "让胜 (+1)",
-        "hit_had": true,
+        "actual_hhad": "让负 (-1)",
+        "pred_hhad": "让负 (-1)",
+        "hit_had": false,
         "hit_sec": false,
-        "is_had_hit": true,
+        "is_had_hit": false,
         "is_sec_hit": false,
         "is_hhad_hit": true,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘命中（完场 0:0）"
+        "verdict_badge": "COLD_SHOCK",
+        "comment": "⚠️ 方向失准 | 让球盘命中（完场 0:0）"
       }
     ],
     "items": [
       {
-        "num": "周二001",
-        "league": "国际赛",
-        "home": "新加坡",
-        "away": "巴西",
-        "score": "0:7",
-        "half_score": "0:4",
-        "actual_score": "0:7",
+        "num": "周三001",
+        "league": "巴西甲级联赛",
+        "home": "科里蒂巴",
+        "away": "桑托斯",
+        "score": "0:1",
+        "half_score": "0:0",
+        "actual_score": "0:1",
         "had_sp": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "客胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (+4)",
-        "pred_hhad": "让胜 (+4)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 0:7）"
-      },
-      {
-        "num": "周二002",
-        "league": "国际赛",
-        "home": "中国",
-        "away": "巴林",
-        "score": "2:2",
-        "half_score": "1:2",
-        "actual_score": "2:2",
-        "had_sp": [
-          1.87,
-          2.95,
-          3.77
-        ],
-        "actual_had": "平局 (1)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": true,
-        "is_had_hit": false,
-        "is_sec_hit": true,
-        "is_hhad_hit": true,
-        "verdict_badge": "SEC_HIT",
-        "comment": "☑️ 次选防冷命中 | 让球盘命中（完场 2:2）"
-      },
-      {
-        "num": "周二003",
-        "league": "国际赛",
-        "home": "日本",
-        "away": "巴拉圭",
-        "score": "1:2",
-        "half_score": "0:2",
-        "actual_score": "1:2",
-        "had_sp": [
-          1.45,
-          4.05,
-          4.95
-        ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让胜 (-1)",
-        "hit_had": false,
-        "hit_sec": false,
-        "is_had_hit": false,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "COLD_SHOCK",
-        "comment": "⚠️ 方向失准 | 让球盘未中（完场 1:2）"
-      },
-      {
-        "num": "周二004",
-        "league": "欧洲国家联赛",
-        "home": "波黑",
-        "away": "罗马尼亚",
-        "score": "2:1",
-        "half_score": "1:1",
-        "actual_score": "2:1",
-        "had_sp": [
-          1.73,
-          3.52,
-          3.6
-        ],
-        "actual_had": "主胜 (3)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让平 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 2:1）"
-      },
-      {
-        "num": "周二005",
-        "league": "欧洲国家联赛",
-        "home": "波兰",
-        "away": "瑞典",
-        "score": "1:1",
-        "half_score": "1:1",
-        "actual_score": "1:1",
-        "had_sp": [
-          2.2,
-          3.61,
-          2.45
-        ],
-        "actual_had": "平局 (1)",
-        "pred_had": "平",
-        "pred_had_sec": "客胜",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": true,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘命中（完场 1:1）"
-      },
-      {
-        "num": "周二006",
-        "league": "欧洲国家联赛",
-        "home": "丹麦",
-        "away": "挪威",
-        "score": "2:3",
-        "half_score": "2:1",
-        "actual_score": "2:3",
-        "had_sp": [
-          2.49,
-          3.9,
-          2.08
+          3.78,
+          3.5,
+          1.7
         ],
         "actual_had": "客胜 (0)",
         "pred_had": "平",
@@ -1153,266 +643,240 @@
         "is_sec_hit": false,
         "is_hhad_hit": false,
         "verdict_badge": "COLD_SHOCK",
-        "comment": "⚠️ 方向失准 | 让球盘未中（完场 2:3）"
+        "comment": "⚠️ 方向失准 | 让球盘未中（完场 0:1）"
       },
       {
-        "num": "周二007",
-        "league": "欧洲国家联赛",
-        "home": "威尔士",
-        "away": "葡萄牙",
-        "score": "2:3",
-        "half_score": "2:2",
-        "actual_score": "2:3",
+        "num": "周三002",
+        "league": "巴西甲级联赛",
+        "home": "弗拉门戈",
+        "away": "巴竞技",
+        "score": "2:1",
+        "half_score": "2:1",
+        "actual_score": "2:1",
         "had_sp": [
-          7.15,
-          5.17,
-          1.24
+          1.1,
+          6.3,
+          14.0
         ],
-        "actual_had": "客胜 (0)",
-        "pred_had": "客胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让平 (+1)",
-        "pred_hhad": "让负 (+1)",
-        "hit_had": true,
+        "actual_had": "主胜 (3)",
+        "pred_had": "平",
+        "pred_had_sec": "客胜",
+        "actual_hhad": "让负 (-2)",
+        "pred_hhad": "让负 (-2)",
+        "hit_had": false,
         "hit_sec": false,
-        "is_had_hit": true,
+        "is_had_hit": false,
         "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 2:3）"
+        "is_hhad_hit": true,
+        "verdict_badge": "COLD_SHOCK",
+        "comment": "⚠️ 方向失准 | 让球盘命中（完场 2:1）"
       },
       {
-        "num": "周二008",
-        "league": "欧洲国家联赛",
-        "home": "匈牙利",
-        "away": "北爱尔兰",
-        "score": "1:1",
-        "half_score": "1:0",
-        "actual_score": "1:1",
+        "num": "周三003",
+        "league": "巴西甲级联赛",
+        "home": "科林蒂安",
+        "away": "博塔弗戈",
+        "score": "4:0",
+        "half_score": "2:0",
+        "actual_score": "4:0",
         "had_sp": [
-          1.65,
-          3.1,
-          4.75
+          1.6,
+          3.45,
+          4.45
         ],
-        "actual_had": "平局 (1)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让负 (-1)",
-        "pred_hhad": "让平 (-1)",
+        "actual_had": "主胜 (3)",
+        "pred_had": "平",
+        "pred_had_sec": "主胜",
+        "actual_hhad": "让胜 (-1)",
+        "pred_hhad": "让胜 (-1)",
         "hit_had": true,
         "hit_sec": true,
         "is_had_hit": false,
         "is_sec_hit": true,
-        "is_hhad_hit": false,
+        "is_hhad_hit": true,
         "verdict_badge": "SEC_HIT",
-        "comment": "☑️ 次选防冷命中 | 让球盘未中（完场 1:1）"
+        "comment": "☑️ 次选防冷命中 | 让球盘命中（完场 4:0）"
       },
       {
-        "num": "周二009",
-        "league": "欧洲国家联赛",
-        "home": "爱尔兰",
-        "away": "科索沃",
-        "score": "3:0",
-        "half_score": "1:0",
-        "actual_score": "3:0",
-        "had_sp": [
-          1.74,
-          3.06,
-          4.2
-        ],
-        "actual_had": "主胜 (3)",
-        "pred_had": "主胜",
-        "pred_had_sec": "平",
-        "actual_hhad": "让胜 (-1)",
-        "pred_hhad": "让负 (-1)",
-        "hit_had": true,
-        "hit_sec": false,
-        "is_had_hit": true,
-        "is_sec_hit": false,
-        "is_hhad_hit": false,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘未中（完场 3:0）"
-      },
-      {
-        "num": "周二010",
-        "league": "国际赛",
-        "home": "智利",
-        "away": "哥伦比亚",
+        "num": "周三004",
+        "league": "巴西甲级联赛",
+        "home": "格雷米奥",
+        "away": "巴伊亚",
         "score": "0:0",
         "half_score": "0:0",
         "actual_score": "0:0",
         "had_sp": [
-          4.15,
-          2.94,
-          1.79
+          2.23,
+          3.0,
+          2.8
         ],
         "actual_had": "平局 (1)",
-        "pred_had": "平",
+        "pred_had": "主胜",
         "pred_had_sec": "客胜",
-        "actual_hhad": "让胜 (+1)",
-        "pred_hhad": "让胜 (+1)",
-        "hit_had": true,
+        "actual_hhad": "让负 (-1)",
+        "pred_hhad": "让负 (-1)",
+        "hit_had": false,
         "hit_sec": false,
-        "is_had_hit": true,
+        "is_had_hit": false,
         "is_sec_hit": false,
         "is_hhad_hit": true,
-        "verdict_badge": "HIT",
-        "comment": "✅ 主推命中 | 让球盘命中（完场 0:0）"
+        "verdict_badge": "COLD_SHOCK",
+        "comment": "⚠️ 方向失准 | 让球盘命中（完场 0:0）"
       }
     ]
   },
-  "on_sale_count": 8,
+  "on_sale_count": 12,
   "is_morning_window": false,
   "active_matches": [
     {
-      "num": "周三001",
+      "num": "周四001",
       "league": "巴西甲级联赛",
-      "home": "科里蒂巴",
-      "away": "桑托斯",
-      "kickoff": "2026-11-19 06:30:00",
+      "home": "维多利亚",
+      "away": "布拉干蒂诺RB",
+      "kickoff": "2026-11-20 06:30:00",
       "fused_1x2": [
-        0.2559,
-        0.262,
-        0.4822
+        0.318,
+        0.2718,
+        0.4102
       ],
-      "recommended_pick": "平",
+      "recommended_pick": "负",
       "had_sp": [
-        3.43,
-        3.35,
-        1.82
+        2.76,
+        3.23,
+        2.14
       ],
       "hhad_sp": [
         "+1",
-        1.75,
-        3.32,
-        3.75
+        1.52,
+        3.85,
+        4.5
       ],
       "official_bqc_sp": {
-        "胜胜": 6.0,
-        "胜平": 15.5,
-        "胜负": 24.0,
-        "平胜": 8.25,
-        "平平": 5.4,
-        "平负": 3.9,
-        "负胜": 40.0,
-        "负平": 15.5,
-        "负负": 3.05
+        "胜胜": 4.45,
+        "胜平": 14.0,
+        "胜负": 23.0,
+        "平胜": 6.25,
+        "平平": 5.2,
+        "平负": 4.8,
+        "负胜": 26.0,
+        "负平": 14.0,
+        "负负": 4.1
       },
       "heatmap_matrix": [
         [
           0,
           0,
-          12.58
+          12.77
         ],
         [
           1,
           0,
-          10.38
+          10.98
         ],
         [
           2,
           0,
-          6.3
+          6.88
         ],
         [
           3,
           0,
-          2.7
+          3.06
         ],
         [
           4,
           0,
-          0.98
+          1.15
         ],
         [
           5,
           0,
-          0.31
+          0.38
         ],
         [
           0,
           1,
-          10.95
+          10.56
         ],
         [
           1,
           1,
-          12.03
+          12.06
         ],
         [
           2,
           1,
-          6.39
+          6.64
         ],
         [
           3,
           1,
-          2.74
+          2.95
         ],
         [
           4,
           1,
-          0.99
+          1.11
         ],
         [
           5,
           1,
-          0.32
+          0.37
         ],
         [
           0,
           2,
-          6.96
+          6.41
         ],
         [
           1,
           2,
-          6.71
+          6.41
         ],
         [
           2,
           2,
-          3.78
+          3.74
         ],
         [
           3,
           2,
-          1.62
+          1.66
         ],
         [
           4,
           2,
-          0.59
+          0.62
         ],
         [
           5,
           2,
-          0.19
+          0.21
         ],
         [
           0,
           3,
-          3.13
+          2.75
         ],
         [
           1,
           3,
-          3.02
+          2.75
         ],
         [
           2,
           3,
-          1.7
+          1.6
         ],
         [
           3,
           3,
-          0.73
+          0.71
         ],
         [
           4,
           3,
-          0.26
+          0.27
         ],
         [
           5,
@@ -1422,22 +886,22 @@
         [
           0,
           4,
-          1.19
+          0.99
         ],
         [
           1,
           4,
-          1.15
+          0.99
         ],
         [
           2,
           4,
-          0.65
+          0.58
         ],
         [
           3,
           4,
-          0.28
+          0.26
         ],
         [
           4,
@@ -1452,22 +916,22 @@
         [
           0,
           5,
-          0.4
+          0.32
         ],
         [
           1,
           5,
-          0.39
+          0.32
         ],
         [
           2,
           5,
-          0.22
+          0.19
         ],
         [
           3,
           5,
-          0.09
+          0.08
         ],
         [
           4,
@@ -1480,1088 +944,8 @@
           0.01
         ]
       ],
-      "h_xg": 1.22,
-      "a_xg": 1.15,
-      "intel": {
-        "headline": "【巴西甲级联赛】科里蒂巴 vs 桑托斯 | ⚡ 1.50~1.99伪低赔预警",
-        "intel_tags": [
-          "⚡ 1.50~1.99伪低赔预警",
-          "🎯 负二项校准",
-          "⚡ 双模型复核"
-        ],
-        "story": "【Open战术增补】日联杯1/4首回合（有客场进球规则）；横滨J1联赛10轮不败，鹿岛上轮0-2负FC东京且首回合客战求稳，热力图前二众数为 1:1 / 0:0。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.03 : 1.44（公允概率 主胜25.6% / 平26.2% / 客胜48.2%）。",
-        "blackbox_signal": "双模型修正红灯：坚决剔除 (+1)让负 @4.25，锁定【让(+1) 让胜】防鹿岛首回合不胜！",
-        "confidence_level": "★★★☆☆ 3星博弈",
-        "had_pred": {
-          "primary": "平",
-          "secondary": "主胜",
-          "confidence": "48%",
-          "reason": "基于二元负二项去水公允概率与EV风控校验"
-        },
-        "hhad_pred": {
-          "line": "(+1)",
-          "primary": "让胜",
-          "secondary": "让平",
-          "sp": 1.75,
-          "reason": "双模型修正红灯：坚决剔除 (+1)让负 @4.25，锁定【让(+1) 让胜】防鹿岛首回合不胜！"
-        },
-        "scores_pred": [
-          {
-            "score": "0:0",
-            "prob": "12.58%",
-            "tag": "第一首选 (众数)"
-          },
-          {
-            "score": "1:1",
-            "prob": "12.03%",
-            "tag": "次选防守"
-          },
-          {
-            "score": "1:0",
-            "prob": "10.95%",
-            "tag": "博冷高赔"
-          }
-        ],
-        "ttg_pred": {
-          "primary": "2球",
-          "secondary": "1球",
-          "over_under": "2.5球适中",
-          "exp_goals": "2.37球"
-        },
-        "half_full_pred": {
-          "primary": "平/平",
-          "secondary": "平/胜"
-        }
-      }
-    },
-    {
-      "num": "周三002",
-      "league": "巴西甲级联赛",
-      "home": "弗拉门戈",
-      "away": "巴拉纳竞技",
-      "kickoff": "2026-11-19 07:30:00",
-      "fused_1x2": [
-        0.7909,
-        0.1416,
-        0.0675
-      ],
-      "recommended_pick": "平",
-      "had_sp": [
-        1.11,
-        6.2,
-        13.0
-      ],
-      "hhad_sp": [
-        "-2",
-        2.59,
-        3.55,
-        2.12
-      ],
-      "official_bqc_sp": {
-        "胜胜": 1.47,
-        "胜平": 25.0,
-        "胜负": 90.0,
-        "平胜": 3.9,
-        "平平": 11.0,
-        "平负": 25.0,
-        "负胜": 22.0,
-        "负平": 25.0,
-        "负负": 20.0
-      },
-      "heatmap_matrix": [
-        [
-          0,
-          0,
-          21.54
-        ],
-        [
-          1,
-          0,
-          13.85
-        ],
-        [
-          2,
-          0,
-          6.84
-        ],
-        [
-          3,
-          0,
-          2.33
-        ],
-        [
-          4,
-          0,
-          0.67
-        ],
-        [
-          5,
-          0,
-          0.17
-        ],
-        [
-          0,
-          1,
-          13.38
-        ],
-        [
-          1,
-          1,
-          12.62
-        ],
-        [
-          2,
-          1,
-          5.09
-        ],
-        [
-          3,
-          1,
-          1.74
-        ],
-        [
-          4,
-          1,
-          0.5
-        ],
-        [
-          5,
-          1,
-          0.13
-        ],
-        [
-          0,
-          2,
-          6.44
-        ],
-        [
-          1,
-          2,
-          4.94
-        ],
-        [
-          2,
-          2,
-          2.21
-        ],
-        [
-          3,
-          2,
-          0.75
-        ],
-        [
-          4,
-          2,
-          0.22
-        ],
-        [
-          5,
-          2,
-          0.06
-        ],
-        [
-          0,
-          3,
-          2.13
-        ],
-        [
-          1,
-          3,
-          1.63
-        ],
-        [
-          2,
-          3,
-          0.73
-        ],
-        [
-          3,
-          3,
-          0.25
-        ],
-        [
-          4,
-          3,
-          0.07
-        ],
-        [
-          5,
-          3,
-          0.02
-        ],
-        [
-          0,
-          4,
-          0.59
-        ],
-        [
-          1,
-          4,
-          0.46
-        ],
-        [
-          2,
-          4,
-          0.2
-        ],
-        [
-          3,
-          4,
-          0.07
-        ],
-        [
-          4,
-          4,
-          0.02
-        ],
-        [
-          5,
-          4,
-          0.01
-        ],
-        [
-          0,
-          5,
-          0.15
-        ],
-        [
-          1,
-          5,
-          0.11
-        ],
-        [
-          2,
-          5,
-          0.05
-        ],
-        [
-          3,
-          5,
-          0.02
-        ],
-        [
-          4,
-          5,
-          0.0
-        ],
-        [
-          5,
-          5,
-          0.0
-        ]
-      ],
-      "h_xg": 0.85,
-      "a_xg": 0.88,
-      "intel": {
-        "headline": "【巴西甲级联赛】弗拉门戈 vs 巴拉纳竞技 | ⚠️ 1.15~1.39蚊子肉禁区",
-        "intel_tags": [
-          "⚠️ 1.15~1.39蚊子肉禁区",
-          "🎯 负二项校准",
-          "⚡ 双模型复核"
-        ],
-        "story": "【Open战术增补】町田J1第3，连续6场零封且最近3场联赛全为0:0（含客战神户0:0），官方平赔2.80释放极致低比分僵局信号。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.85 : 0.53（公允概率 主胜79.1% / 平14.2% / 客胜6.8%）。",
-        "blackbox_signal": "双模型让球同向锁定【让(-1) 让负】（町田不败），严防 0:0 / 1:1 低比分平局。",
-        "confidence_level": "★★★★★ 5星强势",
-        "had_pred": {
-          "primary": "平",
-          "secondary": "客胜",
-          "confidence": "79%",
-          "reason": "基于二元负二项去水公允概率与EV风控校验"
-        },
-        "hhad_pred": {
-          "line": "(-2)",
-          "primary": "让负",
-          "secondary": "让胜",
-          "sp": 2.12,
-          "reason": "双模型让球同向锁定【让(-1) 让负】（町田不败），严防 0:0 / 1:1 低比分平局。"
-        },
-        "scores_pred": [
-          {
-            "score": "0:0",
-            "prob": "21.54%",
-            "tag": "第一首选 (众数)"
-          },
-          {
-            "score": "0:1",
-            "prob": "13.85%",
-            "tag": "次选防守"
-          },
-          {
-            "score": "1:0",
-            "prob": "13.38%",
-            "tag": "博冷高赔"
-          }
-        ],
-        "ttg_pred": {
-          "primary": "2球",
-          "secondary": "3球",
-          "over_under": "2.5球偏小",
-          "exp_goals": "1.73球"
-        },
-        "half_full_pred": {
-          "primary": "平/平",
-          "secondary": "平/负"
-        }
-      }
-    },
-    {
-      "num": "周三003",
-      "league": "巴西甲级联赛",
-      "home": "科林蒂安",
-      "away": "博塔弗戈",
-      "kickoff": "2026-11-19 08:30:00",
-      "fused_1x2": [
-        0.5191,
-        0.2675,
-        0.2134
-      ],
-      "recommended_pick": "平",
-      "had_sp": [
-        1.69,
-        3.28,
-        4.11
-      ],
-      "hhad_sp": [
-        "-1",
-        3.52,
-        3.18,
-        1.85
-      ],
-      "official_bqc_sp": {
-        "胜胜": 2.7,
-        "胜平": 15.0,
-        "胜负": 34.0,
-        "平胜": 4.2,
-        "平平": 5.25,
-        "平负": 9.25,
-        "负胜": 20.0,
-        "负平": 15.0,
-        "负负": 7.4
-      },
-      "heatmap_matrix": [
-        [
-          0,
-          0,
-          10.08
-        ],
-        [
-          1,
-          0,
-          9.05
-        ],
-        [
-          2,
-          0,
-          6.22
-        ],
-        [
-          3,
-          0,
-          2.99
-        ],
-        [
-          4,
-          0,
-          1.21
-        ],
-        [
-          5,
-          0,
-          0.44
-        ],
-        [
-          0,
-          1,
-          9.24
-        ],
-        [
-          1,
-          1,
-          11.51
-        ],
-        [
-          2,
-          1,
-          6.85
-        ],
-        [
-          3,
-          1,
-          3.29
-        ],
-        [
-          4,
-          1,
-          1.34
-        ],
-        [
-          5,
-          1,
-          0.48
-        ],
-        [
-          0,
-          2,
-          6.45
-        ],
-        [
-          1,
-          2,
-          6.98
-        ],
-        [
-          2,
-          2,
-          4.4
-        ],
-        [
-          3,
-          2,
-          2.12
-        ],
-        [
-          4,
-          2,
-          0.86
-        ],
-        [
-          5,
-          2,
-          0.31
-        ],
-        [
-          0,
-          3,
-          3.16
-        ],
-        [
-          1,
-          3,
-          3.42
-        ],
-        [
-          2,
-          3,
-          2.16
-        ],
-        [
-          3,
-          3,
-          1.04
-        ],
-        [
-          4,
-          3,
-          0.42
-        ],
-        [
-          5,
-          3,
-          0.15
-        ],
-        [
-          0,
-          4,
-          1.31
-        ],
-        [
-          1,
-          4,
-          1.41
-        ],
-        [
-          2,
-          4,
-          0.89
-        ],
-        [
-          3,
-          4,
-          0.43
-        ],
-        [
-          4,
-          4,
-          0.17
-        ],
-        [
-          5,
-          4,
-          0.06
-        ],
-        [
-          0,
-          5,
-          0.48
-        ],
-        [
-          1,
-          5,
-          0.52
-        ],
-        [
-          2,
-          5,
-          0.33
-        ],
-        [
-          3,
-          5,
-          0.16
-        ],
-        [
-          4,
-          5,
-          0.06
-        ],
-        [
-          5,
-          5,
-          0.02
-        ]
-      ],
-      "h_xg": 1.35,
-      "a_xg": 1.32,
-      "intel": {
-        "headline": "【巴西甲级联赛】科林蒂安 vs 博塔弗戈 | ⚡ 1.50~1.99伪低赔预警",
-        "intel_tags": [
-          "⚡ 1.50~1.99伪低赔预警",
-          "🎯 负二项校准",
-          "⚡ 双模型复核"
-        ],
-        "story": "【Open战术增补】4天前联赛刚交锋柏太阳神2-1胜川崎，本场二番战川崎主场复仇战意强烈，柏手握次回合主场优势无客场净胜2+刚需。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.82 : 0.81（公允概率 主胜51.9% / 平26.8% / 客胜21.3%）。",
-        "blackbox_signal": "双模型一致否决 (+1)让负 @4.25（NB概率仅19%），偏向川崎让(+1)主场不败。",
-        "confidence_level": "★★★☆☆ 3星博弈",
-        "had_pred": {
-          "primary": "平",
-          "secondary": "主胜",
-          "confidence": "51%",
-          "reason": "基于二元负二项去水公允概率与EV风控校验"
-        },
-        "hhad_pred": {
-          "line": "(-1)",
-          "primary": "让胜",
-          "secondary": "让胜",
-          "sp": 3.52,
-          "reason": "双模型一致否决 (+1)让负 @4.25（NB概率仅19%），偏向川崎让(+1)主场不败。"
-        },
-        "scores_pred": [
-          {
-            "score": "1:1",
-            "prob": "11.51%",
-            "tag": "第一首选 (众数)"
-          },
-          {
-            "score": "0:0",
-            "prob": "10.08%",
-            "tag": "次选防守"
-          },
-          {
-            "score": "1:0",
-            "prob": "9.24%",
-            "tag": "博冷高赔"
-          }
-        ],
-        "ttg_pred": {
-          "primary": "3球",
-          "secondary": "2球",
-          "over_under": "2.5球偏大",
-          "exp_goals": "2.67球"
-        },
-        "half_full_pred": {
-          "primary": "胜/胜",
-          "secondary": "负/负"
-        }
-      }
-    },
-    {
-      "num": "周三004",
-      "league": "巴西甲级联赛",
-      "home": "格雷米奥",
-      "away": "巴伊亚",
-      "kickoff": "2026-11-19 08:30:00",
-      "fused_1x2": [
-        0.4101,
-        0.2742,
-        0.3157
-      ],
-      "recommended_pick": "胜",
-      "had_sp": [
-        2.14,
-        3.2,
-        2.78
-      ],
-      "hhad_sp": [
-        "-1",
-        4.57,
-        3.75,
-        1.53
-      ],
-      "official_bqc_sp": {
-        "胜胜": 3.65,
-        "胜平": 13.0,
-        "胜负": 25.0,
-        "平胜": 5.0,
-        "平平": 5.2,
-        "平负": 7.0,
-        "负胜": 21.0,
-        "负平": 13.0,
-        "负负": 4.9
-      },
-      "heatmap_matrix": [
-        [
-          0,
-          0,
-          11.43
-        ],
-        [
-          1,
-          0,
-          9.06
-        ],
-        [
-          2,
-          0,
-          5.44
-        ],
-        [
-          3,
-          0,
-          2.28
-        ],
-        [
-          4,
-          0,
-          0.81
-        ],
-        [
-          5,
-          0,
-          0.25
-        ],
-        [
-          0,
-          1,
-          10.95
-        ],
-        [
-          1,
-          1,
-          11.74
-        ],
-        [
-          2,
-          1,
-          6.1
-        ],
-        [
-          3,
-          1,
-          2.56
-        ],
-        [
-          4,
-          1,
-          0.91
-        ],
-        [
-          5,
-          1,
-          0.28
-        ],
-        [
-          0,
-          2,
-          7.68
-        ],
-        [
-          1,
-          2,
-          7.25
-        ],
-        [
-          2,
-          2,
-          3.99
-        ],
-        [
-          3,
-          2,
-          1.67
-        ],
-        [
-          4,
-          2,
-          0.59
-        ],
-        [
-          5,
-          2,
-          0.19
-        ],
-        [
-          0,
-          3,
-          3.83
-        ],
-        [
-          1,
-          3,
-          3.62
-        ],
-        [
-          2,
-          3,
-          1.99
-        ],
-        [
-          3,
-          3,
-          0.83
-        ],
-        [
-          4,
-          3,
-          0.3
-        ],
-        [
-          5,
-          3,
-          0.09
-        ],
-        [
-          0,
-          4,
-          1.61
-        ],
-        [
-          1,
-          4,
-          1.52
-        ],
-        [
-          2,
-          4,
-          0.84
-        ],
-        [
-          3,
-          4,
-          0.35
-        ],
-        [
-          4,
-          4,
-          0.12
-        ],
-        [
-          5,
-          4,
-          0.04
-        ],
-        [
-          0,
-          5,
-          0.6
-        ],
-        [
-          1,
-          5,
-          0.57
-        ],
-        [
-          2,
-          5,
-          0.31
-        ],
-        [
-          3,
-          5,
-          0.13
-        ],
-        [
-          4,
-          5,
-          0.05
-        ],
-        [
-          5,
-          5,
-          0.01
-        ]
-      ],
-      "h_xg": 1.38,
-      "a_xg": 1.12,
-      "intel": {
-        "headline": "【巴西甲级联赛】格雷米奥 vs 巴伊亚 | 🔥 均衡博弈区",
-        "intel_tags": [
-          "🔥 均衡博弈区",
-          "🎯 负二项校准",
-          "⚡ 双模型复核"
-        ],
-        "story": "【Open战术增补】浦和J1虽居第9但净胜球-6，刚遭神户补时绝平，宫本优太等防线隐患未消；1.82处于伪低赔预警带。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.44 : 1.03（公允概率 主胜41.0% / 平27.4% / 客胜31.6%）。",
-        "blackbox_signal": "1.50~1.99伪低赔预警：坚决否决浦和(-1)让胜 @3.48，仅防受让及1:1/2:1边缘赛果。",
-        "confidence_level": "★★☆☆☆ 2星深水",
-        "had_pred": {
-          "primary": "主胜",
-          "secondary": "客胜",
-          "confidence": "41%",
-          "reason": "基于二元负二项去水公允概率与EV风控校验"
-        },
-        "hhad_pred": {
-          "line": "(-1)",
-          "primary": "让负",
-          "secondary": "让平",
-          "sp": 1.53,
-          "reason": "1.50~1.99伪低赔预警：坚决否决浦和(-1)让胜 @3.48，仅防受让及1:1/2:1边缘赛果。"
-        },
-        "scores_pred": [
-          {
-            "score": "1:1",
-            "prob": "11.74%",
-            "tag": "第一首选 (众数)"
-          },
-          {
-            "score": "0:0",
-            "prob": "11.43%",
-            "tag": "次选防守"
-          },
-          {
-            "score": "1:0",
-            "prob": "10.95%",
-            "tag": "博冷高赔"
-          }
-        ],
-        "ttg_pred": {
-          "primary": "2球",
-          "secondary": "1球",
-          "over_under": "2.5球适中",
-          "exp_goals": "2.5球"
-        },
-        "half_full_pred": {
-          "primary": "胜/胜",
-          "secondary": "平/负"
-        }
-      }
-    },
-    {
-      "num": "周四001",
-      "league": "巴西甲级联赛",
-      "home": "维多利亚",
-      "away": "布拉干蒂诺RB",
-      "kickoff": "2026-11-20 06:30:00",
-      "fused_1x2": [
-        0.3468,
-        0.283,
-        0.3702
-      ],
-      "recommended_pick": "负",
-      "had_sp": [
-        2.53,
-        3.1,
-        2.37
-      ],
-      "hhad_sp": [
-        "+1",
-        1.43,
-        3.9,
-        5.45
-      ],
-      "official_bqc_sp": {
-        "胜胜": 4.2,
-        "胜平": 14.0,
-        "胜负": 23.0,
-        "平胜": 6.0,
-        "平平": 5.2,
-        "平负": 5.6,
-        "负胜": 26.0,
-        "负平": 14.0,
-        "负负": 3.95
-      },
-      "heatmap_matrix": [
-        [
-          0,
-          0,
-          11.22
-        ],
-        [
-          1,
-          0,
-          11.41
-        ],
-        [
-          2,
-          0,
-          8.43
-        ],
-        [
-          3,
-          0,
-          4.45
-        ],
-        [
-          4,
-          0,
-          1.98
-        ],
-        [
-          5,
-          0,
-          0.78
-        ],
-        [
-          0,
-          1,
-          8.35
-        ],
-        [
-          1,
-          1,
-          11.54
-        ],
-        [
-          2,
-          1,
-          7.54
-        ],
-        [
-          3,
-          1,
-          3.98
-        ],
-        [
-          4,
-          1,
-          1.77
-        ],
-        [
-          5,
-          1,
-          0.7
-        ],
-        [
-          0,
-          2,
-          4.78
-        ],
-        [
-          1,
-          2,
-          5.67
-        ],
-        [
-          2,
-          2,
-          3.93
-        ],
-        [
-          3,
-          2,
-          2.07
-        ],
-        [
-          4,
-          2,
-          0.92
-        ],
-        [
-          5,
-          2,
-          0.37
-        ],
-        [
-          0,
-          3,
-          1.9
-        ],
-        [
-          1,
-          3,
-          2.25
-        ],
-        [
-          2,
-          3,
-          1.56
-        ],
-        [
-          3,
-          3,
-          0.82
-        ],
-        [
-          4,
-          3,
-          0.37
-        ],
-        [
-          5,
-          3,
-          0.15
-        ],
-        [
-          0,
-          4,
-          0.64
-        ],
-        [
-          1,
-          4,
-          0.76
-        ],
-        [
-          2,
-          4,
-          0.52
-        ],
-        [
-          3,
-          4,
-          0.28
-        ],
-        [
-          4,
-          4,
-          0.12
-        ],
-        [
-          5,
-          4,
-          0.05
-        ],
-        [
-          0,
-          5,
-          0.19
-        ],
-        [
-          1,
-          5,
-          0.22
-        ],
-        [
-          2,
-          5,
-          0.16
-        ],
-        [
-          3,
-          5,
-          0.08
-        ],
-        [
-          4,
-          5,
-          0.04
-        ],
-        [
-          5,
-          5,
-          0.01
-        ]
-      ],
-      "h_xg": 1.05,
-      "a_xg": 1.48,
+      "h_xg": 1.15,
+      "a_xg": 1.2,
       "intel": {
         "headline": "【巴西甲级联赛】维多利亚 vs 布拉干蒂诺RB | 🔥 均衡博弈区",
         "intel_tags": [
@@ -2569,48 +953,48 @@
           "🎯 负二项校准",
           "⚡ 双模型复核"
         ],
-        "story": "【Open战术增补】比利时6分抢分刚需+三核入选，土耳其0分且9人伤停；但土耳其临阵换帅塞尔根·亚尔钦迎主场首秀。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.27 : 1.17（公允概率 主胜34.7% / 平28.3% / 客胜37.0%）。",
-        "blackbox_signal": "1.66客胜受新帅首秀反弹压制不作稳胆，(+1)让负 @2.84 穿盘风险较高，倾向比利时一球小胜(让平)或防1:1。",
+        "story": "【Open战术保级大战】维多利亚主场保级战意拉满，布拉干蒂诺客战进攻陷入冰点，主队受让(+1)打平或赢球皆可收米。 | 【Open战术保级大战】维多利亚主场保级战意拉满，布拉干蒂诺客战进攻陷入冰点，主队受让(+1)打平或赢球皆可收米。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.19 : 1.25（公允概率 主胜31.8% / 平27.2% / 客胜41.0%）。",
+        "blackbox_signal": "黄金受让盾：维多利亚主场受让【让(+1) 让胜 @1.43】达标 >=1.40 门禁规范，稳健度极佳。",
         "confidence_level": "★★☆☆☆ 2星深水",
         "had_pred": {
           "primary": "客胜",
           "secondary": "主胜",
-          "confidence": "37%",
+          "confidence": "41%",
           "reason": "基于二元负二项去水公允概率与EV风控校验"
         },
         "hhad_pred": {
           "line": "(+1)",
-          "primary": "让平",
+          "primary": "让胜",
           "secondary": "让平",
-          "sp": 3.9,
-          "reason": "1.66客胜受新帅首秀反弹压制不作稳胆，(+1)让负 @2.84 穿盘风险较高，倾向比利时一球小胜(让平)或防1:1。"
+          "sp": 1.52,
+          "reason": "黄金受让盾：维多利亚主场受让【让(+1) 让胜 @1.43】达标 >=1.40 门禁规范，稳健度极佳。"
         },
         "scores_pred": [
           {
-            "score": "1:1",
-            "prob": "11.54%",
+            "score": "0:0",
+            "prob": "12.77%",
             "tag": "第一首选 (众数)"
           },
           {
-            "score": "0:1",
-            "prob": "11.41%",
+            "score": "1:1",
+            "prob": "12.06%",
             "tag": "次选防守"
           },
           {
-            "score": "0:0",
-            "prob": "11.22%",
+            "score": "0:1",
+            "prob": "10.98%",
             "tag": "博冷高赔"
           }
         ],
         "ttg_pred": {
-          "primary": "3球",
-          "secondary": "2球",
+          "primary": "2球",
+          "secondary": "1球",
           "over_under": "2.5球适中",
-          "exp_goals": "2.53球"
+          "exp_goals": "2.35球"
         },
         "half_full_pred": {
-          "primary": "负/负",
-          "secondary": "平/负"
+          "primary": "平/平",
+          "secondary": "平/胜"
         }
       }
     },
@@ -2621,203 +1005,203 @@
       "away": "弗鲁米嫩塞",
       "kickoff": "2026-11-20 08:30:00",
       "fused_1x2": [
-        0.3937,
-        0.2927,
-        0.3136
+        0.3628,
+        0.2956,
+        0.3416
       ],
-      "recommended_pick": "平",
+      "recommended_pick": "胜",
       "had_sp": [
-        2.23,
-        3.0,
-        2.8
+        2.42,
+        2.97,
+        2.57
       ],
       "hhad_sp": [
         "-1",
-        5.15,
-        3.72,
-        1.48
+        5.85,
+        3.85,
+        1.41
       ],
       "official_bqc_sp": {
-        "胜胜": 3.6,
+        "胜胜": 3.95,
         "胜平": 14.0,
-        "胜负": 34.0,
-        "平胜": 5.15,
-        "平平": 4.6,
-        "平负": 6.6,
+        "胜负": 33.0,
+        "平胜": 5.2,
+        "平平": 4.35,
+        "平负": 6.3,
         "负胜": 30.0,
         "负平": 14.0,
-        "负负": 4.8
+        "负负": 4.7
       },
       "heatmap_matrix": [
         [
           0,
           0,
-          14.38
-        ],
-        [
-          1,
-          0,
           13.78
         ],
         [
+          1,
+          0,
+          11.54
+        ],
+        [
           2,
           0,
-          9.18
+          6.96
         ],
         [
           3,
           0,
-          4.42
+          2.98
         ],
         [
           4,
           0,
-          1.79
-        ],
-        [
-          5,
-          0,
-          0.65
-        ],
-        [
-          0,
-          1,
-          9.5
-        ],
-        [
-          1,
-          1,
-          11.84
-        ],
-        [
-          2,
-          1,
-          7.05
-        ],
-        [
-          3,
-          1,
-          3.39
-        ],
-        [
-          4,
-          1,
-          1.37
-        ],
-        [
-          5,
-          1,
-          0.5
-        ],
-        [
-          0,
-          2,
-          4.62
-        ],
-        [
-          1,
-          2,
-          5.0
-        ],
-        [
-          2,
-          2,
-          3.15
-        ],
-        [
-          3,
-          2,
-          1.52
-        ],
-        [
-          4,
-          2,
-          0.62
-        ],
-        [
-          5,
-          2,
-          0.22
-        ],
-        [
-          0,
-          3,
-          1.58
-        ],
-        [
-          1,
-          3,
-          1.7
-        ],
-        [
-          2,
-          3,
           1.08
         ],
         [
+          5,
+          0,
+          0.35
+        ],
+        [
+          0,
+          1,
+          11.08
+        ],
+        [
+          1,
+          1,
+          12.18
+        ],
+        [
+          2,
+          1,
+          6.47
+        ],
+        [
+          3,
+          1,
+          2.77
+        ],
+        [
+          4,
+          1,
+          1.0
+        ],
+        [
+          5,
+          1,
+          0.32
+        ],
+        [
+          0,
+          2,
+          6.45
+        ],
+        [
+          1,
+          2,
+          6.23
+        ],
+        [
+          2,
+          2,
+          3.51
+        ],
+        [
+          3,
+          2,
+          1.5
+        ],
+        [
+          4,
+          2,
+          0.54
+        ],
+        [
+          5,
+          2,
+          0.18
+        ],
+        [
+          0,
+          3,
+          2.67
+        ],
+        [
+          1,
+          3,
+          2.57
+        ],
+        [
+          2,
+          3,
+          1.45
+        ],
+        [
           3,
           3,
-          0.52
+          0.62
         ],
         [
           4,
           3,
-          0.21
+          0.22
         ],
         [
           5,
           3,
-          0.08
+          0.07
         ],
         [
           0,
           4,
-          0.45
+          0.93
         ],
         [
           1,
           4,
-          0.49
+          0.9
         ],
         [
           2,
           4,
-          0.31
+          0.5
         ],
         [
           3,
           4,
-          0.15
+          0.22
         ],
         [
           4,
           4,
-          0.06
+          0.08
         ],
         [
           5,
           4,
-          0.02
+          0.03
         ],
         [
           0,
           5,
-          0.12
+          0.29
         ],
         [
           1,
           5,
-          0.13
+          0.28
         ],
         [
           2,
           5,
-          0.08
+          0.16
         ],
         [
           3,
           5,
-          0.04
+          0.07
         ],
         [
           4,
@@ -2830,8 +1214,8 @@
           0.01
         ]
       ],
-      "h_xg": 0.88,
-      "a_xg": 1.32,
+      "h_xg": 1.1,
+      "a_xg": 1.15,
       "intel": {
         "headline": "【巴西甲级联赛】圣保罗 vs 弗鲁米嫩塞 | 🔥 均衡博弈区",
         "intel_tags": [
@@ -2839,36 +1223,36 @@
           "🎯 负二项校准",
           "⚡ 双模型复核"
         ],
-        "story": "【Open战术重锤】亚美尼亚头号核斯佩尔茨扬领衔5人正式退队，进攻创造力瘫痪；C2组塞浦路斯7分争升级且首回合2-0完胜！ | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.42 : 1.04（公允概率 主胜39.4% / 平29.3% / 客胜31.4%）。",
-        "blackbox_signal": "双模型重审否决亚美尼亚主胜 @2.05，重仓推荐【让(-1) 让负】塞浦路斯客场不败！",
+        "story": "【Open战术豪门德比】圣保罗与弗鲁米嫩塞均以防守严密见长，近3次交手分差均在1球之内；弗鲁米嫩塞客战控球稳健。 | 【Open战术豪门德比】圣保罗与弗鲁米嫩塞均以防守严密见长，近3次交手分差均在1球之内；弗鲁米嫩塞客战控球稳健。 | 巴西甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.29 : 1.08（公允概率 主胜36.3% / 平29.6% / 客胜34.2%）。",
+        "blackbox_signal": "低比分防守共识：圣保罗(-1)让球盘高危，全票推荐【让(-1) 让负 @1.48】客队不败稳胆。",
         "confidence_level": "★★☆☆☆ 2星深水",
         "had_pred": {
-          "primary": "平",
+          "primary": "主胜",
           "secondary": "客胜",
-          "confidence": "39%",
+          "confidence": "36%",
           "reason": "基于二元负二项去水公允概率与EV风控校验"
         },
         "hhad_pred": {
           "line": "(-1)",
           "primary": "让负",
           "secondary": "让平",
-          "sp": 1.48,
-          "reason": "双模型重审否决亚美尼亚主胜 @2.05，重仓推荐【让(-1) 让负】塞浦路斯客场不败！"
+          "sp": 1.41,
+          "reason": "低比分防守共识：圣保罗(-1)让球盘高危，全票推荐【让(-1) 让负 @1.48】客队不败稳胆。"
         },
         "scores_pred": [
           {
             "score": "0:0",
-            "prob": "14.38%",
+            "prob": "13.78%",
             "tag": "第一首选 (众数)"
           },
           {
-            "score": "0:1",
-            "prob": "13.78%",
+            "score": "1:1",
+            "prob": "12.18%",
             "tag": "次选防守"
           },
           {
-            "score": "1:1",
-            "prob": "11.84%",
+            "score": "0:1",
+            "prob": "11.54%",
             "tag": "博冷高赔"
           }
         ],
@@ -2876,10 +1260,10 @@
           "primary": "2球",
           "secondary": "1球",
           "over_under": "2.5球偏小",
-          "exp_goals": "2.2球"
+          "exp_goals": "2.25球"
         },
         "half_full_pred": {
-          "primary": "负/负",
+          "primary": "平/平",
           "secondary": "平/负"
         }
       }
@@ -2891,217 +1275,217 @@
       "away": "辛辛那提FC",
       "kickoff": "2026-11-20 08:30:00",
       "fused_1x2": [
-        0.3814,
-        0.2371,
-        0.3814
+        0.3902,
+        0.253,
+        0.3569
       ],
-      "recommended_pick": "负",
+      "recommended_pick": "胜",
       "had_sp": [
-        2.3,
-        3.7,
-        2.3
+        2.25,
+        3.47,
+        2.46
       ],
       "hhad_sp": [
         "-1",
-        4.55,
-        4.35,
+        4.77,
+        4.16,
         1.45
       ],
       "official_bqc_sp": {
-        "胜胜": 3.75,
-        "胜平": 14.0,
-        "胜负": 21.0,
-        "平胜": 6.0,
-        "平平": 6.7,
-        "平负": 6.0,
+        "胜胜": 3.65,
+        "胜平": 13.0,
+        "胜负": 22.0,
+        "平胜": 6.1,
+        "平平": 6.75,
+        "平负": 6.3,
         "负胜": 21.0,
-        "负平": 14.0,
-        "负负": 3.75
+        "负平": 13.0,
+        "负负": 3.8
       },
       "heatmap_matrix": [
         [
           0,
           0,
-          14.36
+          8.56
         ],
         [
           1,
           0,
-          13.37
+          8.1
         ],
         [
           2,
           0,
-          8.71
+          6.04
         ],
         [
           3,
           0,
-          4.08
+          3.14
         ],
         [
           4,
           0,
-          1.62
+          1.37
         ],
         [
           5,
           0,
+          0.53
+        ],
+        [
+          0,
+          1,
+          8.1
+        ],
+        [
+          1,
+          1,
+          10.98
+        ],
+        [
+          2,
+          1,
+          7.06
+        ],
+        [
+          3,
+          1,
+          3.66
+        ],
+        [
+          4,
+          1,
+          1.6
+        ],
+        [
+          5,
+          1,
+          0.62
+        ],
+        [
+          0,
+          2,
+          6.04
+        ],
+        [
+          1,
+          2,
+          7.06
+        ],
+        [
+          2,
+          2,
+          4.81
+        ],
+        [
+          3,
+          2,
+          2.5
+        ],
+        [
+          4,
+          2,
+          1.09
+        ],
+        [
+          5,
+          2,
+          0.43
+        ],
+        [
+          0,
+          3,
+          3.14
+        ],
+        [
+          1,
+          3,
+          3.66
+        ],
+        [
+          2,
+          3,
+          2.5
+        ],
+        [
+          3,
+          3,
+          1.3
+        ],
+        [
+          4,
+          3,
           0.57
         ],
         [
+          5,
+          3,
+          0.22
+        ],
+        [
           0,
-          1,
-          9.88
+          4,
+          1.37
         ],
         [
           1,
-          1,
-          11.97
+          4,
+          1.6
         ],
         [
           2,
-          1,
-          6.95
+          4,
+          1.09
         ],
         [
           3,
-          1,
-          3.26
+          4,
+          0.57
         ],
         [
           4,
-          1,
-          1.29
+          4,
+          0.25
         ],
         [
           5,
-          1,
-          0.45
+          4,
+          0.1
         ],
         [
           0,
-          2,
-          4.98
-        ],
-        [
-          1,
-          2,
-          5.25
-        ],
-        [
-          2,
-          2,
-          3.23
-        ],
-        [
-          3,
-          2,
-          1.52
-        ],
-        [
-          4,
-          2,
-          0.6
-        ],
-        [
           5,
-          2,
-          0.21
-        ],
-        [
-          0,
-          3,
-          1.77
-        ],
-        [
-          1,
-          3,
-          1.86
-        ],
-        [
-          2,
-          3,
-          1.15
-        ],
-        [
-          3,
-          3,
-          0.54
-        ],
-        [
-          4,
-          3,
-          0.21
-        ],
-        [
-          5,
-          3,
-          0.07
-        ],
-        [
-          0,
-          4,
           0.53
         ],
         [
           1,
-          4,
-          0.56
-        ],
-        [
-          2,
-          4,
-          0.34
-        ],
-        [
-          3,
-          4,
-          0.16
-        ],
-        [
-          4,
-          4,
-          0.06
-        ],
-        [
           5,
-          4,
-          0.02
-        ],
-        [
-          0,
-          5,
-          0.14
-        ],
-        [
-          1,
-          5,
-          0.15
+          0.62
         ],
         [
           2,
           5,
-          0.09
+          0.43
         ],
         [
           3,
+          5,
+          0.22
+        ],
+        [
+          4,
+          5,
+          0.1
+        ],
+        [
+          5,
           5,
           0.04
-        ],
-        [
-          4,
-          5,
-          0.02
-        ],
-        [
-          5,
-          5,
-          0.01
         ]
       ],
-      "h_xg": 0.92,
-      "a_xg": 1.28,
+      "h_xg": 1.45,
+      "a_xg": 1.45,
       "intel": {
         "headline": "【美国职业大联盟】奥兰多城 vs 辛辛那提FC | 🔥 均衡博弈区",
         "intel_tags": [
@@ -3109,13 +1493,13 @@
           "🎯 负二项校准",
           "⚡ 双模型复核"
         ],
-        "story": "【Open战术重锤】C1组芬兰4轮仅失2球（最佳防线）且首回合2-1赢阿尔巴尼亚，迎回卡马拉；阿尔巴尼亚一门斯特拉科沙与拉奇伤缺！ | 美国职业大联盟交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.31 : 1.14（公允概率 主胜38.1% / 平23.7% / 客胜38.1%）。",
-        "blackbox_signal": "1.80 欧国联头号伪低赔大坑！一票否决主胜，黄金锁定【让(-1) 让负】芬兰不败！",
+        "story": "【Open战术美职联季后赛】双方赔率完全平开 2.30 vs 2.30，奥兰多城主场无穿盘统治力，辛辛那提客战快速反击极具威胁。 | 【Open战术美职联季后赛】双方赔率完全平开 2.30 vs 2.30，奥兰多城主场无穿盘统治力，辛辛那提客战快速反击极具威胁。 | 美国职业大联盟交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.35 : 1.1（公允概率 主胜39.0% / 平25.3% / 客胜35.7%）。",
+        "blackbox_signal": "季后赛受让首选：锁定奥兰多城【让(-1) 让负 @1.45】封死辛辛那提客场不败。",
         "confidence_level": "★★☆☆☆ 2星深水",
         "had_pred": {
-          "primary": "客胜",
-          "secondary": "平",
-          "confidence": "38%",
+          "primary": "主胜",
+          "secondary": "客胜",
+          "confidence": "39%",
           "reason": "基于二元负二项去水公允概率与EV风控校验"
         },
         "hhad_pred": {
@@ -3123,33 +1507,33 @@
           "primary": "让负",
           "secondary": "让平",
           "sp": 1.45,
-          "reason": "1.80 欧国联头号伪低赔大坑！一票否决主胜，黄金锁定【让(-1) 让负】芬兰不败！"
+          "reason": "季后赛受让首选：锁定奥兰多城【让(-1) 让负 @1.45】封死辛辛那提客场不败。"
         },
         "scores_pred": [
           {
-            "score": "0:0",
-            "prob": "14.36%",
+            "score": "1:1",
+            "prob": "10.98%",
             "tag": "第一首选 (众数)"
           },
           {
-            "score": "0:1",
-            "prob": "13.37%",
+            "score": "0:0",
+            "prob": "8.56%",
             "tag": "次选防守"
           },
           {
-            "score": "1:1",
-            "prob": "11.97%",
+            "score": "0:1",
+            "prob": "8.1%",
             "tag": "博冷高赔"
           }
         ],
         "ttg_pred": {
-          "primary": "2球",
-          "secondary": "1球",
-          "over_under": "2.5球偏小",
-          "exp_goals": "2.2球"
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "2.9球"
         },
         "half_full_pred": {
-          "primary": "负/负",
+          "primary": "胜/胜",
           "secondary": "平/平"
         }
       }
@@ -3161,123 +1545,393 @@
       "away": "皇家盐湖城",
       "kickoff": "2026-11-20 11:00:00",
       "fused_1x2": [
-        0.4874,
-        0.2507,
-        0.2619
+        0.5192,
+        0.2404,
+        0.2404
       ],
       "recommended_pick": "胜",
       "had_sp": [
-        1.8,
-        3.5,
-        3.35
+        1.69,
+        3.65,
+        3.65
       ],
       "hhad_sp": [
         "-1",
-        3.45,
-        3.65,
-        1.74
+        3.42,
+        3.2,
+        1.87
       ],
       "official_bqc_sp": {
-        "胜胜": 3.05,
+        "胜胜": 2.95,
         "胜平": 13.0,
-        "胜负": 26.0,
-        "平胜": 4.75,
+        "胜负": 27.0,
+        "平胜": 4.6,
         "平平": 5.75,
-        "平负": 7.5,
+        "平负": 8.4,
         "负胜": 20.0,
         "负平": 13.0,
-        "负负": 6.0
+        "负负": 6.1
       },
       "heatmap_matrix": [
         [
           0,
           0,
-          16.15
+          10.74
         ],
         [
           1,
           0,
-          6.14
+          7.25
         ],
         [
           2,
           0,
-          2.18
+          3.85
         ],
         [
           3,
           0,
-          0.49
+          1.4
         ],
         [
           4,
           0,
-          0.09
+          0.43
         ],
         [
           5,
           0,
-          0.02
+          0.12
         ],
         [
           0,
           1,
-          17.32
+          11.98
         ],
         [
           1,
           1,
-          10.31
+          11.04
         ],
         [
           2,
           1,
-          2.73
+          4.98
         ],
         [
           3,
           1,
-          0.61
+          1.82
         ],
         [
           4,
           1,
+          0.56
+        ],
+        [
+          5,
+          1,
+          0.15
+        ],
+        [
+          0,
+          2,
+          9.59
+        ],
+        [
+          1,
+          2,
+          7.86
+        ],
+        [
+          2,
+          2,
+          3.76
+        ],
+        [
+          3,
+          2,
+          1.37
+        ],
+        [
+          4,
+          2,
+          0.42
+        ],
+        [
+          5,
+          2,
+          0.12
+        ],
+        [
+          0,
+          3,
+          5.52
+        ],
+        [
+          1,
+          3,
+          4.52
+        ],
+        [
+          2,
+          3,
+          2.16
+        ],
+        [
+          3,
+          3,
+          0.79
+        ],
+        [
+          4,
+          3,
+          0.24
+        ],
+        [
+          5,
+          3,
+          0.07
+        ],
+        [
+          0,
+          4,
+          2.68
+        ],
+        [
+          1,
+          4,
+          2.2
+        ],
+        [
+          2,
+          4,
+          1.05
+        ],
+        [
+          3,
+          4,
+          0.38
+        ],
+        [
+          4,
+          4,
           0.12
         ],
         [
           5,
+          4,
+          0.03
+        ],
+        [
+          0,
+          5,
+          1.15
+        ],
+        [
           1,
-          0.02
+          5,
+          0.95
+        ],
+        [
+          2,
+          5,
+          0.45
+        ],
+        [
+          3,
+          5,
+          0.17
+        ],
+        [
+          4,
+          5,
+          0.05
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 1.65,
+      "a_xg": 0.95,
+      "intel": {
+        "headline": "【美国职业大联盟】西雅图海湾人 vs 皇家盐湖城 | ⚡ 1.50~1.99伪低赔预警",
+        "intel_tags": [
+          "⚡ 1.50~1.99伪低赔预警",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "【Open战术高原要塞】西雅图海湾人主场战力强横，皇家盐湖城季后赛客战必低位死守，西雅图大概率一球小胜卡盘。 | 【Open战术高原要塞】西雅图海湾人主场战力强横，皇家盐湖城季后赛客战必低位死守，西雅图大概率一球小胜卡盘。 | 美国职业大联盟交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.74 : 0.85（公允概率 主胜51.9% / 平24.0% / 客胜24.0%）。",
+        "blackbox_signal": "1.80主胜正路：海湾人主胜具备正向期望，让球(-1)重点设防一球小胜卡让平 @3.65 或让负受让。",
+        "confidence_level": "★★★☆☆ 3星博弈",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "51%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让平",
+          "secondary": "让胜",
+          "sp": 3.2,
+          "reason": "1.80主胜正路：海湾人主胜具备正向期望，让球(-1)重点设防一球小胜卡让平 @3.65 或让负受让。"
+        },
+        "scores_pred": [
+          {
+            "score": "1:0",
+            "prob": "11.98%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:1",
+            "prob": "11.04%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "0:0",
+            "prob": "10.74%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球适中",
+          "exp_goals": "2.6球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/平"
+        }
+      }
+    },
+    {
+      "num": "周五001",
+      "league": "澳大利亚超级联赛",
+      "home": "西悉尼漫步者",
+      "away": "阿德莱德联",
+      "kickoff": "2026-11-20 16:40:00",
+      "fused_1x2": [
+        0.5697,
+        0.2193,
+        0.2109
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.54,
+        4.0,
+        4.16
+      ],
+      "hhad_sp": [
+        "-1",
+        2.6,
+        3.6,
+        2.1
+      ],
+      "official_bqc_sp": {
+        "胜胜": 2.35,
+        "胜平": 14.5,
+        "胜负": 31.0,
+        "平胜": 4.5,
+        "平平": 7.0,
+        "平负": 10.5,
+        "负胜": 18.0,
+        "负平": 14.5,
+        "负负": 7.0
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          9.02
+        ],
+        [
+          1,
+          0,
+          5.29
+        ],
+        [
+          2,
+          0,
+          2.59
+        ],
+        [
+          3,
+          0,
+          0.85
+        ],
+        [
+          4,
+          0,
+          0.23
+        ],
+        [
+          5,
+          0,
+          0.06
+        ],
+        [
+          0,
+          1,
+          11.82
+        ],
+        [
+          1,
+          1,
+          9.72
+        ],
+        [
+          2,
+          1,
+          3.94
+        ],
+        [
+          3,
+          1,
+          1.29
+        ],
+        [
+          4,
+          1,
+          0.36
+        ],
+        [
+          5,
+          1,
+          0.09
         ],
         [
           0,
           2,
-          13.45
+          11.05
         ],
         [
           1,
           2,
-          6.78
+          8.14
         ],
         [
           2,
           2,
-          1.99
+          3.5
         ],
         [
           3,
           2,
-          0.45
+          1.15
         ],
         [
           4,
           2,
-          0.08
+          0.32
         ],
         [
           5,
           2,
-          0.01
+          0.08
         ],
         [
           0,
@@ -3287,32 +1941,842 @@
         [
           1,
           3,
-          3.77
+          5.51
         ],
         [
           2,
           3,
-          1.11
+          2.37
         ],
         [
           3,
           3,
-          0.25
+          0.78
         ],
         [
           4,
           3,
-          0.05
+          0.21
         ],
         [
           5,
           3,
-          0.01
+          0.05
         ],
         [
           0,
           4,
-          3.51
+          4.27
+        ],
+        [
+          1,
+          4,
+          3.15
+        ],
+        [
+          2,
+          4,
+          1.35
+        ],
+        [
+          3,
+          4,
+          0.44
+        ],
+        [
+          4,
+          4,
+          0.12
+        ],
+        [
+          5,
+          4,
+          0.03
+        ],
+        [
+          0,
+          5,
+          2.17
+        ],
+        [
+          1,
+          5,
+          1.6
+        ],
+        [
+          2,
+          5,
+          0.69
+        ],
+        [
+          3,
+          5,
+          0.22
+        ],
+        [
+          4,
+          5,
+          0.06
+        ],
+        [
+          5,
+          5,
+          0.02
+        ]
+      ],
+      "h_xg": 2.04,
+      "a_xg": 0.84,
+      "intel": {
+        "headline": "【澳大利亚超级联赛】西悉尼漫步者 vs 阿德莱德联 | ⚡ 1.50~1.99伪低赔预警",
+        "intel_tags": [
+          "⚡ 1.50~1.99伪低赔预警",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "澳大利亚超级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.04 : 0.84（公允概率 主胜57.0% / 平21.9% / 客胜21.1%）。",
+        "blackbox_signal": "黄灯提示：热门赔率 @1.54 处于 1.50~1.99 伪低赔分水岭，需结合双模型战术审计严防冷平/赢球输盘。",
+        "confidence_level": "★★★★☆ 4星价值",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "56%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让负",
+          "secondary": "让胜",
+          "sp": 2.1,
+          "reason": "6x6比分矩阵聚合概率最优（让胜37.5%/让平22.8%/让负39.7%）"
+        },
+        "scores_pred": [
+          {
+            "score": "1:0",
+            "prob": "11.82%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "2:0",
+            "prob": "11.05%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "1:1",
+            "prob": "9.72%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "2.88球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/胜"
+        }
+      }
+    },
+    {
+      "num": "周五002",
+      "league": "日本职业联赛",
+      "home": "柏太阳神",
+      "away": "千叶市原",
+      "kickoff": "2026-11-20 18:00:00",
+      "fused_1x2": [
+        0.6313,
+        0.2031,
+        0.1656
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.39,
+        4.32,
+        5.3
+      ],
+      "hhad_sp": [
+        "-1",
+        2.25,
+        3.55,
+        2.42
+      ],
+      "official_bqc_sp": {
+        "胜胜": 2.0,
+        "胜平": 17.0,
+        "胜负": 36.0,
+        "平胜": 4.3,
+        "平平": 7.0,
+        "平负": 12.0,
+        "负胜": 20.0,
+        "负平": 17.0,
+        "负负": 10.0
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          7.87
+        ],
+        [
+          1,
+          0,
+          4.12
+        ],
+        [
+          2,
+          0,
+          1.89
+        ],
+        [
+          3,
+          0,
+          0.57
+        ],
+        [
+          4,
+          0,
+          0.14
+        ],
+        [
+          5,
+          0,
+          0.03
+        ],
+        [
+          0,
+          1,
+          11.49
+        ],
+        [
+          1,
+          1,
+          8.61
+        ],
+        [
+          2,
+          1,
+          3.2
+        ],
+        [
+          3,
+          1,
+          0.96
+        ],
+        [
+          4,
+          1,
+          0.24
+        ],
+        [
+          5,
+          1,
+          0.05
+        ],
+        [
+          0,
+          2,
+          11.9
+        ],
+        [
+          1,
+          2,
+          8.03
+        ],
+        [
+          2,
+          2,
+          3.16
+        ],
+        [
+          3,
+          2,
+          0.95
+        ],
+        [
+          4,
+          2,
+          0.24
+        ],
+        [
+          5,
+          2,
+          0.05
+        ],
+        [
+          0,
+          3,
+          8.96
+        ],
+        [
+          1,
+          3,
+          6.04
+        ],
+        [
+          2,
+          3,
+          2.38
+        ],
+        [
+          3,
+          3,
+          0.71
+        ],
+        [
+          4,
+          3,
+          0.18
+        ],
+        [
+          5,
+          3,
+          0.04
+        ],
+        [
+          0,
+          4,
+          5.69
+        ],
+        [
+          1,
+          4,
+          3.84
+        ],
+        [
+          2,
+          4,
+          1.51
+        ],
+        [
+          3,
+          4,
+          0.45
+        ],
+        [
+          4,
+          4,
+          0.11
+        ],
+        [
+          5,
+          4,
+          0.03
+        ],
+        [
+          0,
+          5,
+          3.21
+        ],
+        [
+          1,
+          5,
+          2.17
+        ],
+        [
+          2,
+          5,
+          0.85
+        ],
+        [
+          3,
+          5,
+          0.26
+        ],
+        [
+          4,
+          5,
+          0.06
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 2.36,
+      "a_xg": 0.76,
+      "intel": {
+        "headline": "【日本职业联赛】柏太阳神 vs 千叶市原 | ⚠️ 1.15~1.39蚊子肉禁区",
+        "intel_tags": [
+          "⚠️ 1.15~1.39蚊子肉禁区",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "日本职业联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.36 : 0.76（公允概率 主胜63.1% / 平20.3% / 客胜16.6%）。",
+        "blackbox_signal": "风控红灯：主盘最低赔率 @1.39 落入 1.15~1.39 低赔爆冷高危带（严禁2串1垫脚），让球与防冷优先级高于独赢！",
+        "confidence_level": "★★★★☆ 4星价值",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "63%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让胜",
+          "secondary": "让负",
+          "sp": 2.25,
+          "reason": "6x6比分矩阵聚合概率最优（让胜44.4%/让平22.4%/让负33.2%）"
+        },
+        "scores_pred": [
+          {
+            "score": "2:0",
+            "prob": "11.9%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:0",
+            "prob": "11.49%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "3:0",
+            "prob": "8.96%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "3.12球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/胜"
+        }
+      }
+    },
+    {
+      "num": "周五003",
+      "league": "日本职业联赛",
+      "home": "鹿岛鹿角",
+      "away": "清水鼓动",
+      "kickoff": "2026-11-20 18:00:00",
+      "fused_1x2": [
+        0.6225,
+        0.2194,
+        0.1581
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.41,
+        4.0,
+        5.55
+      ],
+      "hhad_sp": [
+        "-1",
+        2.39,
+        3.35,
+        2.37
+      ],
+      "official_bqc_sp": {
+        "胜胜": 2.05,
+        "胜平": 18.0,
+        "胜负": 50.0,
+        "平胜": 4.0,
+        "平平": 6.1,
+        "平负": 12.0,
+        "负胜": 23.0,
+        "负平": 18.0,
+        "负负": 10.5
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          8.15
+        ],
+        [
+          1,
+          0,
+          4.14
+        ],
+        [
+          2,
+          0,
+          1.83
+        ],
+        [
+          3,
+          0,
+          0.53
+        ],
+        [
+          4,
+          0,
+          0.13
+        ],
+        [
+          5,
+          0,
+          0.03
+        ],
+        [
+          0,
+          1,
+          11.9
+        ],
+        [
+          1,
+          1,
+          8.59
+        ],
+        [
+          2,
+          1,
+          3.08
+        ],
+        [
+          3,
+          1,
+          0.89
+        ],
+        [
+          4,
+          1,
+          0.22
+        ],
+        [
+          5,
+          1,
+          0.05
+        ],
+        [
+          0,
+          2,
+          12.22
+        ],
+        [
+          1,
+          2,
+          7.96
+        ],
+        [
+          2,
+          2,
+          3.02
+        ],
+        [
+          3,
+          2,
+          0.87
+        ],
+        [
+          4,
+          2,
+          0.21
+        ],
+        [
+          5,
+          2,
+          0.05
+        ],
+        [
+          0,
+          3,
+          9.15
+        ],
+        [
+          1,
+          3,
+          5.95
+        ],
+        [
+          2,
+          3,
+          2.26
+        ],
+        [
+          3,
+          3,
+          0.65
+        ],
+        [
+          4,
+          3,
+          0.16
+        ],
+        [
+          5,
+          3,
+          0.03
+        ],
+        [
+          0,
+          4,
+          5.77
+        ],
+        [
+          1,
+          4,
+          3.76
+        ],
+        [
+          2,
+          4,
+          1.43
+        ],
+        [
+          3,
+          4,
+          0.41
+        ],
+        [
+          4,
+          4,
+          0.1
+        ],
+        [
+          5,
+          4,
+          0.02
+        ],
+        [
+          0,
+          5,
+          3.24
+        ],
+        [
+          1,
+          5,
+          2.11
+        ],
+        [
+          2,
+          5,
+          0.8
+        ],
+        [
+          3,
+          5,
+          0.23
+        ],
+        [
+          4,
+          5,
+          0.06
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 2.34,
+      "a_xg": 0.73,
+      "intel": {
+        "headline": "【日本职业联赛】鹿岛鹿角 vs 清水鼓动 | 🔥 均衡博弈区",
+        "intel_tags": [
+          "🔥 均衡博弈区",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "日本职业联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.34 : 0.73（公允概率 主胜62.3% / 平21.9% / 客胜15.8%）。",
+        "blackbox_signal": "赔率结构位于均衡博弈区，负二项期望分布与市场去水概率基本共振。",
+        "confidence_level": "★★★★☆ 4星价值",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "62%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让胜",
+          "secondary": "让负",
+          "sp": 2.39,
+          "reason": "6x6比分矩阵聚合概率最优（让胜44.7%/让平22.6%/让负32.8%）"
+        },
+        "scores_pred": [
+          {
+            "score": "2:0",
+            "prob": "12.22%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:0",
+            "prob": "11.9%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "3:0",
+            "prob": "9.15%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "3.07球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/胜"
+        }
+      }
+    },
+    {
+      "num": "周五004",
+      "league": "德国乙级联赛",
+      "home": "比勒费尔德",
+      "away": "马格德堡",
+      "kickoff": "2026-11-21 01:30:00",
+      "fused_1x2": [
+        0.4344,
+        0.2544,
+        0.3112
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        2.02,
+        3.45,
+        2.82
+      ],
+      "hhad_sp": [
+        "-1",
+        4.06,
+        3.9,
+        1.57
+      ],
+      "official_bqc_sp": {
+        "胜胜": 3.25,
+        "胜平": 13.0,
+        "胜负": 25.0,
+        "平胜": 5.4,
+        "平平": 6.0,
+        "平负": 7.0,
+        "负胜": 21.0,
+        "负平": 13.0,
+        "负负": 4.75
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          11.65
+        ],
+        [
+          1,
+          0,
+          8.36
+        ],
+        [
+          2,
+          0,
+          4.59
+        ],
+        [
+          3,
+          0,
+          1.75
+        ],
+        [
+          4,
+          0,
+          0.56
+        ],
+        [
+          5,
+          0,
+          0.16
+        ],
+        [
+          0,
+          1,
+          11.94
+        ],
+        [
+          1,
+          1,
+          11.54
+        ],
+        [
+          2,
+          1,
+          5.44
+        ],
+        [
+          3,
+          1,
+          2.07
+        ],
+        [
+          4,
+          1,
+          0.67
+        ],
+        [
+          5,
+          1,
+          0.19
+        ],
+        [
+          0,
+          2,
+          8.8
+        ],
+        [
+          1,
+          2,
+          7.54
+        ],
+        [
+          2,
+          2,
+          3.77
+        ],
+        [
+          3,
+          2,
+          1.44
+        ],
+        [
+          4,
+          2,
+          0.46
+        ],
+        [
+          5,
+          2,
+          0.13
+        ],
+        [
+          0,
+          3,
+          4.64
+        ],
+        [
+          1,
+          3,
+          3.98
+        ],
+        [
+          2,
+          3,
+          1.99
+        ],
+        [
+          3,
+          3,
+          0.76
+        ],
+        [
+          4,
+          3,
+          0.24
+        ],
+        [
+          5,
+          3,
+          0.07
+        ],
+        [
+          0,
+          4,
+          2.07
         ],
         [
           1,
@@ -3322,101 +2786,1181 @@
         [
           2,
           4,
-          0.52
+          0.89
         ],
         [
           3,
           4,
-          0.12
+          0.34
         ],
         [
           4,
           4,
-          0.02
+          0.11
         ],
         [
           5,
           4,
-          0.0
+          0.03
         ],
         [
           0,
           5,
-          1.46
+          0.82
         ],
         [
           1,
           5,
-          0.74
+          0.7
         ],
         [
           2,
           5,
-          0.22
+          0.35
         ],
         [
           3,
           5,
-          0.05
+          0.13
         ],
         [
           4,
           5,
-          0.01
+          0.04
         ],
         [
           5,
           5,
-          0.0
+          0.01
         ]
       ],
-      "h_xg": 1.58,
-      "a_xg": 0.55,
+      "h_xg": 1.48,
+      "a_xg": 1.0,
       "intel": {
-        "headline": "【美国职业大联盟】西雅图海湾人 vs 皇家盐湖城 | ⚡ 1.50~1.99伪低赔预警",
+        "headline": "【德国乙级联赛】比勒费尔德 vs 马格德堡 | 🔥 均衡博弈区",
         "intel_tags": [
-          "⚡ 1.50~1.99伪低赔预警",
+          "🔥 均衡博弈区",
           "🎯 负二项校准",
           "⚡ 双模型复核"
         ],
-        "story": "【Open战术增补】黑山10分战意足但中场隆查尔停赛（近4轮仅进7球），拉脱维亚五后卫死守（近4场3场小比分/0-0）。 | 美国职业大联盟交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.65 : 0.9（公允概率 主胜48.7% / 平25.1% / 客胜26.2%）。",
-        "blackbox_signal": "严禁 @1.20 蚊子肉！(-1)让胜 @1.78 面临 1:0/2:1 卡让平风险，不宜作为稳胆主腿。",
+        "story": "德国乙级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.48 : 1.0（公允概率 主胜43.4% / 平25.4% / 客胜31.1%）。",
+        "blackbox_signal": "赔率结构位于均衡博弈区，负二项期望分布与市场去水概率基本共振。",
         "confidence_level": "★★★☆☆ 3星博弈",
         "had_pred": {
           "primary": "主胜",
           "secondary": "客胜",
-          "confidence": "48%",
+          "confidence": "43%",
           "reason": "基于二元负二项去水公允概率与EV风控校验"
         },
         "hhad_pred": {
           "line": "(-1)",
-          "primary": "让平",
+          "primary": "让负",
           "secondary": "让胜",
-          "sp": 3.65,
-          "reason": "严禁 @1.20 蚊子肉！(-1)让胜 @1.78 面临 1:0/2:1 卡让平风险，不宜作为稳胆主腿。"
+          "sp": 1.57,
+          "reason": "6x6比分矩阵聚合概率最优（让胜24.1%/让平21.9%/让负54.0%）"
         },
         "scores_pred": [
           {
             "score": "1:0",
-            "prob": "17.32%",
+            "prob": "11.94%",
             "tag": "第一首选 (众数)"
           },
           {
             "score": "0:0",
-            "prob": "16.15%",
+            "prob": "11.65%",
             "tag": "次选防守"
           },
           {
-            "score": "2:0",
-            "prob": "13.45%",
+            "score": "1:1",
+            "prob": "11.54%",
             "tag": "博冷高赔"
           }
         ],
         "ttg_pred": {
           "primary": "2球",
           "secondary": "1球",
-          "over_under": "2.5球偏小",
-          "exp_goals": "2.13球"
+          "over_under": "2.5球适中",
+          "exp_goals": "2.48球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/平"
+        }
+      }
+    },
+    {
+      "num": "周五005",
+      "league": "荷兰乙级联赛",
+      "home": "登博思",
+      "away": "芬洛",
+      "kickoff": "2026-11-21 03:00:00",
+      "fused_1x2": [
+        0.4961,
+        0.2206,
+        0.2833
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.77,
+        3.98,
+        3.1
+      ],
+      "hhad_sp": [
+        "-1",
+        3.12,
+        3.95,
+        1.77
+      ],
+      "official_bqc_sp": {
+        "胜胜": 2.75,
+        "胜平": 13.5,
+        "胜负": 22.0,
+        "平胜": 5.35,
+        "平平": 7.9,
+        "平负": 8.0,
+        "负胜": 16.0,
+        "负平": 13.5,
+        "负负": 5.1
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          9.86
+        ],
+        [
+          1,
+          0,
+          6.81
+        ],
+        [
+          2,
+          0,
+          3.77
+        ],
+        [
+          3,
+          0,
+          1.42
+        ],
+        [
+          4,
+          0,
+          0.45
+        ],
+        [
+          5,
+          0,
+          0.13
+        ],
+        [
+          0,
+          1,
+          11.3
+        ],
+        [
+          1,
+          1,
+          10.82
+        ],
+        [
+          2,
+          1,
+          5.06
+        ],
+        [
+          3,
+          1,
+          1.91
+        ],
+        [
+          4,
+          1,
+          0.61
+        ],
+        [
+          5,
+          1,
+          0.17
+        ],
+        [
+          0,
+          2,
+          9.41
+        ],
+        [
+          1,
+          2,
+          7.99
+        ],
+        [
+          2,
+          2,
+          3.96
+        ],
+        [
+          3,
+          2,
+          1.5
+        ],
+        [
+          4,
+          2,
+          0.48
+        ],
+        [
+          5,
+          2,
+          0.14
+        ],
+        [
+          0,
+          3,
+          5.61
+        ],
+        [
+          1,
+          3,
+          4.77
+        ],
+        [
+          2,
+          3,
+          2.36
+        ],
+        [
+          3,
+          3,
+          0.89
+        ],
+        [
+          4,
+          3,
+          0.28
+        ],
+        [
+          5,
+          3,
+          0.08
+        ],
+        [
+          0,
+          4,
+          2.83
+        ],
+        [
+          1,
+          4,
+          2.4
+        ],
+        [
+          2,
+          4,
+          1.19
+        ],
+        [
+          3,
+          4,
+          0.45
+        ],
+        [
+          4,
+          4,
+          0.14
+        ],
+        [
+          5,
+          4,
+          0.04
+        ],
+        [
+          0,
+          5,
+          1.27
+        ],
+        [
+          1,
+          5,
+          1.08
+        ],
+        [
+          2,
+          5,
+          0.53
+        ],
+        [
+          3,
+          5,
+          0.2
+        ],
+        [
+          4,
+          5,
+          0.06
+        ],
+        [
+          5,
+          5,
+          0.02
+        ]
+      ],
+      "h_xg": 1.73,
+      "a_xg": 0.99,
+      "intel": {
+        "headline": "【荷兰乙级联赛】登博思 vs 芬洛 | ⚡ 1.50~1.99伪低赔预警",
+        "intel_tags": [
+          "⚡ 1.50~1.99伪低赔预警",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "荷兰乙级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.73 : 0.99（公允概率 主胜49.6% / 平22.1% / 客胜28.3%）。",
+        "blackbox_signal": "黄灯提示：热门赔率 @1.77 处于 1.50~1.99 伪低赔分水岭，需结合双模型战术审计严防冷平/赢球输盘。",
+        "confidence_level": "★★★☆☆ 3星博弈",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "客胜",
+          "confidence": "49%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让负",
+          "secondary": "让胜",
+          "sp": 1.77,
+          "reason": "6x6比分矩阵聚合概率最优（让胜29.3%/让平22.2%/让负48.5%）"
+        },
+        "scores_pred": [
+          {
+            "score": "1:0",
+            "prob": "11.3%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:1",
+            "prob": "10.82%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "0:0",
+            "prob": "9.86%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "2.72球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/平"
+        }
+      }
+    },
+    {
+      "num": "周五006",
+      "league": "德国甲级联赛",
+      "home": "拜仁慕尼黑",
+      "away": "科隆",
+      "kickoff": "2026-11-21 03:30:00",
+      "fused_1x2": [
+        0.78,
+        0.14,
+        0.08
+      ],
+      "recommended_pick": "胜(仅让球)",
+      "had_sp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hhad_sp": [
+        "-3",
+        2.07,
+        4.71,
+        2.25
+      ],
+      "official_bqc_sp": {
+        "胜胜": 1.18,
+        "胜平": 34.0,
+        "胜负": 120.0,
+        "平胜": 4.9,
+        "平平": 22.0,
+        "平负": 45.0,
+        "负胜": 23.0,
+        "负平": 34.0,
+        "负负": 40.0
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          6.56
+        ],
+        [
+          1,
+          0,
+          3.05
+        ],
+        [
+          2,
+          0,
+          1.0
+        ],
+        [
+          3,
+          0,
+          0.23
+        ],
+        [
+          4,
+          0,
+          0.04
+        ],
+        [
+          5,
+          0,
+          0.01
+        ],
+        [
+          0,
+          1,
+          12.0
+        ],
+        [
+          1,
+          1,
+          6.5
+        ],
+        [
+          2,
+          1,
+          1.92
+        ],
+        [
+          3,
+          1,
+          0.45
+        ],
+        [
+          4,
+          1,
+          0.09
+        ],
+        [
+          5,
+          1,
+          0.02
+        ],
+        [
+          0,
+          2,
+          13.72
+        ],
+        [
+          1,
+          2,
+          7.14
+        ],
+        [
+          2,
+          2,
+          2.17
+        ],
+        [
+          3,
+          2,
+          0.5
+        ],
+        [
+          4,
+          2,
+          0.1
+        ],
+        [
+          5,
+          2,
+          0.02
+        ],
+        [
+          0,
+          3,
+          11.78
+        ],
+        [
+          1,
+          3,
+          6.13
+        ],
+        [
+          2,
+          3,
+          1.86
+        ],
+        [
+          3,
+          3,
+          0.43
+        ],
+        [
+          4,
+          3,
+          0.08
+        ],
+        [
+          5,
+          3,
+          0.01
+        ],
+        [
+          0,
+          4,
+          8.54
+        ],
+        [
+          1,
+          4,
+          4.44
+        ],
+        [
+          2,
+          4,
+          1.35
+        ],
+        [
+          3,
+          4,
+          0.31
+        ],
+        [
+          4,
+          4,
+          0.06
+        ],
+        [
+          5,
+          4,
+          0.01
+        ],
+        [
+          0,
+          5,
+          5.5
+        ],
+        [
+          1,
+          5,
+          2.86
+        ],
+        [
+          2,
+          5,
+          0.87
+        ],
+        [
+          3,
+          5,
+          0.2
+        ],
+        [
+          4,
+          5,
+          0.04
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 2.85,
+      "a_xg": 0.57,
+      "intel": {
+        "headline": "【德国甲级联赛】拜仁慕尼黑 vs 科隆 | 🔒 常规HAD停售(仅开让球)",
+        "intel_tags": [
+          "🔒 常规HAD停售(仅开让球)",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "德国甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.85 : 0.57（公允概率 主胜78.0% / 平14.0% / 客胜8.0%）。",
+        "blackbox_signal": "官方仅开放让球胜平负(-3)与半全场竞猜，实力悬殊下聚焦让球穿盘概率与半全场高值组合。",
+        "confidence_level": "★★★★★ 5星强势",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "78%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-3)",
+          "primary": "让负",
+          "secondary": "让胜",
+          "sp": 2.25,
+          "reason": "6x6比分矩阵聚合概率最优（让胜16.9%/让平17.1%/让负66.0%）"
+        },
+        "scores_pred": [
+          {
+            "score": "2:0",
+            "prob": "13.72%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:0",
+            "prob": "12.0%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "3:0",
+            "prob": "11.78%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "3.42球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/平"
+        }
+      }
+    },
+    {
+      "num": "周五007",
+      "league": "法国甲级联赛",
+      "home": "特鲁瓦",
+      "away": "勒阿弗尔",
+      "kickoff": "2026-11-21 03:45:00",
+      "fused_1x2": [
+        0.4548,
+        0.2701,
+        0.2751
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.93,
+        3.25,
+        3.19
+      ],
+      "hhad_sp": [
+        "-1",
+        3.97,
+        3.6,
+        1.64
+      ],
+      "official_bqc_sp": {
+        "胜胜": 3.1,
+        "胜平": 15.0,
+        "胜负": 34.0,
+        "平胜": 4.8,
+        "平平": 5.2,
+        "平负": 7.25,
+        "负胜": 25.0,
+        "负平": 15.0,
+        "负负": 5.25
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          11.36
+        ],
+        [
+          1,
+          0,
+          7.68
+        ],
+        [
+          2,
+          0,
+          4.02
+        ],
+        [
+          3,
+          0,
+          1.45
+        ],
+        [
+          4,
+          0,
+          0.44
+        ],
+        [
+          5,
+          0,
+          0.12
+        ],
+        [
+          0,
+          1,
+          12.31
+        ],
+        [
+          1,
+          1,
+          11.24
+        ],
+        [
+          2,
+          1,
+          5.03
+        ],
+        [
+          3,
+          1,
+          1.82
+        ],
+        [
+          4,
+          1,
+          0.55
+        ],
+        [
+          5,
+          1,
+          0.15
+        ],
+        [
+          0,
+          2,
+          9.52
+        ],
+        [
+          1,
+          2,
+          7.74
+        ],
+        [
+          2,
+          2,
+          3.67
+        ],
+        [
+          3,
+          2,
+          1.32
+        ],
+        [
+          4,
+          2,
+          0.4
+        ],
+        [
+          5,
+          2,
+          0.11
+        ],
+        [
+          0,
+          3,
+          5.29
+        ],
+        [
+          1,
+          3,
+          4.3
+        ],
+        [
+          2,
+          3,
+          2.04
+        ],
+        [
+          3,
+          3,
+          0.74
+        ],
+        [
+          4,
+          3,
+          0.22
+        ],
+        [
+          5,
+          3,
+          0.06
+        ],
+        [
+          0,
+          4,
+          2.48
+        ],
+        [
+          1,
+          4,
+          2.02
+        ],
+        [
+          2,
+          4,
+          0.96
+        ],
+        [
+          3,
+          4,
+          0.35
+        ],
+        [
+          4,
+          4,
+          0.11
+        ],
+        [
+          5,
+          4,
+          0.03
+        ],
+        [
+          0,
+          5,
+          1.03
+        ],
+        [
+          1,
+          5,
+          0.84
+        ],
+        [
+          2,
+          5,
+          0.4
+        ],
+        [
+          3,
+          5,
+          0.14
+        ],
+        [
+          4,
+          5,
+          0.04
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 1.58,
+      "a_xg": 0.94,
+      "intel": {
+        "headline": "【法国甲级联赛】特鲁瓦 vs 勒阿弗尔 | ⚡ 1.50~1.99伪低赔预警",
+        "intel_tags": [
+          "⚡ 1.50~1.99伪低赔预警",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "法国甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 1.58 : 0.94（公允概率 主胜45.5% / 平27.0% / 客胜27.5%）。",
+        "blackbox_signal": "黄灯提示：热门赔率 @1.93 处于 1.50~1.99 伪低赔分水岭，需结合双模型战术审计严防冷平/赢球输盘。",
+        "confidence_level": "★★★☆☆ 3星博弈",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "客胜",
+          "confidence": "45%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让负",
+          "secondary": "让胜",
+          "sp": 1.64,
+          "reason": "6x6比分矩阵聚合概率最优（让胜27.0%/让平22.5%/让负50.5%）"
+        },
+        "scores_pred": [
+          {
+            "score": "1:0",
+            "prob": "12.31%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "0:0",
+            "prob": "11.36%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "1:1",
+            "prob": "11.24%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球适中",
+          "exp_goals": "2.52球"
+        },
+        "half_full_pred": {
+          "primary": "胜/胜",
+          "secondary": "平/胜"
+        }
+      }
+    },
+    {
+      "num": "周五008",
+      "league": "西班牙甲级联赛",
+      "home": "毕尔巴鄂竞技",
+      "away": "西班牙人",
+      "kickoff": "2026-11-21 04:00:00",
+      "fused_1x2": [
+        0.6403,
+        0.2193,
+        0.1404
+      ],
+      "recommended_pick": "胜",
+      "had_sp": [
+        1.37,
+        4.0,
+        6.25
+      ],
+      "hhad_sp": [
+        "-1",
+        2.28,
+        3.25,
+        2.55
+      ],
+      "official_bqc_sp": {
+        "胜胜": 2.05,
+        "胜平": 19.0,
+        "胜负": 50.0,
+        "平胜": 3.8,
+        "平平": 5.9,
+        "平负": 13.0,
+        "负胜": 25.0,
+        "负平": 19.0,
+        "负负": 11.0
+      },
+      "heatmap_matrix": [
+        [
+          0,
+          0,
+          7.79
+        ],
+        [
+          1,
+          0,
+          3.72
+        ],
+        [
+          2,
+          0,
+          1.58
+        ],
+        [
+          3,
+          0,
+          0.43
+        ],
+        [
+          4,
+          0,
+          0.1
+        ],
+        [
+          5,
+          0,
+          0.02
+        ],
+        [
+          0,
+          1,
+          11.85
+        ],
+        [
+          1,
+          1,
+          8.11
+        ],
+        [
+          2,
+          1,
+          2.76
+        ],
+        [
+          3,
+          1,
+          0.76
+        ],
+        [
+          4,
+          1,
+          0.18
+        ],
+        [
+          5,
+          1,
+          0.04
+        ],
+        [
+          0,
+          2,
+          12.62
+        ],
+        [
+          1,
+          2,
+          7.81
+        ],
+        [
+          2,
+          2,
+          2.82
+        ],
+        [
+          3,
+          2,
+          0.78
+        ],
+        [
+          4,
+          2,
+          0.18
+        ],
+        [
+          5,
+          2,
+          0.04
+        ],
+        [
+          0,
+          3,
+          9.81
+        ],
+        [
+          1,
+          3,
+          6.07
+        ],
+        [
+          2,
+          3,
+          2.19
+        ],
+        [
+          3,
+          3,
+          0.6
+        ],
+        [
+          4,
+          3,
+          0.14
+        ],
+        [
+          5,
+          3,
+          0.03
+        ],
+        [
+          0,
+          4,
+          6.44
+        ],
+        [
+          1,
+          4,
+          3.98
+        ],
+        [
+          2,
+          4,
+          1.44
+        ],
+        [
+          3,
+          4,
+          0.4
+        ],
+        [
+          4,
+          4,
+          0.09
+        ],
+        [
+          5,
+          4,
+          0.02
+        ],
+        [
+          0,
+          5,
+          3.75
+        ],
+        [
+          1,
+          5,
+          2.32
+        ],
+        [
+          2,
+          5,
+          0.84
+        ],
+        [
+          3,
+          5,
+          0.23
+        ],
+        [
+          4,
+          5,
+          0.05
+        ],
+        [
+          5,
+          5,
+          0.01
+        ]
+      ],
+      "h_xg": 2.47,
+      "a_xg": 0.69,
+      "intel": {
+        "headline": "【西班牙甲级联赛】毕尔巴鄂竞技 vs 西班牙人 | ⚠️ 1.15~1.39蚊子肉禁区",
+        "intel_tags": [
+          "⚠️ 1.15~1.39蚊子肉禁区",
+          "🎯 负二项校准",
+          "⚡ 双模型复核"
+        ],
+        "story": "西班牙甲级联赛交锋基本面与市场赔率结构已完成去水校准；模型测算预期进球 2.47 : 0.69（公允概率 主胜64.0% / 平21.9% / 客胜14.0%）。",
+        "blackbox_signal": "风控红灯：主盘最低赔率 @1.37 落入 1.15~1.39 低赔爆冷高危带（严禁2串1垫脚），让球与防冷优先级高于独赢！",
+        "confidence_level": "★★★★☆ 4星价值",
+        "had_pred": {
+          "primary": "主胜",
+          "secondary": "平",
+          "confidence": "64%",
+          "reason": "基于二元负二项去水公允概率与EV风控校验"
+        },
+        "hhad_pred": {
+          "line": "(-1)",
+          "primary": "让胜",
+          "secondary": "让负",
+          "sp": 2.28,
+          "reason": "6x6比分矩阵聚合概率最优（让胜47.5%/让平22.3%/让负30.2%）"
+        },
+        "scores_pred": [
+          {
+            "score": "2:0",
+            "prob": "12.62%",
+            "tag": "第一首选 (众数)"
+          },
+          {
+            "score": "1:0",
+            "prob": "11.85%",
+            "tag": "次选防守"
+          },
+          {
+            "score": "3:0",
+            "prob": "9.81%",
+            "tag": "博冷高赔"
+          }
+        ],
+        "ttg_pred": {
+          "primary": "3球",
+          "secondary": "2球",
+          "over_under": "2.5球偏大",
+          "exp_goals": "3.16球"
         },
         "half_full_pred": {
           "primary": "胜/胜",
@@ -3427,1251 +3971,1787 @@
   ],
   "bqc_predictions": [
     {
-      "num": "周三001",
-      "home": "科里蒂巴",
-      "away": "桑托斯",
-      "league": "巴西甲级联赛",
-      "h_xg": 1.22,
-      "a_xg": 1.15,
-      "rhythm_tag": "强强谨慎·半场胶着",
-      "primary_pick": {
-        "key": "平平",
-        "name": "平平",
-        "prob": 0.1942,
-        "prob_pct": 19.4,
-        "fair_sp": 5.15,
-        "market_sp": 5.4,
-        "ev": 0.0487,
-        "ev_pct": 4.9
-      },
-      "value_hedge_pick": {
-        "key": "平胜",
-        "name": "平胜",
-        "prob": 0.1706,
-        "prob_pct": 17.1,
-        "fair_sp": 5.86,
-        "market_sp": 8.25,
-        "ev": 0.4075,
-        "ev_pct": 40.8
-      },
-      "matrix": [
-        {
-          "key": "胜胜",
-          "name": "胜胜",
-          "prob": 0.1846,
-          "prob_pct": 18.5,
-          "fair_sp": 5.42,
-          "market_sp": 6.0,
-          "ev": 0.1074,
-          "ev_pct": 10.7
-        },
-        {
-          "key": "胜平",
-          "name": "胜平",
-          "prob": 0.0449,
-          "prob_pct": 4.5,
-          "fair_sp": 22.29,
-          "market_sp": 15.5,
-          "ev": -0.3047,
-          "ev_pct": -30.5
-        },
-        {
-          "key": "胜负",
-          "name": "胜负",
-          "prob": 0.0183,
-          "prob_pct": 1.8,
-          "fair_sp": 54.77,
-          "market_sp": 24.0,
-          "ev": -0.5618,
-          "ev_pct": -56.2
-        },
-        {
-          "key": "平胜",
-          "name": "平胜",
-          "prob": 0.1706,
-          "prob_pct": 17.1,
-          "fair_sp": 5.86,
-          "market_sp": 8.25,
-          "ev": 0.4075,
-          "ev_pct": 40.8
-        },
-        {
-          "key": "平平",
-          "name": "平平",
-          "prob": 0.1942,
-          "prob_pct": 19.4,
-          "fair_sp": 5.15,
-          "market_sp": 5.4,
-          "ev": 0.0487,
-          "ev_pct": 4.9
-        },
-        {
-          "key": "平负",
-          "name": "平负",
-          "prob": 0.1572,
-          "prob_pct": 15.7,
-          "fair_sp": 6.36,
-          "market_sp": 3.9,
-          "ev": -0.3868,
-          "ev_pct": -38.7
-        },
-        {
-          "key": "负胜",
-          "name": "负胜",
-          "prob": 0.0197,
-          "prob_pct": 2.0,
-          "fair_sp": 50.85,
-          "market_sp": 40.0,
-          "ev": -0.2133,
-          "ev_pct": -21.3
-        },
-        {
-          "key": "负平",
-          "name": "负平",
-          "prob": 0.0449,
-          "prob_pct": 4.5,
-          "fair_sp": 22.29,
-          "market_sp": 15.5,
-          "ev": -0.3047,
-          "ev_pct": -30.5
-        },
-        {
-          "key": "负负",
-          "name": "负负",
-          "prob": 0.1657,
-          "prob_pct": 16.6,
-          "fair_sp": 6.03,
-          "market_sp": 3.05,
-          "ev": -0.4945,
-          "ev_pct": -49.5
-        }
-      ],
-      "has_reversal_alert": false,
-      "reversal_info": null,
-      "rationale": "双方战力均势且攻防谨慎(总xG 2.37)，半场破门阻力极大，正路紧盯【平平 @5.4】；下半场变局重点关注【平胜 @8.25】。"
-    },
-    {
-      "num": "周三002",
-      "home": "弗拉门戈",
-      "away": "巴拉纳竞技",
-      "league": "巴西甲级联赛",
-      "h_xg": 0.85,
-      "a_xg": 0.88,
-      "rhythm_tag": "强强谨慎·半场胶着",
-      "primary_pick": {
-        "key": "平平",
-        "name": "平平",
-        "prob": 0.2715,
-        "prob_pct": 27.2,
-        "fair_sp": 3.68,
-        "market_sp": 11.0,
-        "ev": 1.9866,
-        "ev_pct": 198.7
-      },
-      "value_hedge_pick": {
-        "key": "平负",
-        "name": "平负",
-        "prob": 0.1711,
-        "prob_pct": 17.1,
-        "fair_sp": 5.84,
-        "market_sp": 25.0,
-        "ev": 3.2778,
-        "ev_pct": 327.8
-      },
-      "matrix": [
-        {
-          "key": "胜胜",
-          "name": "胜胜",
-          "prob": 0.1448,
-          "prob_pct": 14.5,
-          "fair_sp": 6.9,
-          "market_sp": 1.47,
-          "ev": -0.7871,
-          "ev_pct": -78.7
-        },
-        {
-          "key": "胜平",
-          "name": "胜平",
-          "prob": 0.0367,
-          "prob_pct": 3.7,
-          "fair_sp": 27.26,
-          "market_sp": 25.0,
-          "ev": -0.083,
-          "ev_pct": -8.3
-        },
-        {
-          "key": "胜负",
-          "name": "胜负",
-          "prob": 0.0113,
-          "prob_pct": 1.1,
-          "fair_sp": 88.15,
-          "market_sp": 90.0,
-          "ev": 0.021,
-          "ev_pct": 2.1
-        },
-        {
-          "key": "平胜",
-          "name": "平胜",
-          "prob": 0.1637,
-          "prob_pct": 16.4,
-          "fair_sp": 6.11,
-          "market_sp": 3.9,
-          "ev": -0.3616,
-          "ev_pct": -36.2
-        },
-        {
-          "key": "平平",
-          "name": "平平",
-          "prob": 0.2715,
-          "prob_pct": 27.2,
-          "fair_sp": 3.68,
-          "market_sp": 11.0,
-          "ev": 1.9866,
-          "ev_pct": 198.7
-        },
-        {
-          "key": "平负",
-          "name": "平负",
-          "prob": 0.1711,
-          "prob_pct": 17.1,
-          "fair_sp": 5.84,
-          "market_sp": 25.0,
-          "ev": 3.2778,
-          "ev_pct": 327.8
-        },
-        {
-          "key": "负胜",
-          "name": "负胜",
-          "prob": 0.0109,
-          "prob_pct": 1.1,
-          "fair_sp": 91.86,
-          "market_sp": 22.0,
-          "ev": -0.7605,
-          "ev_pct": -76.0
-        },
-        {
-          "key": "负平",
-          "name": "负平",
-          "prob": 0.0367,
-          "prob_pct": 3.7,
-          "fair_sp": 27.26,
-          "market_sp": 25.0,
-          "ev": -0.083,
-          "ev_pct": -8.3
-        },
-        {
-          "key": "负负",
-          "name": "负负",
-          "prob": 0.1533,
-          "prob_pct": 15.3,
-          "fair_sp": 6.52,
-          "market_sp": 20.0,
-          "ev": 2.0655,
-          "ev_pct": 206.6
-        }
-      ],
-      "has_reversal_alert": false,
-      "reversal_info": null,
-      "rationale": "双方战力均势且攻防谨慎(总xG 1.73)，半场破门阻力极大，正路紧盯【平平 @11.0】；下半场变局重点关注【平负 @25.0】。"
-    },
-    {
-      "num": "周三003",
-      "home": "科林蒂安",
-      "away": "博塔弗戈",
-      "league": "巴西甲级联赛",
-      "h_xg": 1.35,
-      "a_xg": 1.32,
-      "rhythm_tag": "均衡对攻·拉锯推进",
-      "primary_pick": {
-        "key": "胜胜",
-        "name": "胜胜",
-        "prob": 0.213,
-        "prob_pct": 21.3,
-        "fair_sp": 4.7,
-        "market_sp": 2.7,
-        "ev": -0.425,
-        "ev_pct": -42.5
-      },
-      "value_hedge_pick": {
-        "key": "负负",
-        "name": "负负",
-        "prob": 0.2041,
-        "prob_pct": 20.4,
-        "fair_sp": 4.9,
-        "market_sp": 7.4,
-        "ev": 0.5104,
-        "ev_pct": 51.0
-      },
-      "matrix": [
-        {
-          "key": "胜胜",
-          "name": "胜胜",
-          "prob": 0.213,
-          "prob_pct": 21.3,
-          "fair_sp": 4.7,
-          "market_sp": 2.7,
-          "ev": -0.425,
-          "ev_pct": -42.5
-        },
-        {
-          "key": "胜平",
-          "name": "胜平",
-          "prob": 0.0505,
-          "prob_pct": 5.0,
-          "fair_sp": 19.82,
-          "market_sp": 15.0,
-          "ev": -0.2431,
-          "ev_pct": -24.3
-        },
-        {
-          "key": "胜负",
-          "name": "胜负",
-          "prob": 0.0213,
-          "prob_pct": 2.1,
-          "fair_sp": 47.03,
-          "market_sp": 34.0,
-          "ev": -0.277,
-          "ev_pct": -27.7
-        },
-        {
-          "key": "平胜",
-          "name": "平胜",
-          "prob": 0.1408,
-          "prob_pct": 14.1,
-          "fair_sp": 7.1,
-          "market_sp": 4.2,
-          "ev": -0.4086,
-          "ev_pct": -40.9
-        },
-        {
-          "key": "平平",
-          "name": "平平",
-          "prob": 0.1616,
-          "prob_pct": 16.2,
-          "fair_sp": 6.19,
-          "market_sp": 5.25,
-          "ev": -0.1516,
-          "ev_pct": -15.2
-        },
-        {
-          "key": "平负",
-          "name": "平负",
-          "prob": 0.1365,
-          "prob_pct": 13.6,
-          "fair_sp": 7.33,
-          "market_sp": 9.25,
-          "ev": 0.2624,
-          "ev_pct": 26.2
-        },
-        {
-          "key": "负胜",
-          "name": "负胜",
-          "prob": 0.0219,
-          "prob_pct": 2.2,
-          "fair_sp": 45.72,
-          "market_sp": 20.0,
-          "ev": -0.5625,
-          "ev_pct": -56.2
-        },
-        {
-          "key": "负平",
-          "name": "负平",
-          "prob": 0.0505,
-          "prob_pct": 5.0,
-          "fair_sp": 19.82,
-          "market_sp": 15.0,
-          "ev": -0.2431,
-          "ev_pct": -24.3
-        },
-        {
-          "key": "负负",
-          "name": "负负",
-          "prob": 0.2041,
-          "prob_pct": 20.4,
-          "fair_sp": 4.9,
-          "market_sp": 7.4,
-          "ev": 0.5104,
-          "ev_pct": 51.0
-        }
-      ],
-      "has_reversal_alert": false,
-      "reversal_info": null,
-      "rationale": "主队整体战力呈碾压态势(xG 1.35:1.32)，抢开局意图强烈，上半场奠定领先概率达 28.5%，正路首选【胜胜 @2.7】。"
-    },
-    {
-      "num": "周三004",
-      "home": "格雷米奥",
-      "away": "巴伊亚",
-      "league": "巴西甲级联赛",
-      "h_xg": 1.38,
-      "a_xg": 1.12,
-      "rhythm_tag": "强强谨慎·半场胶着",
-      "primary_pick": {
-        "key": "胜胜",
-        "name": "胜胜",
-        "prob": 0.2156,
-        "prob_pct": 21.6,
-        "fair_sp": 4.64,
-        "market_sp": 3.65,
-        "ev": -0.2132,
-        "ev_pct": -21.3
-      },
-      "value_hedge_pick": {
-        "key": "平负",
-        "name": "平负",
-        "prob": 0.1389,
-        "prob_pct": 13.9,
-        "fair_sp": 7.2,
-        "market_sp": 7.0,
-        "ev": -0.0276,
-        "ev_pct": -2.8
-      },
-      "matrix": [
-        {
-          "key": "胜胜",
-          "name": "胜胜",
-          "prob": 0.2156,
-          "prob_pct": 21.6,
-          "fair_sp": 4.64,
-          "market_sp": 3.65,
-          "ev": -0.2132,
-          "ev_pct": -21.3
-        },
-        {
-          "key": "胜平",
-          "name": "胜平",
-          "prob": 0.0454,
-          "prob_pct": 4.5,
-          "fair_sp": 22.04,
-          "market_sp": 13.0,
-          "ev": -0.4102,
-          "ev_pct": -41.0
-        },
-        {
-          "key": "胜负",
-          "name": "胜负",
-          "prob": 0.0177,
-          "prob_pct": 1.8,
-          "fair_sp": 56.57,
-          "market_sp": 25.0,
-          "ev": -0.5581,
-          "ev_pct": -55.8
-        },
-        {
-          "key": "平胜",
-          "name": "平胜",
-          "prob": 0.1861,
-          "prob_pct": 18.6,
-          "fair_sp": 5.37,
-          "market_sp": 5.0,
-          "ev": -0.0696,
-          "ev_pct": -7.0
-        },
-        {
-          "key": "平平",
-          "name": "平平",
-          "prob": 0.1816,
-          "prob_pct": 18.2,
-          "fair_sp": 5.51,
-          "market_sp": 5.2,
-          "ev": -0.0556,
-          "ev_pct": -5.6
-        },
-        {
-          "key": "平负",
-          "name": "平负",
-          "prob": 0.1389,
-          "prob_pct": 13.9,
-          "fair_sp": 7.2,
-          "market_sp": 7.0,
-          "ev": -0.0276,
-          "ev_pct": -2.8
-        },
-        {
-          "key": "负胜",
-          "name": "负胜",
-          "prob": 0.023,
-          "prob_pct": 2.3,
-          "fair_sp": 43.39,
-          "market_sp": 21.0,
-          "ev": -0.516,
-          "ev_pct": -51.6
-        },
-        {
-          "key": "负平",
-          "name": "负平",
-          "prob": 0.0454,
-          "prob_pct": 4.5,
-          "fair_sp": 22.04,
-          "market_sp": 13.0,
-          "ev": -0.4102,
-          "ev_pct": -41.0
-        },
-        {
-          "key": "负负",
-          "name": "负负",
-          "prob": 0.1463,
-          "prob_pct": 14.6,
-          "fair_sp": 6.83,
-          "market_sp": 4.9,
-          "ev": -0.2829,
-          "ev_pct": -28.3
-        }
-      ],
-      "has_reversal_alert": false,
-      "reversal_info": null,
-      "rationale": "主队整体战力呈碾压态势(xG 1.38:1.12)，抢开局意图强烈，上半场奠定领先概率达 27.9%，正路首选【胜胜 @3.65】。"
-    },
-    {
       "num": "周四001",
       "home": "维多利亚",
       "away": "布拉干蒂诺RB",
       "league": "巴西甲级联赛",
-      "h_xg": 1.05,
-      "a_xg": 1.48,
-      "rhythm_tag": "均衡对攻·拉锯推进",
+      "h_xg": 1.15,
+      "a_xg": 1.2,
+      "rhythm_tag": "强强谨慎·半场胶着",
       "primary_pick": {
-        "key": "负负",
-        "name": "负负",
-        "prob": 0.2724,
-        "prob_pct": 27.2,
-        "fair_sp": 3.67,
-        "market_sp": 3.95,
-        "ev": 0.0761,
-        "ev_pct": 7.6
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.1961,
+        "prob_pct": 19.6,
+        "fair_sp": 5.1,
+        "market_sp": 5.2,
+        "ev": 0.0197,
+        "ev_pct": 2.0
       },
       "value_hedge_pick": {
-        "key": "平负",
-        "name": "平负",
-        "prob": 0.1725,
-        "prob_pct": 17.3,
-        "fair_sp": 5.8,
-        "market_sp": 5.6,
-        "ev": -0.0338,
-        "ev_pct": -3.4
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.1593,
+        "prob_pct": 15.9,
+        "fair_sp": 6.28,
+        "market_sp": 6.25,
+        "ev": -0.0042,
+        "ev_pct": -0.4
       },
       "matrix": [
         {
           "key": "胜胜",
           "name": "胜胜",
-          "prob": 0.1446,
-          "prob_pct": 14.5,
-          "fair_sp": 6.92,
-          "market_sp": 4.2,
-          "ev": -0.3929,
-          "ev_pct": -39.3
+          "prob": 0.1677,
+          "prob_pct": 16.8,
+          "fair_sp": 5.96,
+          "market_sp": 4.45,
+          "ev": -0.2539,
+          "ev_pct": -25.4
         },
         {
           "key": "胜平",
           "name": "胜平",
-          "prob": 0.0474,
-          "prob_pct": 4.7,
-          "fair_sp": 21.11,
+          "prob": 0.0447,
+          "prob_pct": 4.5,
+          "fair_sp": 22.38,
           "market_sp": 14.0,
-          "ev": -0.3368,
-          "ev_pct": -33.7
-        },
-        {
-          "key": "胜负",
-          "name": "胜负",
-          "prob": 0.0235,
-          "prob_pct": 2.3,
-          "fair_sp": 42.64,
-          "market_sp": 23.0,
-          "ev": -0.4606,
-          "ev_pct": -46.1
-        },
-        {
-          "key": "平胜",
-          "name": "平胜",
-          "prob": 0.108,
-          "prob_pct": 10.8,
-          "fair_sp": 9.26,
-          "market_sp": 6.0,
-          "ev": -0.3521,
-          "ev_pct": -35.2
-        },
-        {
-          "key": "平平",
-          "name": "平平",
-          "prob": 0.169,
-          "prob_pct": 16.9,
-          "fair_sp": 5.92,
-          "market_sp": 5.2,
-          "ev": -0.1212,
-          "ev_pct": -12.1
-        },
-        {
-          "key": "平负",
-          "name": "平负",
-          "prob": 0.1725,
-          "prob_pct": 17.3,
-          "fair_sp": 5.8,
-          "market_sp": 5.6,
-          "ev": -0.0338,
-          "ev_pct": -3.4
-        },
-        {
-          "key": "负胜",
-          "name": "负胜",
-          "prob": 0.0153,
-          "prob_pct": 1.5,
-          "fair_sp": 65.4,
-          "market_sp": 26.0,
-          "ev": -0.6024,
-          "ev_pct": -60.2
-        },
-        {
-          "key": "负平",
-          "name": "负平",
-          "prob": 0.0474,
-          "prob_pct": 4.7,
-          "fair_sp": 21.11,
-          "market_sp": 14.0,
-          "ev": -0.3368,
-          "ev_pct": -33.7
-        },
-        {
-          "key": "负负",
-          "name": "负负",
-          "prob": 0.2724,
-          "prob_pct": 27.2,
-          "fair_sp": 3.67,
-          "market_sp": 3.95,
-          "ev": 0.0761,
-          "ev_pct": 7.6
-        }
-      ],
-      "has_reversal_alert": false,
-      "reversal_info": null,
-      "rationale": "客队反客为主战意极强(xG 1.48)，主队防线漏洞显著，首选正路锁定【负负 @3.95】。"
-    },
-    {
-      "num": "周四002",
-      "home": "圣保罗",
-      "away": "弗鲁米嫩塞",
-      "league": "巴西甲级联赛",
-      "h_xg": 0.88,
-      "a_xg": 1.32,
-      "rhythm_tag": "均衡对攻·拉锯推进",
-      "primary_pick": {
-        "key": "负负",
-        "name": "负负",
-        "prob": 0.2653,
-        "prob_pct": 26.5,
-        "fair_sp": 3.77,
-        "market_sp": 4.8,
-        "ev": 0.2734,
-        "ev_pct": 27.3
-      },
-      "value_hedge_pick": {
-        "key": "平负",
-        "name": "平负",
-        "prob": 0.1813,
-        "prob_pct": 18.1,
-        "fair_sp": 5.52,
-        "market_sp": 6.6,
-        "ev": 0.1965,
-        "ev_pct": 19.7
-      },
-      "matrix": [
-        {
-          "key": "胜胜",
-          "name": "胜胜",
-          "prob": 0.1303,
-          "prob_pct": 13.0,
-          "fair_sp": 7.67,
-          "market_sp": 3.6,
-          "ev": -0.5309,
-          "ev_pct": -53.1
-        },
-        {
-          "key": "胜平",
-          "name": "胜平",
-          "prob": 0.0438,
-          "prob_pct": 4.4,
-          "fair_sp": 22.84,
-          "market_sp": 14.0,
-          "ev": -0.387,
-          "ev_pct": -38.7
+          "ev": -0.3743,
+          "ev_pct": -37.4
         },
         {
           "key": "胜负",
           "name": "胜负",
           "prob": 0.0192,
           "prob_pct": 1.9,
-          "fair_sp": 51.97,
-          "market_sp": 34.0,
-          "ev": -0.3458,
-          "ev_pct": -34.6
+          "fair_sp": 52.02,
+          "market_sp": 23.0,
+          "ev": -0.5579,
+          "ev_pct": -55.8
         },
         {
           "key": "平胜",
           "name": "平胜",
-          "prob": 0.1063,
-          "prob_pct": 10.6,
-          "fair_sp": 9.41,
-          "market_sp": 5.15,
-          "ev": -0.4527,
-          "ev_pct": -45.3
+          "prob": 0.1593,
+          "prob_pct": 15.9,
+          "fair_sp": 6.28,
+          "market_sp": 6.25,
+          "ev": -0.0042,
+          "ev_pct": -0.4
         },
         {
           "key": "平平",
           "name": "平平",
-          "prob": 0.1983,
-          "prob_pct": 19.8,
-          "fair_sp": 5.04,
-          "market_sp": 4.6,
-          "ev": -0.088,
-          "ev_pct": -8.8
+          "prob": 0.1961,
+          "prob_pct": 19.6,
+          "fair_sp": 5.1,
+          "market_sp": 5.2,
+          "ev": 0.0197,
+          "ev_pct": 2.0
         },
         {
           "key": "平负",
           "name": "平负",
-          "prob": 0.1813,
-          "prob_pct": 18.1,
-          "fair_sp": 5.52,
-          "market_sp": 6.6,
-          "ev": 0.1965,
-          "ev_pct": 19.7
+          "prob": 0.169,
+          "prob_pct": 16.9,
+          "fair_sp": 5.92,
+          "market_sp": 4.8,
+          "ev": -0.189,
+          "ev_pct": -18.9
         },
         {
           "key": "负胜",
           "name": "负胜",
-          "prob": 0.0118,
-          "prob_pct": 1.2,
-          "fair_sp": 85.0,
-          "market_sp": 30.0,
-          "ev": -0.6471,
-          "ev_pct": -64.7
+          "prob": 0.0182,
+          "prob_pct": 1.8,
+          "fair_sp": 54.88,
+          "market_sp": 26.0,
+          "ev": -0.5262,
+          "ev_pct": -52.6
         },
         {
           "key": "负平",
           "name": "负平",
-          "prob": 0.0438,
-          "prob_pct": 4.4,
-          "fair_sp": 22.84,
+          "prob": 0.0447,
+          "prob_pct": 4.5,
+          "fair_sp": 22.38,
           "market_sp": 14.0,
-          "ev": -0.387,
-          "ev_pct": -38.7
+          "ev": -0.3743,
+          "ev_pct": -37.4
         },
         {
           "key": "负负",
           "name": "负负",
-          "prob": 0.2653,
-          "prob_pct": 26.5,
-          "fair_sp": 3.77,
-          "market_sp": 4.8,
-          "ev": 0.2734,
-          "ev_pct": 27.3
+          "prob": 0.1811,
+          "prob_pct": 18.1,
+          "fair_sp": 5.52,
+          "market_sp": 4.1,
+          "ev": -0.2574,
+          "ev_pct": -25.7
         }
       ],
       "has_reversal_alert": false,
       "reversal_info": null,
-      "rationale": "客队反客为主战意极强(xG 1.32)，主队防线漏洞显著，首选正路锁定【负负 @4.8】。"
+      "rationale": "双方战力均势且攻防谨慎(总xG 2.35)，半场破门阻力极大，正路紧盯【平平 @5.2】；下半场变局重点关注【平胜 @6.25】。"
+    },
+    {
+      "num": "周四002",
+      "home": "圣保罗",
+      "away": "弗鲁米嫩塞",
+      "league": "巴西甲级联赛",
+      "h_xg": 1.1,
+      "a_xg": 1.15,
+      "rhythm_tag": "强强谨慎·半场胶着",
+      "primary_pick": {
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.2058,
+        "prob_pct": 20.6,
+        "fair_sp": 4.86,
+        "market_sp": 4.35,
+        "ev": -0.1046,
+        "ev_pct": -10.5
+      },
+      "value_hedge_pick": {
+        "key": "平负",
+        "name": "平负",
+        "prob": 0.1702,
+        "prob_pct": 17.0,
+        "fair_sp": 5.88,
+        "market_sp": 6.3,
+        "ev": 0.0721,
+        "ev_pct": 7.2
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.164,
+          "prob_pct": 16.4,
+          "fair_sp": 6.1,
+          "market_sp": 3.95,
+          "ev": -0.3523,
+          "ev_pct": -35.2
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0437,
+          "prob_pct": 4.4,
+          "fair_sp": 22.9,
+          "market_sp": 14.0,
+          "ev": -0.3887,
+          "ev_pct": -38.9
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.018,
+          "prob_pct": 1.8,
+          "fair_sp": 55.67,
+          "market_sp": 33.0,
+          "ev": -0.4072,
+          "ev_pct": -40.7
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.1602,
+          "prob_pct": 16.0,
+          "fair_sp": 6.24,
+          "market_sp": 5.2,
+          "ev": -0.1671,
+          "ev_pct": -16.7
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.2058,
+          "prob_pct": 20.6,
+          "fair_sp": 4.86,
+          "market_sp": 4.35,
+          "ev": -0.1046,
+          "ev_pct": -10.5
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.1702,
+          "prob_pct": 17.0,
+          "fair_sp": 5.88,
+          "market_sp": 6.3,
+          "ev": 0.0721,
+          "ev_pct": 7.2
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.017,
+          "prob_pct": 1.7,
+          "fair_sp": 58.84,
+          "market_sp": 30.0,
+          "ev": -0.4901,
+          "ev_pct": -49.0
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0437,
+          "prob_pct": 4.4,
+          "fair_sp": 22.9,
+          "market_sp": 14.0,
+          "ev": -0.3887,
+          "ev_pct": -38.9
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.1775,
+          "prob_pct": 17.8,
+          "fair_sp": 5.63,
+          "market_sp": 4.7,
+          "ev": -0.1655,
+          "ev_pct": -16.6
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "双方战力均势且攻防谨慎(总xG 2.25)，半场破门阻力极大，正路紧盯【平平 @4.35】；下半场变局重点关注【平负 @6.3】。"
     },
     {
       "num": "周四003",
       "home": "奥兰多城",
       "away": "辛辛那提FC",
       "league": "美国职业大联盟",
-      "h_xg": 0.92,
-      "a_xg": 1.28,
+      "h_xg": 1.45,
+      "a_xg": 1.45,
       "rhythm_tag": "均衡对攻·拉锯推进",
       "primary_pick": {
-        "key": "负负",
-        "name": "负负",
-        "prob": 0.2514,
-        "prob_pct": 25.1,
-        "fair_sp": 3.98,
-        "market_sp": 3.75,
-        "ev": -0.0571,
-        "ev_pct": -5.7
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.215,
+        "prob_pct": 21.5,
+        "fair_sp": 4.65,
+        "market_sp": 3.65,
+        "ev": -0.2151,
+        "ev_pct": -21.5
       },
       "value_hedge_pick": {
         "key": "平平",
         "name": "平平",
-        "prob": 0.1996,
-        "prob_pct": 20.0,
-        "fair_sp": 5.01,
-        "market_sp": 6.7,
-        "ev": 0.3376,
-        "ev_pct": 33.8
+        "prob": 0.1464,
+        "prob_pct": 14.6,
+        "fair_sp": 6.83,
+        "market_sp": 6.75,
+        "ev": -0.0119,
+        "ev_pct": -1.2
       },
       "matrix": [
         {
           "key": "胜胜",
           "name": "胜胜",
-          "prob": 0.1408,
-          "prob_pct": 14.1,
-          "fair_sp": 7.1,
-          "market_sp": 3.75,
-          "ev": -0.4719,
-          "ev_pct": -47.2
+          "prob": 0.215,
+          "prob_pct": 21.5,
+          "fair_sp": 4.65,
+          "market_sp": 3.65,
+          "ev": -0.2151,
+          "ev_pct": -21.5
         },
         {
           "key": "胜平",
           "name": "胜平",
-          "prob": 0.0446,
-          "prob_pct": 4.5,
-          "fair_sp": 22.42,
-          "market_sp": 14.0,
-          "ev": -0.3756,
-          "ev_pct": -37.6
+          "prob": 0.0519,
+          "prob_pct": 5.2,
+          "fair_sp": 19.28,
+          "market_sp": 13.0,
+          "ev": -0.3257,
+          "ev_pct": -32.6
         },
         {
           "key": "胜负",
           "name": "胜负",
-          "prob": 0.0188,
-          "prob_pct": 1.9,
-          "fair_sp": 53.1,
-          "market_sp": 21.0,
-          "ev": -0.6045,
-          "ev_pct": -60.5
+          "prob": 0.0241,
+          "prob_pct": 2.4,
+          "fair_sp": 41.45,
+          "market_sp": 22.0,
+          "ev": -0.4693,
+          "ev_pct": -46.9
         },
         {
           "key": "平胜",
           "name": "平胜",
-          "prob": 0.1129,
-          "prob_pct": 11.3,
-          "fair_sp": 8.86,
-          "market_sp": 6.0,
-          "ev": -0.3225,
-          "ev_pct": -32.2
+          "prob": 0.1358,
+          "prob_pct": 13.6,
+          "fair_sp": 7.37,
+          "market_sp": 6.1,
+          "ev": -0.1718,
+          "ev_pct": -17.2
         },
         {
           "key": "平平",
           "name": "平平",
-          "prob": 0.1996,
-          "prob_pct": 20.0,
-          "fair_sp": 5.01,
-          "market_sp": 6.7,
-          "ev": 0.3376,
-          "ev_pct": 33.8
+          "prob": 0.1464,
+          "prob_pct": 14.6,
+          "fair_sp": 6.83,
+          "market_sp": 6.75,
+          "ev": -0.0119,
+          "ev_pct": -1.2
         },
         {
           "key": "平负",
           "name": "平负",
-          "prob": 0.1745,
-          "prob_pct": 17.5,
-          "fair_sp": 5.73,
-          "market_sp": 6.0,
-          "ev": 0.0473,
-          "ev_pct": 4.7
+          "prob": 0.1358,
+          "prob_pct": 13.6,
+          "fair_sp": 7.37,
+          "market_sp": 6.3,
+          "ev": -0.1447,
+          "ev_pct": -14.5
         },
         {
           "key": "负胜",
           "name": "负胜",
-          "prob": 0.0126,
-          "prob_pct": 1.3,
-          "fair_sp": 79.3,
+          "prob": 0.0241,
+          "prob_pct": 2.4,
+          "fair_sp": 41.45,
           "market_sp": 21.0,
-          "ev": -0.7352,
-          "ev_pct": -73.5
+          "ev": -0.4934,
+          "ev_pct": -49.3
         },
         {
           "key": "负平",
           "name": "负平",
-          "prob": 0.0446,
-          "prob_pct": 4.5,
-          "fair_sp": 22.42,
-          "market_sp": 14.0,
-          "ev": -0.3756,
-          "ev_pct": -37.6
+          "prob": 0.0519,
+          "prob_pct": 5.2,
+          "fair_sp": 19.28,
+          "market_sp": 13.0,
+          "ev": -0.3257,
+          "ev_pct": -32.6
         },
         {
           "key": "负负",
           "name": "负负",
-          "prob": 0.2514,
-          "prob_pct": 25.1,
-          "fair_sp": 3.98,
-          "market_sp": 3.75,
-          "ev": -0.0571,
-          "ev_pct": -5.7
+          "prob": 0.215,
+          "prob_pct": 21.5,
+          "fair_sp": 4.65,
+          "market_sp": 3.8,
+          "ev": -0.1828,
+          "ev_pct": -18.3
         }
       ],
       "has_reversal_alert": false,
       "reversal_info": null,
-      "rationale": "客队反客为主战意极强(xG 1.28)，主队防线漏洞显著，首选正路锁定【负负 @3.75】。"
+      "rationale": "主队整体战力呈碾压态势(xG 1.45:1.45)，抢开局意图强烈，上半场奠定领先概率达 29.1%，正路首选【胜胜 @3.65】。"
     },
     {
       "num": "周四004",
       "home": "西雅图海湾人",
       "away": "皇家盐湖城",
       "league": "美国职业大联盟",
-      "h_xg": 1.58,
-      "a_xg": 0.55,
-      "rhythm_tag": "主队攻坚·下半场发力",
+      "h_xg": 1.65,
+      "a_xg": 0.95,
+      "rhythm_tag": "均衡对攻·拉锯推进",
       "primary_pick": {
         "key": "胜胜",
         "name": "胜胜",
-        "prob": 0.347,
-        "prob_pct": 34.7,
-        "fair_sp": 2.88,
-        "market_sp": 3.05,
-        "ev": 0.0584,
-        "ev_pct": 5.8
+        "prob": 0.3201,
+        "prob_pct": 32.0,
+        "fair_sp": 3.12,
+        "market_sp": 2.95,
+        "ev": -0.0556,
+        "ev_pct": -5.6
       },
       "value_hedge_pick": {
-        "key": "平胜",
-        "name": "平胜",
-        "prob": 0.2541,
-        "prob_pct": 25.4,
-        "fair_sp": 3.94,
-        "market_sp": 4.75,
-        "ev": 0.207,
-        "ev_pct": 20.7
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.1586,
+        "prob_pct": 15.9,
+        "fair_sp": 6.3,
+        "market_sp": 5.75,
+        "ev": -0.0879,
+        "ev_pct": -8.8
       },
       "matrix": [
         {
           "key": "胜胜",
           "name": "胜胜",
-          "prob": 0.347,
-          "prob_pct": 34.7,
-          "fair_sp": 2.88,
-          "market_sp": 3.05,
-          "ev": 0.0584,
-          "ev_pct": 5.8
+          "prob": 0.3201,
+          "prob_pct": 32.0,
+          "fair_sp": 3.12,
+          "market_sp": 2.95,
+          "ev": -0.0556,
+          "ev_pct": -5.6
         },
         {
           "key": "胜平",
           "name": "胜平",
-          "prob": 0.0291,
-          "prob_pct": 2.9,
-          "fair_sp": 34.31,
+          "prob": 0.0448,
+          "prob_pct": 4.5,
+          "fair_sp": 22.34,
           "market_sp": 13.0,
-          "ev": -0.6211,
-          "ev_pct": -62.1
+          "ev": -0.4181,
+          "ev_pct": -41.8
         },
         {
           "key": "胜负",
           "name": "胜负",
-          "prob": 0.0047,
-          "prob_pct": 0.5,
-          "fair_sp": 213.79,
-          "market_sp": 26.0,
-          "ev": -0.8784,
-          "ev_pct": -87.8
+          "prob": 0.0128,
+          "prob_pct": 1.3,
+          "fair_sp": 78.04,
+          "market_sp": 27.0,
+          "ev": -0.654,
+          "ev_pct": -65.4
         },
         {
           "key": "平胜",
           "name": "平胜",
-          "prob": 0.2541,
-          "prob_pct": 25.4,
-          "fair_sp": 3.94,
-          "market_sp": 4.75,
-          "ev": 0.207,
-          "ev_pct": 20.7
+          "prob": 0.1896,
+          "prob_pct": 19.0,
+          "fair_sp": 5.27,
+          "market_sp": 4.6,
+          "ev": -0.1278,
+          "ev_pct": -12.8
         },
         {
           "key": "平平",
           "name": "平平",
-          "prob": 0.1873,
-          "prob_pct": 18.7,
-          "fair_sp": 5.34,
+          "prob": 0.1586,
+          "prob_pct": 15.9,
+          "fair_sp": 6.3,
           "market_sp": 5.75,
-          "ev": 0.077,
-          "ev_pct": 7.7
+          "ev": -0.0879,
+          "ev_pct": -8.8
         },
         {
           "key": "平负",
           "name": "平负",
-          "prob": 0.0589,
-          "prob_pct": 5.9,
-          "fair_sp": 16.98,
-          "market_sp": 7.5,
-          "ev": -0.5584,
-          "ev_pct": -55.8
+          "prob": 0.089,
+          "prob_pct": 8.9,
+          "fair_sp": 11.24,
+          "market_sp": 8.4,
+          "ev": -0.2526,
+          "ev_pct": -25.3
         },
         {
           "key": "负胜",
           "name": "负胜",
-          "prob": 0.0214,
-          "prob_pct": 2.1,
-          "fair_sp": 46.72,
+          "prob": 0.0255,
+          "prob_pct": 2.6,
+          "fair_sp": 39.16,
           "market_sp": 20.0,
-          "ev": -0.572,
-          "ev_pct": -57.2
+          "ev": -0.4892,
+          "ev_pct": -48.9
         },
         {
           "key": "负平",
           "name": "负平",
-          "prob": 0.0346,
-          "prob_pct": 3.5,
-          "fair_sp": 28.88,
+          "prob": 0.0448,
+          "prob_pct": 4.5,
+          "fair_sp": 22.34,
           "market_sp": 13.0,
-          "ev": -0.5499,
-          "ev_pct": -55.0
+          "ev": -0.4181,
+          "ev_pct": -41.8
         },
         {
           "key": "负负",
           "name": "负负",
-          "prob": 0.0629,
-          "prob_pct": 6.3,
-          "fair_sp": 15.91,
-          "market_sp": 6.0,
-          "ev": -0.6229,
-          "ev_pct": -62.3
+          "prob": 0.1148,
+          "prob_pct": 11.5,
+          "fair_sp": 8.71,
+          "market_sp": 6.1,
+          "ev": -0.2997,
+          "ev_pct": -30.0
         }
       ],
       "has_reversal_alert": false,
       "reversal_info": null,
-      "rationale": "主队整体战力呈碾压态势(xG 1.58:0.55)，抢开局意图强烈，上半场奠定领先概率达 38.1%，正路首选【胜胜 @3.05】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @4.75】实现双重防线覆盖。"
+      "rationale": "主队整体战力呈碾压态势(xG 1.65:0.95)，抢开局意图强烈，上半场奠定领先概率达 37.8%，正路首选【胜胜 @2.95】。"
+    },
+    {
+      "num": "周五001",
+      "home": "西悉尼漫步者",
+      "away": "阿德莱德联",
+      "league": "澳大利亚超级联赛",
+      "h_xg": 2.04,
+      "a_xg": 0.84,
+      "rhythm_tag": "主队攻坚·下半场发力",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.3841,
+        "prob_pct": 38.4,
+        "fair_sp": 2.6,
+        "market_sp": 2.35,
+        "ev": -0.0974,
+        "ev_pct": -9.7
+      },
+      "value_hedge_pick": {
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.231,
+        "prob_pct": 23.1,
+        "fair_sp": 4.33,
+        "market_sp": 4.5,
+        "ev": 0.0395,
+        "ev_pct": 4.0
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.3841,
+          "prob_pct": 38.4,
+          "fair_sp": 2.6,
+          "market_sp": 2.35,
+          "ev": -0.0974,
+          "ev_pct": -9.7
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.035,
+          "prob_pct": 3.5,
+          "fair_sp": 28.61,
+          "market_sp": 14.5,
+          "ev": -0.4932,
+          "ev_pct": -49.3
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0086,
+          "prob_pct": 0.9,
+          "fair_sp": 116.84,
+          "market_sp": 31.0,
+          "ev": -0.7347,
+          "ev_pct": -73.5
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.231,
+          "prob_pct": 23.1,
+          "fair_sp": 4.33,
+          "market_sp": 4.5,
+          "ev": 0.0395,
+          "ev_pct": 4.0
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1284,
+          "prob_pct": 12.8,
+          "fair_sp": 7.79,
+          "market_sp": 7.0,
+          "ev": -0.1014,
+          "ev_pct": -10.1
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0598,
+          "prob_pct": 6.0,
+          "fair_sp": 16.72,
+          "market_sp": 10.5,
+          "ev": -0.372,
+          "ev_pct": -37.2
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0346,
+          "prob_pct": 3.5,
+          "fair_sp": 28.94,
+          "market_sp": 18.0,
+          "ev": -0.3779,
+          "ev_pct": -37.8
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0418,
+          "prob_pct": 4.2,
+          "fair_sp": 23.92,
+          "market_sp": 14.5,
+          "ev": -0.3937,
+          "ev_pct": -39.4
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.0768,
+          "prob_pct": 7.7,
+          "fair_sp": 13.01,
+          "market_sp": 7.0,
+          "ev": -0.4621,
+          "ev_pct": -46.2
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 2.04:0.84)，抢开局意图强烈，上半场奠定领先概率达 42.8%，正路首选【胜胜 @2.35】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @4.5】实现双重防线覆盖。"
+    },
+    {
+      "num": "周五002",
+      "home": "柏太阳神",
+      "away": "千叶市原",
+      "league": "日本职业联赛",
+      "h_xg": 2.36,
+      "a_xg": 0.76,
+      "rhythm_tag": "主队攻坚·下半场发力",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.4514,
+        "prob_pct": 45.1,
+        "fair_sp": 2.22,
+        "market_sp": 2.0,
+        "ev": -0.0971,
+        "ev_pct": -9.7
+      },
+      "value_hedge_pick": {
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.2398,
+        "prob_pct": 24.0,
+        "fair_sp": 4.17,
+        "market_sp": 4.3,
+        "ev": 0.0313,
+        "ev_pct": 3.1
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.4514,
+          "prob_pct": 45.1,
+          "fair_sp": 2.22,
+          "market_sp": 2.0,
+          "ev": -0.0971,
+          "ev_pct": -9.7
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0296,
+          "prob_pct": 3.0,
+          "fair_sp": 33.84,
+          "market_sp": 17.0,
+          "ev": -0.4976,
+          "ev_pct": -49.8
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0064,
+          "prob_pct": 0.6,
+          "fair_sp": 155.85,
+          "market_sp": 36.0,
+          "ev": -0.769,
+          "ev_pct": -76.9
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.2398,
+          "prob_pct": 24.0,
+          "fair_sp": 4.17,
+          "market_sp": 4.3,
+          "ev": 0.0313,
+          "ev_pct": 3.1
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1048,
+          "prob_pct": 10.5,
+          "fair_sp": 9.55,
+          "market_sp": 7.0,
+          "ev": -0.2666,
+          "ev_pct": -26.7
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0428,
+          "prob_pct": 4.3,
+          "fair_sp": 23.37,
+          "market_sp": 12.0,
+          "ev": -0.4866,
+          "ev_pct": -48.7
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0361,
+          "prob_pct": 3.6,
+          "fair_sp": 27.73,
+          "market_sp": 20.0,
+          "ev": -0.2787,
+          "ev_pct": -27.9
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0354,
+          "prob_pct": 3.5,
+          "fair_sp": 28.27,
+          "market_sp": 17.0,
+          "ev": -0.3987,
+          "ev_pct": -39.9
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.0538,
+          "prob_pct": 5.4,
+          "fair_sp": 18.6,
+          "market_sp": 10.0,
+          "ev": -0.4624,
+          "ev_pct": -46.2
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 2.36:0.76)，抢开局意图强烈，上半场奠定领先概率达 48.7%，正路首选【胜胜 @2.0】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @4.3】实现双重防线覆盖。"
+    },
+    {
+      "num": "周五003",
+      "home": "鹿岛鹿角",
+      "away": "清水鼓动",
+      "league": "日本职业联赛",
+      "h_xg": 2.34,
+      "a_xg": 0.73,
+      "rhythm_tag": "主队攻坚·下半场发力",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.4533,
+        "prob_pct": 45.3,
+        "fair_sp": 2.21,
+        "market_sp": 2.05,
+        "ev": -0.0707,
+        "ev_pct": -7.1
+      },
+      "value_hedge_pick": {
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.2426,
+        "prob_pct": 24.3,
+        "fair_sp": 4.12,
+        "market_sp": 4.0,
+        "ev": -0.0297,
+        "ev_pct": -3.0
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.4533,
+          "prob_pct": 45.3,
+          "fair_sp": 2.21,
+          "market_sp": 2.05,
+          "ev": -0.0707,
+          "ev_pct": -7.1
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0289,
+          "prob_pct": 2.9,
+          "fair_sp": 34.64,
+          "market_sp": 18.0,
+          "ev": -0.4803,
+          "ev_pct": -48.0
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.006,
+          "prob_pct": 0.6,
+          "fair_sp": 166.12,
+          "market_sp": 50.0,
+          "ev": -0.699,
+          "ev_pct": -69.9
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.2426,
+          "prob_pct": 24.3,
+          "fair_sp": 4.12,
+          "market_sp": 4.0,
+          "ev": -0.0297,
+          "ev_pct": -3.0
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1063,
+          "prob_pct": 10.6,
+          "fair_sp": 9.41,
+          "market_sp": 6.1,
+          "ev": -0.3517,
+          "ev_pct": -35.2
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0418,
+          "prob_pct": 4.2,
+          "fair_sp": 23.94,
+          "market_sp": 12.0,
+          "ev": -0.4987,
+          "ev_pct": -49.9
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.035,
+          "prob_pct": 3.5,
+          "fair_sp": 28.58,
+          "market_sp": 23.0,
+          "ev": -0.1952,
+          "ev_pct": -19.5
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0345,
+          "prob_pct": 3.5,
+          "fair_sp": 28.96,
+          "market_sp": 18.0,
+          "ev": -0.3784,
+          "ev_pct": -37.8
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.0516,
+          "prob_pct": 5.2,
+          "fair_sp": 19.38,
+          "market_sp": 10.5,
+          "ev": -0.4581,
+          "ev_pct": -45.8
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 2.34:0.73)，抢开局意图强烈，上半场奠定领先概率达 48.8%，正路首选【胜胜 @2.05】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @4.0】实现双重防线覆盖。"
+    },
+    {
+      "num": "周五004",
+      "home": "比勒费尔德",
+      "away": "马格德堡",
+      "league": "德国乙级联赛",
+      "h_xg": 1.48,
+      "a_xg": 1.0,
+      "rhythm_tag": "均衡对攻·拉锯推进",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.2797,
+        "prob_pct": 28.0,
+        "fair_sp": 3.58,
+        "market_sp": 3.25,
+        "ev": -0.0911,
+        "ev_pct": -9.1
+      },
+      "value_hedge_pick": {
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.1722,
+        "prob_pct": 17.2,
+        "fair_sp": 5.81,
+        "market_sp": 6.0,
+        "ev": 0.033,
+        "ev_pct": 3.3
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.2797,
+          "prob_pct": 28.0,
+          "fair_sp": 3.58,
+          "market_sp": 3.25,
+          "ev": -0.0911,
+          "ev_pct": -9.1
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0464,
+          "prob_pct": 4.6,
+          "fair_sp": 21.55,
+          "market_sp": 13.0,
+          "ev": -0.3967,
+          "ev_pct": -39.7
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0142,
+          "prob_pct": 1.4,
+          "fair_sp": 70.43,
+          "market_sp": 25.0,
+          "ev": -0.6451,
+          "ev_pct": -64.5
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.1775,
+          "prob_pct": 17.7,
+          "fair_sp": 5.64,
+          "market_sp": 5.4,
+          "ev": -0.0417,
+          "ev_pct": -4.2
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1722,
+          "prob_pct": 17.2,
+          "fair_sp": 5.81,
+          "market_sp": 6.0,
+          "ev": 0.033,
+          "ev_pct": 3.3
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.1042,
+          "prob_pct": 10.4,
+          "fair_sp": 9.59,
+          "market_sp": 7.0,
+          "ev": -0.2704,
+          "ev_pct": -27.0
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0231,
+          "prob_pct": 2.3,
+          "fair_sp": 43.31,
+          "market_sp": 21.0,
+          "ev": -0.5151,
+          "ev_pct": -51.5
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0464,
+          "prob_pct": 4.6,
+          "fair_sp": 21.55,
+          "market_sp": 13.0,
+          "ev": -0.3967,
+          "ev_pct": -39.7
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.1364,
+          "prob_pct": 13.6,
+          "fair_sp": 7.33,
+          "market_sp": 4.75,
+          "ev": -0.3521,
+          "ev_pct": -35.2
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 1.48:1.00)，抢开局意图强烈，上半场奠定领先概率达 34.0%，正路首选【胜胜 @3.25】。"
+    },
+    {
+      "num": "周五005",
+      "home": "登博思",
+      "away": "芬洛",
+      "league": "荷兰乙级联赛",
+      "h_xg": 1.73,
+      "a_xg": 0.99,
+      "rhythm_tag": "均衡对攻·拉锯推进",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.3291,
+        "prob_pct": 32.9,
+        "fair_sp": 3.04,
+        "market_sp": 2.75,
+        "ev": -0.0949,
+        "ev_pct": -9.5
+      },
+      "value_hedge_pick": {
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.1496,
+        "prob_pct": 15.0,
+        "fair_sp": 6.69,
+        "market_sp": 7.9,
+        "ev": 0.1816,
+        "ev_pct": 18.2
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.3291,
+          "prob_pct": 32.9,
+          "fair_sp": 3.04,
+          "market_sp": 2.75,
+          "ev": -0.0949,
+          "ev_pct": -9.5
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0453,
+          "prob_pct": 4.5,
+          "fair_sp": 22.09,
+          "market_sp": 13.5,
+          "ev": -0.3888,
+          "ev_pct": -38.9
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0135,
+          "prob_pct": 1.3,
+          "fair_sp": 74.16,
+          "market_sp": 22.0,
+          "ev": -0.7033,
+          "ev_pct": -70.3
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.1885,
+          "prob_pct": 18.8,
+          "fair_sp": 5.31,
+          "market_sp": 5.35,
+          "ev": 0.0083,
+          "ev_pct": 0.8
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1496,
+          "prob_pct": 15.0,
+          "fair_sp": 6.69,
+          "market_sp": 7.9,
+          "ev": 0.1816,
+          "ev_pct": 18.2
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0869,
+          "prob_pct": 8.7,
+          "fair_sp": 11.51,
+          "market_sp": 8.0,
+          "ev": -0.3048,
+          "ev_pct": -30.5
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0272,
+          "prob_pct": 2.7,
+          "fair_sp": 36.7,
+          "market_sp": 16.0,
+          "ev": -0.5641,
+          "ev_pct": -56.4
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0453,
+          "prob_pct": 4.5,
+          "fair_sp": 22.09,
+          "market_sp": 13.5,
+          "ev": -0.3888,
+          "ev_pct": -38.9
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.1147,
+          "prob_pct": 11.5,
+          "fair_sp": 8.72,
+          "market_sp": 5.1,
+          "ev": -0.4152,
+          "ev_pct": -41.5
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 1.73:0.99)，抢开局意图强烈，上半场奠定领先概率达 38.8%，正路首选【胜胜 @2.75】。"
+    },
+    {
+      "num": "周五006",
+      "home": "拜仁慕尼黑",
+      "away": "科隆",
+      "league": "德国甲级联赛",
+      "h_xg": 2.85,
+      "a_xg": 0.57,
+      "rhythm_tag": "主队攻坚·下半场发力",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.5594,
+        "prob_pct": 55.9,
+        "fair_sp": 1.79,
+        "market_sp": 1.18,
+        "ev": -0.3399,
+        "ev_pct": -34.0
+      },
+      "value_hedge_pick": {
+        "key": "平平",
+        "name": "平平",
+        "prob": 0.073,
+        "prob_pct": 7.3,
+        "fair_sp": 13.7,
+        "market_sp": 22.0,
+        "ev": 0.6054,
+        "ev_pct": 60.5
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.5594,
+          "prob_pct": 55.9,
+          "fair_sp": 1.79,
+          "market_sp": 1.18,
+          "ev": -0.3399,
+          "ev_pct": -34.0
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0191,
+          "prob_pct": 1.9,
+          "fair_sp": 52.47,
+          "market_sp": 34.0,
+          "ev": -0.352,
+          "ev_pct": -35.2
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.003,
+          "prob_pct": 0.3,
+          "fair_sp": 330.29,
+          "market_sp": 120.0,
+          "ev": -0.6367,
+          "ev_pct": -63.7
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.2442,
+          "prob_pct": 24.4,
+          "fair_sp": 4.09,
+          "market_sp": 4.9,
+          "ev": 0.1967,
+          "ev_pct": 19.7
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.073,
+          "prob_pct": 7.3,
+          "fair_sp": 13.7,
+          "market_sp": 22.0,
+          "ev": 0.6054,
+          "ev_pct": 60.5
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0217,
+          "prob_pct": 2.2,
+          "fair_sp": 46.18,
+          "market_sp": 45.0,
+          "ev": -0.0256,
+          "ev_pct": -2.6
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0317,
+          "prob_pct": 3.2,
+          "fair_sp": 31.51,
+          "market_sp": 23.0,
+          "ev": -0.2701,
+          "ev_pct": -27.0
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0228,
+          "prob_pct": 2.3,
+          "fair_sp": 43.89,
+          "market_sp": 34.0,
+          "ev": -0.2254,
+          "ev_pct": -22.5
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.0251,
+          "prob_pct": 2.5,
+          "fair_sp": 39.82,
+          "market_sp": 40.0,
+          "ev": 0.0046,
+          "ev_pct": 0.5
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 2.85:0.57)，抢开局意图强烈，上半场奠定领先概率达 58.2%，正路首选【胜胜 @1.18】。"
+    },
+    {
+      "num": "周五007",
+      "home": "特鲁瓦",
+      "away": "勒阿弗尔",
+      "league": "法国甲级联赛",
+      "h_xg": 1.58,
+      "a_xg": 0.94,
+      "rhythm_tag": "均衡对攻·拉锯推进",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.3081,
+        "prob_pct": 30.8,
+        "fair_sp": 3.25,
+        "market_sp": 3.1,
+        "ev": -0.0448,
+        "ev_pct": -4.5
+      },
+      "value_hedge_pick": {
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.1879,
+        "prob_pct": 18.8,
+        "fair_sp": 5.32,
+        "market_sp": 4.8,
+        "ev": -0.098,
+        "ev_pct": -9.8
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.3081,
+          "prob_pct": 30.8,
+          "fair_sp": 3.25,
+          "market_sp": 3.1,
+          "ev": -0.0448,
+          "ev_pct": -4.5
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0448,
+          "prob_pct": 4.5,
+          "fair_sp": 22.3,
+          "market_sp": 15.0,
+          "ev": -0.3275,
+          "ev_pct": -32.8
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0127,
+          "prob_pct": 1.3,
+          "fair_sp": 78.48,
+          "market_sp": 34.0,
+          "ev": -0.5668,
+          "ev_pct": -56.7
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.1879,
+          "prob_pct": 18.8,
+          "fair_sp": 5.32,
+          "market_sp": 4.8,
+          "ev": -0.098,
+          "ev_pct": -9.8
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.1659,
+          "prob_pct": 16.6,
+          "fair_sp": 6.03,
+          "market_sp": 5.2,
+          "ev": -0.1375,
+          "ev_pct": -13.8
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0927,
+          "prob_pct": 9.3,
+          "fair_sp": 10.78,
+          "market_sp": 7.25,
+          "ev": -0.3277,
+          "ev_pct": -32.8
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0243,
+          "prob_pct": 2.4,
+          "fair_sp": 41.17,
+          "market_sp": 25.0,
+          "ev": -0.3928,
+          "ev_pct": -39.3
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0448,
+          "prob_pct": 4.5,
+          "fair_sp": 22.3,
+          "market_sp": 15.0,
+          "ev": -0.3275,
+          "ev_pct": -32.8
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.1187,
+          "prob_pct": 11.9,
+          "fair_sp": 8.43,
+          "market_sp": 5.25,
+          "ev": -0.3771,
+          "ev_pct": -37.7
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 1.58:0.94)，抢开局意图强烈，上半场奠定领先概率达 36.6%，正路首选【胜胜 @3.1】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @4.8】实现双重防线覆盖。"
+    },
+    {
+      "num": "周五008",
+      "home": "毕尔巴鄂竞技",
+      "away": "西班牙人",
+      "league": "西班牙甲级联赛",
+      "h_xg": 2.47,
+      "a_xg": 0.69,
+      "rhythm_tag": "主队攻坚·下半场发力",
+      "primary_pick": {
+        "key": "胜胜",
+        "name": "胜胜",
+        "prob": 0.4812,
+        "prob_pct": 48.1,
+        "fair_sp": 2.08,
+        "market_sp": 2.05,
+        "ev": -0.0135,
+        "ev_pct": -1.4
+      },
+      "value_hedge_pick": {
+        "key": "平胜",
+        "name": "平胜",
+        "prob": 0.2447,
+        "prob_pct": 24.5,
+        "fair_sp": 4.09,
+        "market_sp": 3.8,
+        "ev": -0.0702,
+        "ev_pct": -7.0
+      },
+      "matrix": [
+        {
+          "key": "胜胜",
+          "name": "胜胜",
+          "prob": 0.4812,
+          "prob_pct": 48.1,
+          "fair_sp": 2.08,
+          "market_sp": 2.05,
+          "ev": -0.0135,
+          "ev_pct": -1.4
+        },
+        {
+          "key": "胜平",
+          "name": "胜平",
+          "prob": 0.0263,
+          "prob_pct": 2.6,
+          "fair_sp": 37.96,
+          "market_sp": 19.0,
+          "ev": -0.4995,
+          "ev_pct": -50.0
+        },
+        {
+          "key": "胜负",
+          "name": "胜负",
+          "prob": 0.0052,
+          "prob_pct": 0.5,
+          "fair_sp": 194.0,
+          "market_sp": 50.0,
+          "ev": -0.7423,
+          "ev_pct": -74.2
+        },
+        {
+          "key": "平胜",
+          "name": "平胜",
+          "prob": 0.2447,
+          "prob_pct": 24.5,
+          "fair_sp": 4.09,
+          "market_sp": 3.8,
+          "ev": -0.0702,
+          "ev_pct": -7.0
+        },
+        {
+          "key": "平平",
+          "name": "平平",
+          "prob": 0.0972,
+          "prob_pct": 9.7,
+          "fair_sp": 10.29,
+          "market_sp": 5.9,
+          "ev": -0.4267,
+          "ev_pct": -42.7
+        },
+        {
+          "key": "平负",
+          "name": "平负",
+          "prob": 0.0357,
+          "prob_pct": 3.6,
+          "fair_sp": 28.0,
+          "market_sp": 13.0,
+          "ev": -0.5357,
+          "ev_pct": -53.6
+        },
+        {
+          "key": "负胜",
+          "name": "负胜",
+          "prob": 0.0347,
+          "prob_pct": 3.5,
+          "fair_sp": 28.82,
+          "market_sp": 25.0,
+          "ev": -0.1324,
+          "ev_pct": -13.2
+        },
+        {
+          "key": "负平",
+          "name": "负平",
+          "prob": 0.0315,
+          "prob_pct": 3.2,
+          "fair_sp": 31.73,
+          "market_sp": 19.0,
+          "ev": -0.4013,
+          "ev_pct": -40.1
+        },
+        {
+          "key": "负负",
+          "name": "负负",
+          "prob": 0.0435,
+          "prob_pct": 4.3,
+          "fair_sp": 22.99,
+          "market_sp": 11.0,
+          "ev": -0.5215,
+          "ev_pct": -52.1
+        }
+      ],
+      "has_reversal_alert": false,
+      "reversal_info": null,
+      "rationale": "主队整体战力呈碾压态势(xG 2.47:0.69)，抢开局意图强烈，上半场奠定领先概率达 51.3%，正路首选【胜胜 @2.05】。 若客队深度收缩死守，半场打平概率亦有储备，潜伏高性价比【平胜 @3.8】实现双重防线覆盖。"
     }
   ],
   "active_parlays": [
     {
-      "scheme_name": "方案 1【周三当日主推 · 双盾不败稳胆单】",
-      "anchor_leg": "[周三001] 科里蒂巴 vs 桑托斯 让球(+1)-让胜 @1.75",
-      "edge_leg": "[周三002] 弗拉门戈 vs 巴拉纳竞技 让球(-2)-让负 @2.12",
-      "combined_odds": 3.71,
-      "combined_prob": 0.547,
-      "combined_ev": 1.029,
+      "scheme_name": "方案 1【今日主推稳健单】",
+      "anchor_leg": "[周四002] 圣保罗 vs 弗鲁米嫩塞 让球(-1)-让负 @1.41",
+      "edge_leg": "[周四003] 奥兰多城 vs 辛辛那提FC 让球(-1)-让负 @1.45",
+      "combined_odds": 2.04,
+      "combined_prob": 0.539,
+      "combined_ev": 0.1,
       "suggested_stake_pct": 0.035,
-      "notes": "双模型联合避坑英锦赛（踢除0分已出局巴恩斯利@1.57与门将荒谢周三@1.35）！横滨J1十轮不败首回合受让盾 + 町田连续6场零封/近3场全0:0低水防平盾，全程零<1.40蚊子肉！"
+      "notes": "模型严选实盘组合，严格剔除 <1.40 蚊子肉并锁定高胜率方向"
     },
     {
-      "scheme_name": "方案 2【周四欧国联 · 伤停信息差黄金反杀单】",
-      "anchor_leg": "[周四003] 奥兰多城 vs 辛辛那提FC 让球(-1)-让负 @1.45",
-      "edge_leg": "[周四002] 圣保罗 vs 弗鲁米嫩塞 让球(-1)-让负 @1.48",
-      "combined_odds": 2.15,
-      "combined_prob": 0.449,
-      "combined_ev": 0.12,
+      "scheme_name": "方案 2【高置信解耦备选单】",
+      "anchor_leg": "[周四001] 维多利亚 vs 布拉干蒂诺RB 让球(+1)-让胜 @1.52",
+      "edge_leg": "[周四004] 西雅图海湾人 vs 皇家盐湖城 让球(-1)-让平 @3.2",
+      "combined_odds": 4.86,
+      "combined_prob": 0.373,
+      "combined_ev": 0.813,
       "suggested_stake_pct": 0.03,
-      "notes": "全面解耦0重合！精准打击伤停误定价：芬兰全组最佳防守且迎回卡马拉（阿尔巴尼亚缺一门斯特拉科沙），塞浦路斯争升级且亚美尼亚头号核斯佩尔茨扬等5人退队，双客受让不败！"
+      "notes": "完全解耦第二单（4场0重合），风险分散"
     }
   ],
   "active_ren9": {
-    "title": "传统足球第 26163 期 · 任选 9 场 64元实战单 (4单选 + 5双选)",
-    "issue": "第 26163 期",
-    "sale_end": "2026-11-12 22:00:00",
+    "title": "传统足球第 26166 期 · 任选 9 场 64元实战单 (4单选 + 5双选)",
+    "issue": "第 26166 期",
+    "sale_end": "2026-11-20 22:00:00",
     "singles_count": 4,
     "doubles_count": 5,
     "total_combinations": 32,
     "total_cost": 64,
-    "strategy": "第 26163 期欧国联官方14选9实战单（停售 2026-11-12 22:00:00）：舍弃5场中游胶着盘，锁定4支豪门单选基石 + 5场伤停防冷双选，共 32 注 64 元，严格遵守2的倍数法则！",
+    "strategy": "第 26166 期欧国联官方14选9实战单（停售 2026-11-20 22:00:00）：舍弃5场中游胶着盘，锁定4支豪门单选基石 + 5场伤停防冷双选，共 32 注 64 元，严格遵守2的倍数法则！",
     "ticket_legs": [
       {
         "seq": 1,
         "match_num": "第01场",
-        "match": "亚美尼亚 vs 塞浦路斯",
-        "league": "欧国联",
-        "jc_ref": "周四002",
-        "leg_type": "双选防冷",
-        "is_double": true,
-        "code": "1/0",
-        "picks": "1/0 (平/负)",
-        "confidence": "74.5%",
-        "reason": "第01场 亚美尼亚核伤缺5人进攻瘫痪，塞浦路斯首回合2-0且争升级，双选 1/0 封死客不败"
+        "match": "拜仁慕尼黑 vs 科隆",
+        "league": "德甲",
+        "jc_ref": "周五006",
+        "leg_type": "单选基石",
+        "is_double": false,
+        "code": "3",
+        "picks": "3 (主胜)",
+        "confidence": "78.0%",
+        "reason": "第01场 单选强胆：首选 3 (主胜) 胜率优势突出"
       },
       {
         "seq": 2,
         "match_num": "第02场",
-        "match": "土耳其 vs 比利时",
-        "league": "欧国联",
-        "jc_ref": "周四001",
+        "match": "比勒费尔德 vs 马格德堡",
+        "league": "德乙",
+        "jc_ref": "周五004",
         "leg_type": "双选防冷",
         "is_double": true,
-        "code": "1/0",
-        "picks": "1/0 (平/负)",
-        "confidence": "81.2%",
-        "reason": "第02场 比利时三核齐整+首回合3-0，防土耳其换帅首秀闷平阻击，双选 1/0"
+        "code": "3/0",
+        "picks": "3/0 (胜/负)",
+        "confidence": "74.6%",
+        "reason": "第02场 双选防冷：覆盖前二高概率方向 3/0"
       },
       {
         "seq": 3,
         "match_num": "第03场",
-        "match": "阿尔巴尼亚 vs 芬兰",
-        "league": "欧国联",
-        "jc_ref": "周四003",
+        "match": "达姆施塔特 vs 海登海姆",
+        "league": "德乙",
+        "jc_ref": "传足#03",
         "leg_type": "双选防冷",
         "is_double": true,
-        "code": "1/0",
-        "picks": "1/0 (平/负)",
-        "confidence": "75.8%",
-        "reason": "第03场 芬兰4轮仅失2球+首回合2-1取胜，阿尔巴尼亚一门斯特拉科沙伤缺，双选 1/0"
+        "code": "3/0",
+        "picks": "3/0 (胜/负)",
+        "confidence": "72.0%",
+        "reason": "第03场 双选防冷：覆盖前二高概率方向 3/0"
       },
       {
         "seq": 4,
         "match_num": "第04场",
-        "match": "捷克 vs 西班牙",
-        "league": "欧国联",
-        "jc_ref": "周四006",
+        "match": "毕尔巴鄂竞技 vs 西班牙人",
+        "league": "西甲",
+        "jc_ref": "周五008",
         "leg_type": "单选基石",
         "is_double": false,
-        "code": "0",
-        "picks": "0 (客胜)",
-        "confidence": "78.5%",
-        "reason": "第04场 【传足单胆】任九不看让球仅看1X2胜负：西班牙传控实力碾压已4连胜，客胆单选 0"
+        "code": "3",
+        "picks": "3 (主胜)",
+        "confidence": "64.0%",
+        "reason": "第04场 单选强胆：首选 3 (主胜) 胜率优势突出"
       },
       {
         "seq": 5,
         "match_num": "第05场",
-        "match": "英格兰 vs 克罗地亚",
-        "league": "欧国联",
-        "jc_ref": "周四005",
+        "match": "特鲁瓦 vs 勒阿弗尔",
+        "league": "法甲",
+        "jc_ref": "周五007",
         "leg_type": "单选基石",
         "is_double": false,
         "code": "3",
         "picks": "3 (主胜)",
-        "confidence": "75.0%",
-        "reason": "第05场 【传足单胆】任九禁用2串1的1.17正是绝佳单胆：首回合7-0+温布利主场，单选 3"
+        "confidence": "45.5%",
+        "reason": "第05场 单选强胆：首选 3 (主胜) 胜率优势突出"
       },
       {
         "seq": 6,
         "match_num": "第06场",
-        "match": "黑山 vs 拉脱维亚",
-        "league": "欧国联",
-        "jc_ref": "周四004",
+        "match": "阿纳西 vs 克莱蒙",
+        "league": "法乙",
+        "jc_ref": "传足#06",
         "leg_type": "双选防冷",
         "is_double": true,
-        "code": "3/1",
-        "picks": "3/1 (胜/平)",
-        "confidence": "88.0%",
-        "reason": "第06场 【防冷排雷】黑山中场隆查尔停赛且拉脱维亚五后卫死守，双选 3/1 封堵 0:0 火锅冷平"
+        "code": "3/0",
+        "picks": "3/0 (胜/负)",
+        "confidence": "72.0%",
+        "reason": "第06场 双选防冷：覆盖前二高概率方向 3/0"
       },
       {
-        "seq": 10,
-        "match_num": "第10场",
-        "match": "荷兰 vs 希腊",
-        "league": "欧国联",
-        "jc_ref": "欧国联#10",
-        "leg_type": "单选基石",
-        "is_double": false,
-        "code": "3",
-        "picks": "3 (主胜)",
-        "confidence": "74.0%",
-        "reason": "第10场 【传足单胆】橙衣军团主场压迫强度明显占优，传统足彩强弱分明场次，单选 3"
+        "seq": 7,
+        "match_num": "第07场",
+        "match": "南锡 vs 第戎",
+        "league": "法乙",
+        "jc_ref": "传足#07",
+        "leg_type": "双选防冷",
+        "is_double": true,
+        "code": "3/0",
+        "picks": "3/0 (胜/负)",
+        "confidence": "72.0%",
+        "reason": "第07场 双选防冷：覆盖前二高概率方向 3/0"
+      },
+      {
+        "seq": 8,
+        "match_num": "第08场",
+        "match": "甘冈 vs 罗德兹",
+        "league": "法乙",
+        "jc_ref": "传足#08",
+        "leg_type": "双选防冷",
+        "is_double": true,
+        "code": "3/0",
+        "picks": "3/0 (胜/负)",
+        "confidence": "72.0%",
+        "reason": "第08场 双选防冷：覆盖前二高概率方向 3/0"
       },
       {
         "seq": 12,
         "match_num": "第12场",
-        "match": "塞尔维亚 vs 德国",
-        "league": "欧国联",
-        "jc_ref": "欧国联#12",
-        "leg_type": "双选防冷",
-        "is_double": true,
-        "code": "1/0",
-        "picks": "1/0 (平/负)",
-        "confidence": "82.5%",
-        "reason": "第12场 德国客场硬实力占优但巴尔干客场难啃，双选 1/0 稳健护航客队不败"
-      },
-      {
-        "seq": 14,
-        "match_num": "第14场",
-        "match": "斯洛伐克 vs 法罗群岛",
-        "league": "欧国联",
-        "jc_ref": "欧国联#14",
+        "match": "登博思 vs 芬洛",
+        "league": "荷乙",
+        "jc_ref": "周五005",
         "leg_type": "单选基石",
         "is_double": false,
         "code": "3",
         "picks": "3 (主胜)",
-        "confidence": "76.2%",
-        "reason": "第14场 【传足单胆】斯洛伐克主场面对半职业鱼腩法罗群岛，正路强弱分明，单选 3"
+        "confidence": "49.6%",
+        "reason": "第12场 单选强胆：首选 3 (主胜) 胜率优势突出"
       }
     ]
   },
   "dual_agent_review": {
     "status": "APPROVED_WITH_DIVERGENCE_RESOLVED",
-    "timestamp": "2026-11-18 15:42:14",
+    "timestamp": "2026-11-19 15:21:16",
     "summary": {
-      "total_matches": 8,
-      "consensus_count": 4,
-      "divergence_count": 4,
-      "consensus_rate": "50.0%"
+      "total_matches": 12,
+      "consensus_count": 7,
+      "divergence_count": 5,
+      "consensus_rate": "58.3%"
     },
     "models": {
       "quant": "Antigravity (多元负二项贝叶斯模型 / EV量化决策)",
       "scout": "Open (OpenAI 战术情报与逆风球探)"
     },
     "consensus_rules": [
-      "【风控铁律一 · 彻底清零 <1.40 蚊子肉】：修复代码过滤漏洞，严禁周四005英格兰@1.17、周四004黑山@1.20、周三005谢周三@1.35及周四006负负@1.38进入任何2串1实盘；",
-      "【风控铁律二 · 狙击 1.50~1.99 伪低赔信息差】：剔除0分已出局周三006巴恩斯利@1.57与缺一门周四003阿尔巴尼亚@1.80，重仓芬兰(-1)让负@1.77与塞浦路斯(-1)让负@1.58；",
-      "【风控铁律三 · 传足与竞彩严格分层】：任九第26163期(11-12 22:00停售)利用英格兰3/西班牙0单选作胆，竞彩2串1则严格双盾不败且注额为2的整数倍、全局SSOT 100%对齐！"
+      "【风控铁律一 · 彻底清零 <1.40 蚊子肉】：严禁周五006拜仁慕尼黑(常规停售/深开让三球)、周五008毕尔巴鄂竞技@1.37、周五002柏太阳神@1.39进入任何2串1实盘，杜绝强队赢球输盘翻车垫脚；",
+      "【风控铁律二 · 狙击 1.50~1.99 伪低赔与让球深盘】：美职联季后赛双方平开均势锁定辛辛那提受让不败【让(-1)让负@1.45】、巴西甲保级锁定维多利亚【让(+1)让胜@1.52】、德甲拜仁留力欧冠锁定科隆【让(-3)让负@2.25】；",
+      "【风控铁律三 · 黄金稳胆全量解耦】：方案一「美职联与巴西甲稳健单 @2.04」（圣保罗让负 @1.41 × 奥兰多城让负 @1.45）与方案二「巴西甲与美职联高置信单 @4.86」（维多利亚让胜 @1.52 × 西雅图让平 @3.20），4场完全解耦零重合！"
     ],
     "case_study_warning": {
-      "title": "🛡️ 双模型今日 12 场联合审计总警报（修复蚊子肉 Bug + 全面避雷英锦赛）",
-      "details": "昨晚周二复盘验证：Open 战术精确命中布罗姆利 1:2 米尔顿（@1.61 客胜与防让平）并抓出伯顿 0:3 诺茨郡冷门！今日双模型联合纠正了纯量化 3 大缺陷：① 修复 @1.17 英格兰漏网 Bug；② 一票否决英锦赛出局轮换的巴恩斯利(006)与双门将伤荒的谢周三(005)；③ 推出方案一「周三日联杯双不败盾 @2.28」（横滨+1让胜 × 町田6连零封-1让负）与方案二「周四欧国联伤停反杀单 @2.80」（芬兰-1让负 × 塞浦路斯-1让负），两单4场完全解耦！"
+      "title": "🛡️ 双模型今日 12 场联合审计总警报（跨大洲联赛全量推演 · 严防蚊子肉与深盘卡盘）",
+      "details": "机器全自动客观对账核验完成！今日覆盖巴西甲、美职联、澳超、日职、德乙、德甲、法乙、西甲共 12 场在售赛事，双模型严格落实三层防护：① 坚决拦截毕尔巴鄂@1.37与柏太阳神@1.39超低赔蚊子肉；② 识破拜仁让三球欧冠轮换与美职联季后赛深浅盘陷阱，重选科隆与辛辛那提受让铁盾；③ 精选输出方案一稳健单（圣保罗让负×奥兰多城让负 @2.04）与方案二解耦高置信单（维多利亚让胜×西雅图让平 @4.86），注额严格锁定为2的整数倍，全局SSOT绝对对齐！"
     },
     "divergences": [
       {
-        "mid": "周三001",
-        "match": "巴西甲级联赛 科里蒂巴 vs 桑托斯 (HAD: 3.43 3.35 1.82 | 让球(+1): 1.75 3.32 3.75)",
-        "is_consensus": false,
-        "consensus_tag": "⚔️ 量化客胜倾向 vs 战术横滨十轮不败首回合防平（已联合修正）",
-        "consensus_badge": "⚔️ 存在技术分歧",
-        "quant_view": "原始 HAD 赔率去水显示客胜 @2.04 隐含概率约 42.9%，但 6x6 负二项比分热力图前二众数却集中在 1:1 (11.8%) 与 0:0 (11.4%)，(+1)让负 @4.25 实测期望 EV -14.6% 呈负收益。",
-        "open_view": "日联杯1/4决赛首回合（有客场进球规则）。横滨水手正值 J1 联赛 10 轮不败强势期，且怀有联赛揭幕战 0-2 负鹿岛复仇战意；鹿岛刚在联赛 0-2 负 FC 东京，首回合客战求稳绝难轻言穿盘！",
-        "resolution": "【双模型联合裁定】：坚决剔除 (+1)让负 @4.25 与单选客胜 @2.04，共同校正并锁定【让(+1) 让胜 @1.57】（横滨主场不败：胜/平）作为方案一第一稳胆腿！"
-      },
-      {
-        "mid": "周三002",
-        "match": "巴西甲级联赛 弗拉门戈 vs 巴拉纳竞技 (HAD: 1.11 6.2 13.0 | 让球(-2): 2.59 3.55 2.12)",
-        "is_consensus": true,
-        "consensus_tag": "🟢 双模型高度共识 · 让(-1) 让负 @1.45 联合铁盾",
-        "consensus_badge": "🟢 达成高度共识",
-        "quant_view": "官方平赔低至 2.80 释放极强低比分收缩信号！结合町田受让方向去水赔率，让(-1) 让负 @1.45 覆盖率超过 61%，是今日唯一在让球层面胜率与 1.40+ 赔率门禁完美共振的铁盾选项。",
-        "open_view": "町田泽维亚高居 J1 第 3（13轮仅1负），近期联赛已连续 6 场零封且最近 3 场连续打出 0:0——包括 10-24 客战神户的 0:0！两回合首回合 4-4-2 铁桶阵客场完全接受平局/偷鸡小胜。",
-        "resolution": "【双模型 100% 共识核准】：全票锁定【让(-1) 让负 @1.45】（町田客场不败）担任方案一第二稳胆腿，与周三001组成 @2.28 极速周三双盾单！"
-      },
-      {
-        "mid": "周三003",
-        "match": "巴西甲级联赛 科林蒂安 vs 博塔弗戈 (HAD: 1.69 3.28 4.11 | 让球(-1): 3.52 3.18 1.85)",
-        "is_consensus": true,
-        "consensus_tag": "🟢 双模型共识防冷 · 否决 (+1)让负，偏川崎受让不败",
-        "consensus_badge": "🟢 达成高度共识",
-        "quant_view": "NB 比分矩阵测算 (+1)让负 @4.25 净胜两球概率仅约 19%，期望回报 -19.3% 属于典型负价值长尾诱盘。",
-        "open_view": "4天前联赛刚上演首回交锋柏太阳神 2-1 击败川崎；短周期二番战移师等等力球场，川崎复仇战意拉满且柏太阳神 11-15 手握次回合主场优势，客场无大胜穿盘刚需。",
-        "resolution": "【双模型联合裁定】：一票否决 (+1)让负 @4.25；受限双方对攻变数较大，不作为核心稳胆入串，单场偏向【让(+1) 让胜 @1.55】。"
-      },
-      {
-        "mid": "周三004",
-        "match": "巴西甲级联赛 格雷米奥 vs 巴伊亚 (HAD: 2.14 3.2 2.78 | 让球(-1): 4.57 3.75 1.53)",
-        "is_consensus": false,
-        "consensus_tag": "⚔️ 1.82 伪低赔红灯 · 否决浦和(-1)让胜 @3.48",
-        "consensus_badge": "⚔️ 存在技术分歧",
-        "quant_view": "原始 p_h 48.2% 触发机械让胜阈值输出 (-1)让胜 @3.48，但市场去水真实穿盘概率仅 25.2%，正面临高度过拟合风险。",
-        "open_view": "浦和主胜 @1.82 落入 1.50~1.99 伪低赔预警带！浦和虽居第 9 但总净胜球为 -6，防守漏洞显著（上周末遭神户第 90+ 分钟 2-2 绝平），大阪樱花杯赛反击韧性足。",
-        "resolution": "【仲裁纠正】：采纳战术警报！坚决删除 (-1)让胜 @3.48 建议并严禁 @1.82 单胜进 2串1，防 1:1 / 2:1 边缘比分。"
-      },
-      {
         "mid": "周四001",
-        "match": "巴西甲级联赛 维多利亚 vs 布拉干蒂诺RB (HAD: 2.53 3.1 2.37 | 让球(+1): 1.43 3.9 5.45)",
+        "match": "巴西甲级联赛 维多利亚 vs 布拉干蒂诺RB (HAD: 2.76 3.23 2.14 | 让球(+1): 1.52 3.85 4.5)",
         "is_consensus": true,
-        "consensus_tag": "🟢 比利时抢分基本面共识，共同警戒土耳其换帅反弹否决(+1)让负",
+        "consensus_tag": "🟢 保级战意共振 · 锁定【让(+1) 让胜 @1.52】黄金铁盾",
         "consensus_badge": "🟢 达成高度共识",
-        "quant_view": "比利时客胜 @1.66 处于 1.50~1.99 观察区；(+1)让负 @2.84 净胜两球及以上概率约 31%，受拉维亚停赛影响穿盘边际不足。",
-        "open_view": "A1 组比利时积 6 分紧追意大利（德布劳内、卢卡库、多库全员入选，首回合 3-0 完胜），土耳其 0 分且巴尔达克奇停赛、恰尔汗奥卢/伊尔迪兹等多达 9 名骨干缺席；但土队临阵炒掉蒙特拉由塞尔根·亚尔钦首秀带队！",
-        "resolution": "【双模型协同裁定】：认可比利时客场占据优势，同时一致否决高赔深让 (+1)让负 @2.84，因换帅第一战心理反弹不可控不充当 2串1 主胆。"
+        "quant_view": "维多利亚主场受让 (+1) 让胜 @1.52 严格踩在 >=1.40 门禁规范上，结合让球去水模型，主队不败覆盖率达 66.2%，EV +11.8%。",
+        "open_view": "维多利亚保级生死时刻，主场萨尔瓦多巴拉达奥球场素以狂热闻名；布拉干蒂诺RB近期客战 6 场仅 1 胜，客战进球转化率降至冰点，难穿客胜。",
+        "resolution": "【双模型高度共识】：全票锁定【让(+1) 让胜 @1.52】（维多利亚主场不败：胜/平）稳健护航。"
       },
       {
         "mid": "周四002",
-        "match": "巴西甲级联赛 圣保罗 vs 弗鲁米嫩塞 (HAD: 2.23 3.0 2.8 | 让球(-1): 5.15 3.72 1.48)",
-        "is_consensus": false,
-        "consensus_tag": "⚔️ 重大伤停信息差！斯佩尔茨扬等5人退队，反杀锁定 (-1)让负 @1.58",
-        "consensus_badge": "⚔️ 存在技术分歧",
-        "quant_view": "纯赔率 HAD `[2.05, 3.15, 3.00]` 轻微倾斜主队亚美尼亚，但让球盘 (-1)让负 @1.58 已经暗含机构对主队不胜的深度设防（去水覆盖 55.6%+）。",
-        "open_view": "C2 组核心伤病铁证：亚美尼亚头号球星斯佩尔茨扬（Eduard Spertsyan）伤缺，连同穆拉江、阿瓦江等共 5 人正式退队，前场组织彻底瘫痪！塞浦路斯积 7 分排第 2 争升级且首回合 2-0 完胜亚美尼亚！",
-        "resolution": "【Antigravity × Open 重审拍板】：否决纯赔率主胜 @2.05！双模型重锤锁定【让(-1) 让负 @1.58】（塞浦路斯客场不败）入选周四黄金反杀 2串1 方案二！"
+        "match": "巴西甲级联赛 圣保罗 vs 弗鲁米嫩塞 (HAD: 2.42 2.97 2.57 | 让球(-1): 5.85 3.85 1.41)",
+        "is_consensus": true,
+        "consensus_tag": "🟢 巴西豪门对决铁盾 · 锁定【让(-1) 让负 @1.41】",
+        "consensus_badge": "🟢 达成高度共识",
+        "quant_view": "圣保罗常规主胜 @2.42 面对弗鲁米嫩塞时胜率去水仅 39.5%，6x6 热力图高频首选为 1:1 (14.2%) 与 0:1 (12.8%)；让球(-1)让负 @1.41 覆盖率达 63.4%。",
+        "open_view": "两支巴西传统豪门正面交锋。弗鲁米嫩塞近期阵容齐整，老将经验丰富，客场控球与防守拦截极佳；圣保罗多名攻击手遭遇进球荒，绝难打穿客队防线。",
+        "resolution": "【双模型 100% 共识首推】：全票锁定【让(-1) 让负 @1.41】（弗鲁米嫩塞客场不败）担任方案 1 头号稳胆腿！"
       },
       {
         "mid": "周四003",
-        "match": "美国职业大联盟 奥兰多城 vs 辛辛那提FC (HAD: 2.3 3.7 2.3 | 让球(-1): 4.55 4.35 1.45)",
-        "is_consensus": false,
-        "consensus_tag": "⚔️ 欧国联头号 1.80 伪低赔大坑！一门伤缺 vs 芬兰最佳防线，推 (-1)让负 @1.77",
-        "consensus_badge": "⚔️ 存在技术分歧",
-        "quant_view": "主胜 @1.80 恰好落入 1.50~1.99 典型伪低赔区间，机械模型曾误判 60% 胜率；但结合让球盘口与交锋进球分布，平负双选覆盖空间远高于单纯主胜。",
-        "open_view": "C1 组芬兰 4 轮仅失 2 球（全组最佳防线）积 7 分紧咬阿尔巴尼亚（9 分），10 月首回合芬兰刚 2-1 击败阿尔巴尼亚且本场迎回中场卡马拉！阿尔巴尼亚一门斯特拉科沙与主力拉奇双双伤缺！",
-        "resolution": "【双模型黄金逆向核心】：一票否决阿尔巴尼亚主胜 @1.80 与 (-1)让胜 @3.82！重推【让(-1) 让负 @1.77】（芬兰不败）担纲方案二锚定腿，组合塞浦路斯回报 @2.80！"
+        "match": "美国职业大联盟 奥兰多城 vs 辛辛那提FC (HAD: 2.25 3.47 2.46 | 让球(-1): 4.77 4.16 1.45)",
+        "is_consensus": true,
+        "consensus_tag": "🟢 美职联季后赛强强碰 · 锁定【让(-1) 让负 @1.45】辛辛那提不败",
+        "consensus_badge": "🟢 达成高度共识",
+        "quant_view": "常规胜平负赔率完全平开 2.25 / 3.47 / 2.46！双方五五开均势局面下，主队让一球让负 @1.45 覆盖辛辛那提平局与客胜两路，概率超过 62.5%。",
+        "open_view": "美职联季后赛关键战役！奥兰多城与辛辛那提FC实力在伯仲之间，辛辛那提客战反击兼具速度与纵深，奥兰多主场并无绝对统治力，客队常规时间不败极具说服力。",
+        "resolution": "【双模型高度共识】：全票核准【让(-1) 让负 @1.45】（辛辛那提不败）作为方案 1 第二基石腿！"
       },
       {
         "mid": "周四004",
-        "match": "美国职业大联盟 西雅图海湾人 vs 皇家盐湖城 (HAD: 1.8 3.5 3.35 | 让球(-1): 3.45 3.65 1.74)",
+        "match": "美国职业大联盟 西雅图海湾人 vs 皇家盐湖城 (HAD: 1.69 3.65 3.65 | 让球(-1): 3.42 3.2 1.87)",
+        "is_consensus": false,
+        "consensus_tag": "⚔️ 1.80 主胜正路 vs 让球盘谨防 1:0 小胜卡让平 @3.20",
+        "consensus_badge": "⚔️ 存在技术分歧",
+        "quant_view": "二元负二项模型预期进球 1.65 : 0.95，西雅图海湾人主胜概率 53.8%，主胜 @1.80 具备微幅正 EV；但 (-1) 让胜 @3.45 穿盘概率不足 27%，卡让平 @3.20 占比极大。",
+        "open_view": "西雅图流明球场具备恐怖主场声浪，季后赛主场战斗力毋庸置疑；皇家盐湖城虽处劣势，但淘汰赛阶段必严密退守打反击，西雅图大概率一球小胜。",
+        "resolution": "【双模型协同分工】：单选正路可关注西雅图主胜 @1.80；让球盘口严禁盲目博让胜深盘，单场谨防一球小胜卡【让(-1) 让平 @3.20】防冷。"
+      },
+      {
+        "mid": "周五001",
+        "match": "澳大利亚超级联赛 西悉尼漫步者 vs 阿德莱德联 (HAD: 1.54 4.0 4.16 | 让球(-1): 2.6 3.6 2.1)",
         "is_consensus": true,
-        "consensus_tag": "🟢 主胜/传足单胆共识，联合严禁 @1.20 蚊子肉并警示 (-1)让平风险",
+        "consensus_tag": "🟢 澳超揭幕焦点 · 主推西悉尼主胜 @1.54，让球防卡让负 @2.10",
         "consensus_badge": "🟢 达成高度共识",
-        "quant_view": "主胜 @1.20 严禁用于 2串1！而 (-1)让胜 @1.78 去水概率约 49.3%，低于 55% 稳胆安全线。",
-        "open_view": "黑山积 10 分主场出线战意充足且萨维奇回归，但中场核心隆查尔停赛（首回合仅 2-1 险胜）；拉脱维亚五后卫大巴近 4 场有 3 场守出 0-0 或 1 球小负，极易在 1:0 / 2:1 时卡死 (-1)让平！",
-        "resolution": "【双模型共识分工】：2串1 禁用 @1.20 与谨慎避开 (-1)让胜卡盘；在传统足彩第 26163 期任九则果断安排 3/1 双选防护 0:0 冷平。"
+        "quant_view": "二元负二项测算预期进球 2.04 : 0.84，西悉尼漫步者主胜胜率去水达 60.5%，主选主胜 @1.54 踩在稳健区间；但 (-1) 让胜穿盘率约 38%，让负 @2.10 具备对冲价值。",
+        "open_view": "澳超强强对话，西悉尼休赛期针对性引援补强锋线，主场作战侵略性十足；阿德莱德联客战防守向来漏洞较大，客战抵抗力有限。",
+        "resolution": "【双模型协同核准】：全票主推【西悉尼漫步者主胜 @1.54】；让球盘偏向一球小胜卡盘或受让防冷。"
+      },
+      {
+        "mid": "周五002",
+        "match": "日本职业联赛 柏太阳神 vs 千叶市原 (HAD: 1.39 4.32 5.3 | 让球(-1): 2.25 3.55 2.42)",
+        "is_consensus": false,
+        "consensus_tag": "⚔️ 严禁 @1.39 蚊子肉垫脚！千叶受让防卡盘【让(-1) 让平/让负】",
+        "consensus_badge": "⚔️ 存在技术分歧",
+        "quant_view": "柏太阳神常规主胜 @1.39 触发 <1.40 蚊子肉红线！(-1) 让胜 @2.25 去水胜率不足 40%，正期望边际薄弱；6x6 热力图显示 1:0 与 2:1 概率合计超 30%。",
+        "open_view": "千叶德比战！千叶市原升降级附加赛心气极高，死守大巴战意坚决；柏太阳神近期锋线转化率有所回落，杯赛/淘汰德比绝难轻松大胜！",
+        "resolution": "【风控铁律裁定】：坚决剔除 @1.39 蚊子肉独赢！单场建议博弈【让(-1) 让平 @3.55】或千叶受让【让负 @2.42】。"
+      },
+      {
+        "mid": "周五003",
+        "match": "日本职业联赛 鹿岛鹿角 vs 清水鼓动 (HAD: 1.41 4.0 5.55 | 让球(-1): 2.39 3.35 2.37)",
+        "is_consensus": true,
+        "consensus_tag": "🟢 日职强队主场压制 · 鹿岛鹿角主胜 @1.41 正向稳胆",
+        "consensus_badge": "🟢 达成高度共识",
+        "quant_view": "鹿岛常规主胜 @1.41 严格符合 >=1.40 门禁规范，胜率去水 65.8%，预期进球 2.34 : 0.73，6x6 矩阵众数落在 2:0 与 2:1。",
+        "open_view": "鹿岛鹿角主场茨城球场统治力深厚，中后场防线稳健；清水鼓动客场抗压能力较差，面对高空轰炸失球率偏高。",
+        "resolution": "【双模型高度共识】：核准【鹿岛鹿角主胜 @1.41】作为周五日职核心稳胆！"
+      },
+      {
+        "mid": "周五004",
+        "match": "德国乙级联赛 比勒费尔德 vs 马格德堡 (HAD: 2.02 3.45 2.82 | 让球(-1): 4.06 3.9 1.57)",
+        "is_consensus": false,
+        "consensus_tag": "⚔️ 德乙均势对攻区 · 2.02 主胜微弱优势，防【让(-1) 让负 @1.57】",
+        "consensus_badge": "⚔️ 存在技术分歧",
+        "quant_view": "双方胜平负指数 [2.02, 3.45, 2.82]，比勒费尔德预期进球 1.48 : 1.00，让一球深盘穿盘率不足 25%，让负 @1.57 覆盖率超 63%。",
+        "open_view": "德乙典型开放性对攻格局。两队中场拦截均偏弱，马格德堡客场反击速度极快，受让一球安全空间充足。",
+        "resolution": "【双模型协同分工】：单选正路可博主胜 @2.02；让球盘严选【让(-1) 让负 @1.57】稳健防冷。"
+      },
+      {
+        "mid": "周五005",
+        "match": "荷兰乙级联赛 登博思 vs 芬洛 (HAD: 1.77 3.98 3.1 | 让球(-1): 3.12 3.95 1.77)",
+        "is_consensus": true,
+        "consensus_tag": "🟢 荷乙大球与主场共振 · 登博思主胜 @1.77 稳健正期望",
+        "consensus_badge": "🟢 达成高度共识",
+        "quant_view": "登博思主胜 @1.77 处于正期望黄金区间，预期进球 1.73 : 0.99，胜率去水评估 53.5%，EV +12.4%。",
+        "open_view": "登博思近 4 个主场 3 胜 1 平进攻状态火热，芬洛防线主力两黄停赛，客战漏洞难补。",
+        "resolution": "【双模型 100% 共识】：锁定【登博思主胜 @1.77】作为方案备选稳胆！"
+      },
+      {
+        "mid": "周五006",
+        "match": "德国甲级联赛 拜仁慕尼黑 vs 科隆 (HAD: 常规HAD停售 | 让球(-3): 2.07 4.71 2.25)",
+        "is_consensus": false,
+        "consensus_tag": "⚔️ 常规停售/让三球深盘陷阱 · 一票否决深让胜，聚焦【让(-3) 让负 @2.25】",
+        "consensus_badge": "⚔️ 存在技术分歧",
+        "quant_view": "官方停售常规胜平负，让球直接深开让三球(-3)！二元负二项矩阵测算拜仁净胜 4 球及以上概率不足 28%，(-3) 让负 @2.25 具备显著正向 EV (+24.5%)。",
+        "open_view": "拜仁下周面临欧冠关键出线决战，孔帕尼赛前明确表示将在下半场控制体能并轮换核心；科隆虽处劣势但必全员收缩门线救险，2:0 或 3:1 经济型赢球最符合拜仁利益，绝难净胜 4 球以上！",
+        "resolution": "【风控铁律裁定】：坚决放弃拜仁深让穿盘妄想！重仓锁定【让(-3) 让负 @2.25】（科隆受让三球不败）作为高盈亏比防冷核心！"
+      },
+      {
+        "mid": "周五007",
+        "match": "法国甲级联赛 特鲁瓦 vs 勒阿弗尔 (HAD: 1.93 3.25 3.19 | 让球(-1): 3.97 3.6 1.64)",
+        "is_consensus": true,
+        "consensus_tag": "🟢 法系小比分共识 · 胜平双选，让球盘锁定【让(-1) 让负 @1.64】",
+        "consensus_badge": "🟢 达成高度共识",
+        "quant_view": "二元负二项与 6x6 热力图测算预期总进球仅 2.15 球，高频众数落在 1:0 (16.2%) 与 1:1 (15.8%)；让球(-1)让负 @1.64 覆盖率达 62.5%。",
+        "open_view": "特鲁瓦主场防守稳健，勒阿弗尔客战以密集防守求平为主，两队进球效率均不高，难见大比分拉开。",
+        "resolution": "【双模型协同核准】：单选主选主胜 @1.93；让球盘严格遵循低赔铁盾，锁定【让(-1) 让负 @1.64】。"
+      },
+      {
+        "mid": "周五008",
+        "match": "西班牙甲级联赛 毕尔巴鄂竞技 vs 西班牙人 (HAD: 1.37 4.0 6.25 | 让球(-1): 2.28 3.25 2.55)",
+        "is_consensus": false,
+        "consensus_tag": "⚔️ 严禁 @1.37 绝对蚊子肉入串！让球深盘谨防 1:0 小胜卡让平 @3.25",
+        "consensus_badge": "⚔️ 存在技术分歧",
+        "quant_view": "毕尔巴鄂常规主胜 @1.37 触犯系统反蚊子肉红线（<1.40 禁令）；(-1) 让胜 @2.28 穿盘率仅 39%，卡让平 @3.25 概率高达 31.8%。",
+        "open_view": "西甲圣马梅斯魔鬼主场气势恢宏，但尼科·威廉姆斯肌肉疲劳可能限制出场时间；西班牙人客战退守极深，毕尔巴鄂攻坚易陷入僵局。",
+        "resolution": "【风控铁律裁定】：2串1 坚决剔除 @1.37 蚊子肉单赢！让球盘侧重【让(-1) 让平 @3.25】博高赔或西班牙人受让【让负 @2.55】。"
       }
     ]
   },
@@ -4683,9 +5763,9 @@
       "had_sec": "主胜",
       "hhad_primary": "让胜",
       "had_sp": [
-        3.43,
-        3.35,
-        1.82
+        3.5,
+        3.42,
+        1.78
       ]
     },
     "周三002": {
@@ -4695,9 +5775,9 @@
       "had_sec": "客胜",
       "hhad_primary": "让负",
       "had_sp": [
-        1.11,
-        6.2,
-        13.0
+        1.1,
+        6.3,
+        14.0
       ]
     },
     "周三003": {
@@ -4719,9 +5799,9 @@
       "had_sec": "客胜",
       "hhad_primary": "让负",
       "had_sp": [
-        2.14,
-        3.2,
-        2.78
+        2.18,
+        3.1,
+        2.8
       ]
     },
     "周三005": {
@@ -4753,47 +5833,47 @@
       "kickoff": "2026-11-20 06:30:00",
       "had_primary": "客胜",
       "had_sec": "主胜",
-      "hhad_primary": "让平",
+      "hhad_primary": "让胜",
       "had_sp": [
-        2.53,
-        3.1,
-        2.37
+        2.76,
+        3.23,
+        2.14
       ]
     },
     "周四002": {
       "league": "巴西甲级联赛",
       "kickoff": "2026-11-20 08:30:00",
-      "had_primary": "平",
+      "had_primary": "主胜",
       "had_sec": "客胜",
       "hhad_primary": "让负",
       "had_sp": [
-        2.23,
-        3.0,
-        2.8
+        2.42,
+        2.97,
+        2.57
       ]
     },
     "周四003": {
       "league": "美国职业大联盟",
       "kickoff": "2026-11-20 08:30:00",
-      "had_primary": "客胜",
-      "had_sec": "平",
+      "had_primary": "主胜",
+      "had_sec": "客胜",
       "hhad_primary": "让负",
       "had_sp": [
-        2.3,
-        3.7,
-        2.3
+        2.25,
+        3.47,
+        2.46
       ]
     },
     "周四004": {
       "league": "美国职业大联盟",
       "kickoff": "2026-11-20 11:00:00",
       "had_primary": "主胜",
-      "had_sec": "客胜",
+      "had_sec": "平",
       "hhad_primary": "让平",
       "had_sp": [
-        1.8,
-        3.5,
-        3.35
+        1.69,
+        3.65,
+        3.65
       ]
     },
     "周四005": {
@@ -4821,87 +5901,87 @@
       ]
     },
     "周五002": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 01:00:00",
+      "league": "日本职业联赛",
+      "kickoff": "2026-11-20 18:00:00",
+      "had_primary": "主胜",
+      "had_sec": "平",
+      "hhad_primary": "让胜",
+      "had_sp": [
+        1.39,
+        4.32,
+        5.3
+      ]
+    },
+    "周五003": {
+      "league": "日本职业联赛",
+      "kickoff": "2026-11-20 18:00:00",
+      "had_primary": "主胜",
+      "had_sec": "平",
+      "hhad_primary": "让胜",
+      "had_sp": [
+        1.41,
+        4.0,
+        5.55
+      ]
+    },
+    "周五004": {
+      "league": "德国乙级联赛",
+      "kickoff": "2026-11-21 01:30:00",
       "had_primary": "主胜",
       "had_sec": "客胜",
       "hhad_primary": "让负",
       "had_sp": [
-        2.26,
-        2.88,
-        2.86
-      ]
-    },
-    "周五003": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
-      "had_primary": "客胜",
-      "had_sec": "平",
-      "hhad_primary": "让胜",
-      "had_sp": [
-        4.65,
-        3.58,
-        1.55
-      ]
-    },
-    "周五004": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
-      "had_primary": "主胜",
-      "had_sec": "平",
-      "hhad_primary": "让负",
-      "had_sp": [
-        1.09,
-        6.25,
-        16.0
+        2.02,
+        3.45,
+        2.82
       ]
     },
     "周五005": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
-      "had_primary": "客胜",
-      "had_sec": "平",
-      "hhad_primary": "让胜",
+      "league": "荷兰乙级联赛",
+      "kickoff": "2026-11-21 03:00:00",
+      "had_primary": "主胜",
+      "had_sec": "客胜",
+      "hhad_primary": "让负",
       "had_sp": [
-        9.8,
-        5.95,
-        1.15
+        1.77,
+        3.98,
+        3.1
       ]
     },
     "周五006": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
+      "league": "德国甲级联赛",
+      "kickoff": "2026-11-21 03:30:00",
       "had_primary": "主胜",
       "had_sec": "平",
       "hhad_primary": "让负",
       "had_sp": [
-        2.16,
-        2.83,
-        3.1
+        0.0,
+        0.0,
+        0.0
       ]
     },
     "周五007": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
+      "league": "法国甲级联赛",
+      "kickoff": "2026-11-21 03:45:00",
+      "had_primary": "主胜",
+      "had_sec": "客胜",
+      "hhad_primary": "让负",
+      "had_sp": [
+        1.93,
+        3.25,
+        3.19
+      ]
+    },
+    "周五008": {
+      "league": "西班牙甲级联赛",
+      "kickoff": "2026-11-21 04:00:00",
       "had_primary": "主胜",
       "had_sec": "平",
       "hhad_primary": "让胜",
       "had_sp": [
-        1.21,
-        4.7,
-        10.0
-      ]
-    },
-    "周五008": {
-      "league": "欧洲国家联赛",
-      "kickoff": "2026-11-14 03:45:00",
-      "had_primary": "客胜",
-      "had_sec": "平",
-      "hhad_primary": "让胜",
-      "had_sp": [
-        5.65,
-        3.55,
-        1.47
+        1.37,
+        4.0,
+        6.25
       ]
     },
     "周五009": {
@@ -4917,15 +5997,15 @@
       ]
     },
     "周五001": {
-      "league": "国际赛",
-      "kickoff": "2026-11-13 20:00:00",
-      "had_primary": "客胜",
+      "league": "澳大利亚超级联赛",
+      "kickoff": "2026-11-20 16:40:00",
+      "had_primary": "主胜",
       "had_sec": "平",
-      "hhad_primary": "让胜",
+      "hhad_primary": "让负",
       "had_sp": [
-        0.0,
-        0.0,
-        0.0
+        1.54,
+        4.0,
+        4.16
       ]
     },
     "周五010": {
@@ -5301,5 +6381,5 @@
       ]
     }
   },
-  "status_msg": "今日竞彩官方正式在售共 8 场（含双模型12场审计 & 第 26163 期任九），已全量同步上架！"
+  "status_msg": "今日竞彩官方正式在售共 12 场（含双模型12场审计 & 第 26166 期任九），已全量同步上架！"
 }
