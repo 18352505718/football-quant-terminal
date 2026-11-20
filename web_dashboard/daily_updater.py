@@ -1612,8 +1612,8 @@ def get_dual_agent_review_data(matches=None):
         "timestamp": dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "summary": summary,
         "models": {
-            "quant": "Antigravity (多元负二项贝叶斯模型 / EV量化决策)",
-            "scout": "Open (OpenAI 战术情报与逆风球探)"
+            "quant": "Antigravity (多元负二项贝叶斯模型 / 单位反重力)",
+            "scout": "OpenCode (本地战术球探 / 单位open)"
         },
         "consensus_rules": consensus_rules,
         "case_study_warning": case_warning,
