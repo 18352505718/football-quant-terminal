@@ -3,6 +3,7 @@
 赛博天眼 · 云端全自动增量同步脚本 (Sync to Render)
 本脚本运行在本地国内网络环境，直连体彩官方网关并完成量化模型计算，
 随后通过安全 API 通道将最新数据推送到 Render 云端！
+支持自动唤醒冷启动实例与 3 次优雅重试机制。
 """
 import os
 import sys
@@ -46,25 +47,40 @@ def run_sync():
         
     with open(cache_path, "rb") as f:
         data = f.read()
-        
-    req = urllib.request.Request(RENDER_PUSH_URL, data=data, headers={
-        "Content-Type": "application/json",
-        "X-Sync-Token": SYNC_TOKEN
-    })
-    
+
+    # 预先唤醒 Render（避免休眠导致瞬断）
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            body = resp.read().decode("utf-8")
-            elapsed = round(time.time() - t0, 2)
-            print(f"🚀 云端同步成功！Render 响应状态码: {resp.status}，耗时: {elapsed}s")
-            print(f"   返回内容: {body}")
-            print(f"   访问网址: https://football-quant-terminal.onrender.com/")
-            print("=" * 65)
-            return True
-    except Exception as e:
-        print(f"❌ 推送云端失败: {e}")
-        print("=" * 65)
-        return False
+        ping_req = urllib.request.Request(
+            "https://football-quant-terminal.onrender.com/?ping=1",
+            headers={"User-Agent": "CyberEye-Sync/2.0"}
+        )
+        with urllib.request.urlopen(ping_req, timeout=10) as _:
+            pass
+    except Exception:
+        pass
+        
+    for attempt in range(1, 4):
+        req = urllib.request.Request(RENDER_PUSH_URL, data=data, headers={
+            "Content-Type": "application/json",
+            "X-Sync-Token": SYNC_TOKEN
+        })
+        try:
+            with urllib.request.urlopen(req, timeout=35) as resp:
+                body = resp.read().decode("utf-8")
+                elapsed = round(time.time() - t0, 2)
+                print(f"🚀 云端同步成功！Render 响应状态码: {resp.status}，耗时: {elapsed}s (第 {attempt} 次尝试)")
+                print(f"   返回内容: {body}")
+                print(f"   访问网址: https://football-quant-terminal.onrender.com/")
+                print("=" * 65)
+                return True
+        except Exception as e:
+            print(f"⚠️ 第 {attempt} 次推送尝试异常: {e}")
+            if attempt < 3:
+                time.sleep(3)
+
+    print("❌ 推送云端失败 (3次重试均超时或断开)")
+    print("=" * 65)
+    return False
 
 if __name__ == "__main__":
     run_sync()
