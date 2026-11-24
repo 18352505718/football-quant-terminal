@@ -125,8 +125,8 @@ def build_genuine_dual_review(prep_items, active_matches):
             "is_unit_open_person": True,
             "reply_id": "20261124-1425-单位反重力-030 (响应 029/028)",
             "reply_to_sha": "ef8b5ced06fb",
-            "ledger_chain": "天火云\\ledger.csv (Seq #1~#4, 0 Broken · 100% 密码学验通)",
-            "commit_antigravity_hash": "e2f79624b6a921ff4999852cf1f4489551d7b83850d442188bb335e877d05c80",
+            "ledger_chain": "天火云\\ledger.csv (Seq #1~#6, 0 Broken · 100% 密码学验通)",
+            "commit_antigravity_hash": "eb951d50c9fc9ad70bb064ecb28396c04c46a491511d1a04cb4b0e881f07d847",
             "commit_opencode_hash": "8a0ef562cbc6d863491a752218d13b82b4d911daf6ca880fddf1fbb9a332a923",
             "note": "遵统领令「从今天就开始」：今日 11-24 即刻启动 Commit-Reveal 独立密码学对账！大盘赛事推荐、二串一方案与双模型会审 100% 逻辑自洽！",
             "v1_2_status": "即日 (11-24) 正式启动独立承诺-揭示 (Commit-Reveal)：台账已咬合验证通过"

@@ -1,5 +1,5 @@
 {
-  "last_update_time": "2026-11-24 14:37:53",
+  "last_update_time": "2026-11-24 14:52:54",
   "today_date": "2026-11-24",
   "yesterday_results": [
     {
@@ -2202,15 +2202,15 @@
         3.72
       ],
       "official_bqc_sp": {
-        "胜胜": 4.4,
+        "胜胜": 4.5,
         "胜平": 15.0,
         "胜负": 19.0,
         "平胜": 7.75,
         "平平": 7.5,
-        "平负": 4.75,
-        "负胜": 22.0,
+        "平负": 4.45,
+        "负胜": 24.0,
         "负平": 15.0,
-        "负负": 3.1
+        "负负": 3.15
       },
       "heatmap_matrix": [
         [
@@ -4726,9 +4726,9 @@
         "prob": 0.1984,
         "prob_pct": 19.8,
         "fair_sp": 5.04,
-        "market_sp": 3.1,
-        "ev": -0.3851,
-        "ev_pct": -38.5
+        "market_sp": 3.15,
+        "ev": -0.3751,
+        "ev_pct": -37.5
       },
       "value_hedge_pick": {
         "key": "平平",
@@ -4747,9 +4747,9 @@
           "prob": 0.1583,
           "prob_pct": 15.8,
           "fair_sp": 6.32,
-          "market_sp": 4.4,
-          "ev": -0.3037,
-          "ev_pct": -30.4
+          "market_sp": 4.5,
+          "ev": -0.2879,
+          "ev_pct": -28.8
         },
         {
           "key": "胜平",
@@ -4797,9 +4797,9 @@
           "prob": 0.1769,
           "prob_pct": 17.7,
           "fair_sp": 5.65,
-          "market_sp": 4.75,
-          "ev": -0.1596,
-          "ev_pct": -16.0
+          "market_sp": 4.45,
+          "ev": -0.2127,
+          "ev_pct": -21.3
         },
         {
           "key": "负胜",
@@ -4807,9 +4807,9 @@
           "prob": 0.0184,
           "prob_pct": 1.8,
           "fair_sp": 54.48,
-          "market_sp": 22.0,
-          "ev": -0.5962,
-          "ev_pct": -59.6
+          "market_sp": 24.0,
+          "ev": -0.5595,
+          "ev_pct": -56.0
         },
         {
           "key": "负平",
@@ -4827,14 +4827,14 @@
           "prob": 0.1984,
           "prob_pct": 19.8,
           "fair_sp": 5.04,
-          "market_sp": 3.1,
-          "ev": -0.3851,
-          "ev_pct": -38.5
+          "market_sp": 3.15,
+          "ev": -0.3751,
+          "ev_pct": -37.5
         }
       ],
       "has_reversal_alert": false,
       "reversal_info": null,
-      "rationale": "客队反客为主战意极强(xG 1.30)，主队防线漏洞显著，首选正路锁定【负负 @3.1】。"
+      "rationale": "客队反客为主战意极强(xG 1.30)，主队防线漏洞显著，首选正路锁定【负负 @3.15】。"
     },
     {
       "num": "周二005",
@@ -5871,15 +5871,15 @@
   },
   "dual_agent_review": {
     "status": "COMMIT_REVEAL_VERIFIED_TODAY",
-    "timestamp": "2026-11-24 14:49:47",
+    "timestamp": "2026-11-24 14:53:57",
     "audit_meta": {
       "protocol_version": "v1.2",
       "commit_reveal_active_today": true,
       "is_unit_open_person": true,
       "reply_id": "20261124-1425-单位反重力-030 (响应 029/028)",
       "reply_to_sha": "ef8b5ced06fb",
-      "ledger_chain": "天火云\\ledger.csv (Seq #1~#4, 0 Broken · 100% 密码学验通)",
-      "commit_antigravity_hash": "e2f79624b6a921ff4999852cf1f4489551d7b83850d442188bb335e877d05c80",
+      "ledger_chain": "天火云\\ledger.csv (Seq #1~#6, 0 Broken · 100% 密码学验通)",
+      "commit_antigravity_hash": "eb951d50c9fc9ad70bb064ecb28396c04c46a491511d1a04cb4b0e881f07d847",
       "commit_opencode_hash": "8a0ef562cbc6d863491a752218d13b82b4d911daf6ca880fddf1fbb9a332a923",
       "note": "遵统领令「从今天就开始」：今日 11-24 即刻启动 Commit-Reveal 独立密码学对账！大盘赛事推荐、二串一方案与双模型会审 100% 逻辑自洽！",
       "v1_2_status": "即日 (11-24) 正式启动独立承诺-揭示 (Commit-Reveal)：台账已咬合验证通过"
