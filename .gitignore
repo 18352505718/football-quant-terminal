@@ -8,3 +8,6 @@ __pycache__/
 .saiyanshuju_device.json
 web_dashboard/*.exe
 web_dashboard/watchdog.log
+
+.deepseek_key
+*.key

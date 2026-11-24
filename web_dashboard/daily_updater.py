@@ -1342,243 +1342,81 @@ def build_yesterday_review(yest_results=None, old_cache=None, ren9_draw=None):
     }
 
 
-def get_dual_agent_review_data(matches=None):
+def get_dual_agent_review_data(matches=None, force=False):
     """
-    双模型对抗审核与分歧披露 (Antigravity 量化 × Open 战术)
+    双模型对抗审核与分歧披露 (Antigravity 量化 × OpenCode 战术)
     严格覆盖当日在售全部场次，重点标记【🟢 达成高度共识】与【⚔️ 存在技术分歧】
-    彻底以球队为单一真实源 (SSOT)，杜绝跨期旧比赛缓存错乱覆盖！
+    通过云端全自动 OpenCode 战术球探代理模块 (opencode_server_agent) 实时生成！
+    内置智能场次差分缓存：当日场次不变时毫秒级复用，新排期发布或强制刷新时自动直连 DeepSeek。
     """
-    if not matches:
-        cache_path = os.path.join(BASE_DIR, "web_dashboard", "daily_pipeline_cache.json")
-        if os.path.exists(cache_path):
-            try:
-                with open(cache_path, "r", encoding="utf-8") as f:
-                    c = json.load(f)
-                    matches = c.get("active_matches", [])
-            except Exception:
-                matches = []
+    cache_path = os.path.join(BASE_DIR, "web_dashboard", "daily_pipeline_cache.json")
+    old_dual = None
+    old_match_nums = []
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                c = json.load(f)
+                old_dual = c.get("dual_agent_review")
+                old_match_nums = [m.get("num") for m in c.get("active_matches", []) if m.get("num")]
+        except Exception:
+            pass
 
-    m_map = {m.get("num"): m for m in (matches or [])}
+    if not matches and os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                c = json.load(f)
+                matches = c.get("active_matches", [])
+        except Exception:
+            matches = []
 
-    # 球队专属对抗审校档案 (以主客队前缀二字为键，保证 100% 精准对应，永不张冠李戴)
-    curated_reviews = {
-        ("维多", "布拉"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 保级战意共振 · 锁定【让(+1) 让胜 @1.52】黄金铁盾",
-            "quant_view": "维多利亚主场受让 (+1) 让胜 @1.52 严格踩在 >=1.40 门禁规范上，结合让球去水模型，主队不败覆盖率达 66.2%，EV +11.8%。",
-            "open_view": "维多利亚保级生死时刻，主场萨尔瓦多巴拉达奥球场素以狂热闻名；布拉干蒂诺RB近期客战 6 场仅 1 胜，客战进球转化率降至冰点，难穿客胜。",
-            "resolution": "【双模型高度共识】：全票锁定【让(+1) 让胜 @1.52】（维多利亚主场不败：胜/平）稳健护航。"
-        },
-        ("圣保", "弗鲁"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 巴西豪门对决铁盾 · 锁定【让(-1) 让负 @1.41】",
-            "quant_view": "圣保罗常规主胜 @2.42 面对弗鲁米嫩塞时胜率去水仅 39.5%，6x6 热力图高频首选为 1:1 (14.2%) 与 0:1 (12.8%)；让球(-1)让负 @1.41 覆盖率达 63.4%。",
-            "open_view": "两支巴西传统豪门正面交锋。弗鲁米嫩塞近期阵容齐整，老将经验丰富，客场控球与防守拦截极佳；圣保罗多名攻击手遭遇进球荒，绝难打穿客队防线。",
-            "resolution": "【双模型 100% 共识首推】：全票锁定【让(-1) 让负 @1.41】（弗鲁米嫩塞客场不败）担任方案 1 头号稳胆腿！"
-        },
-        ("奥兰", "辛辛"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 美职联季后赛强强碰 · 锁定【让(-1) 让负 @1.45】辛辛那提不败",
-            "quant_view": "常规胜平负赔率完全平开 2.25 / 3.47 / 2.46！双方五五开均势局面下，主队让一球让负 @1.45 覆盖辛辛那提平局与客胜两路，概率超过 62.5%。",
-            "open_view": "美职联季后赛关键战役！奥兰多城与辛辛那提FC实力在伯仲之间，辛辛那提客战反击兼具速度与纵深，奥兰多主场并无绝对统治力，客队常规时间不败极具说服力。",
-            "resolution": "【双模型高度共识】：全票核准【让(-1) 让负 @1.45】（辛辛那提不败）作为方案 1 第二基石腿！"
-        },
-        ("西雅", "皇家"): {
-            "is_consensus": False,
-            "consensus_badge": "⚔️ 存在技术分歧",
-            "consensus_tag": "⚔️ 1.80 主胜正路 vs 让球盘谨防 1:0 小胜卡让平 @3.20",
-            "quant_view": "二元负二项模型预期进球 1.65 : 0.95，西雅图海湾人主胜概率 53.8%，主胜 @1.80 具备微幅正 EV；但 (-1) 让胜 @3.45 穿盘概率不足 27%，卡让平 @3.20 占比极大。",
-            "open_view": "西雅图流明球场具备恐怖主场声浪，季后赛主场战斗力毋庸置疑；皇家盐湖城虽处劣势，但淘汰赛阶段必严密退守打反击，西雅图大概率一球小胜。",
-            "resolution": "【双模型协同分工】：单选正路可关注西雅图主胜 @1.80；让球盘口严禁盲目博让胜深盘，单场谨防一球小胜卡【让(-1) 让平 @3.20】防冷。"
-        },
-        ("西悉", "阿德"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 双方一致首选主胜 · 防对手无降级变阵低效冷平",
-            "quant_view": "二元负二项测算预期进球 2.12 : 0.84，西悉尼漫步者主胜公允概率 58.9%，主胜 1.47 属于稳健区间；但 (-1) 让胜穿盘率约 38%，让负 2.18 具备对冲价值。",
-            "open_view": "【单位open 024号函】：首选主胜 1.47 (信心B+)。依据：阿德莱德 1分垫底(12队)，西悉尼#6/5分，CLV主+0.0120聪明钱顺向。但必须警惕澳超无降级，垫底队无保级死磕动机，若西悉尼进攻低效次选平局 4.35；让球无xG支持不主张穿盘。",
-            "resolution": "【双模型协同裁定】：全票主推【西悉尼漫步者主胜 @1.47】；防守注意平局防冷，让球盘坚决不追让胜深盘。"
-        },
-        ("柏太", "千叶"): {
-            "is_consensus": False,
-            "consensus_badge": "⚔️ 存在技术分歧",
-            "consensus_tag": "⚔️ 量化红线禁 <1.40 蚊子肉 vs OpenCode 资金推崇主胜 1.28 作二串一",
-            "quant_view": "柏太阳神常规主胜 1.28 触犯系统反蚊子肉红线 (<1.40 禁令)！(-1) 让胜 2.00 去水胜率不足 40%，正期望边际薄弱；矩阵测算 1:0 与 2:1 概率偏大。",
-            "open_view": "【单位open 024号函】：首选主胜 1.28 (信心A-)。依据：积分差8分(20分 vs 12分)，CLV主+0.0176为全池第二强资金进柏。唯一减分项是千叶德比会抹平实力差(次选平4.90)；建议让球盘小注让胜2.00作辅，并主推主胜入二串一。",
-            "resolution": "【双模型博弈定案】：风控层面维持单赢赔率偏低警示；实盘战术若追正路，采纳 OpenCode 意见将其视作高置信基石腿，让球盘辅选让胜 @2.00。"
-        },
-        ("鹿岛", "清水"): {
-            "is_consensus": False,
-            "consensus_badge": "⚔️ 存在技术分歧",
-            "consensus_tag": "⚔️ 1.25 蚊子肉禁令 vs OpenCode 评定全池最强战意胆",
-            "quant_view": "鹿岛常规主胜 1.25 胜率虽高达 66.8%，但属于绝对蚊子肉赔率，极易在 2串1 中拖垮组合风控，量化系统坚决拒绝将其纳入主力单赢池。",
-            "open_view": "【单位open 024号函】：首选主胜 1.25 (信心A，全池最强腿！)。依据：鹿岛争冠区第1名(45分)，清水第7(24分)，积分整整差21分！日职收尾战意拉满。让球(-1)让胜1.95可作辅胆；次选平4.60防守一分。主推 003主胜 × 002主胜 (SP 1.60)。",
-            "resolution": "【双模型博弈分工】：纯单场正路认同鹿岛实力与战意碾压；若打 2串1 需权衡赔率性价比，稳胆选手可采纳 OpenCode 的 003×002 战意方案。"
-        },
-        ("比勒", "马格"): {
-            "is_consensus": False,
-            "consensus_badge": "⚔️ 存在技术分歧",
-            "consensus_tag": "⚔️ 量化主张让负防冷 vs OpenCode 凭 CLV 资金力挺主胜 1.98",
-            "quant_view": "双方胜平负指数均势，比勒费预期进球 1.51 : 0.99，让一球深盘穿盘率不足 25%，受让一球让负 @1.60 覆盖客队平负两路概率达 63%。",
-            "open_view": "【单位open 024号函】：坚决不认可让负！依据：CLV主+0.0212 / 客-0.0241，聪明钱全部涌入比勒费，量化选让负是典型的【逆资金操作】！德乙两队积分差3分且客伤2人(Musonda、Kwarteng)，OpenCode 首选【比勒费主胜 @1.98】！",
-            "resolution": "【双模型针锋相对】：量化侧侧重受让覆盖率，战术侧依托资金盘口硬证据反驳。双方各持己见，激进者单选跟从资金主胜 @1.98，稳健者避开此场。"
-        },
-        ("登博", "芬洛"): {
-            "is_consensus": False,
-            "consensus_badge": "⚔️ 存在技术分歧",
-            "consensus_tag": "⚔️ 核心分歧激化：量化主胜 @1.85 vs OpenCode 坚决客胜 @3.00",
-            "quant_view": "登博思预期进球 1.57 : 0.95，二元负二项去水评估主胜公允概率 53.5%，主胜 1.85 处于数学正期望黄金区间，初选将其作为方案备选稳胆。",
-            "open_view": "【单位open 024号函】：坚决反对主胜！依据：登博思联赛第10名(19分)，客队芬洛是联赛第3名(29分)！主场的是中游弱队，客场才是真正强队，积分榜完全倒挂！竞彩1.88实际胜率不足47%。OpenCode 首选【芬洛客胜 @3.00】，次选平局 3.65，让负 1.68 辅护！",
-            "resolution": "【全场最大技术交锋】：量化模型与基本面战意发生激烈碰撞！OpenCode 指出积分倒挂硬伤，一票否决登博思主胜稳胆地位，建议转向芬洛受让【让负 @1.68】或博高赔客胜！"
-        },
-        ("拜仁", "科隆"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 拜仁 7 伤 + 欧冠轮换 · 双模型 100% 锁定【让(-3) 让负 @2.34】",
-            "quant_view": "官方停售常规胜平负，让球深开让三球(-3)！矩阵测算拜仁净胜 4 球及以上概率不足 28%，(-3) 让负 @2.34 具备显著价值。",
-            "open_view": "【单位open 024号函】：高度认同！首选让负 2.34。硬核伤停核实：拜仁整整 7 人伤停（诺伊尔、穆西亚拉、格纳布里、戴维斯、迪亚斯等核心在列），下周欧冠生死战必留力；科隆保级必门线大巴，拜仁赢4球极度困难！次选让平 4.71。",
-            "resolution": "【双模型 100% 协同锁死】：数学测算与真实伤停战意完全共振！全票锁定【让(-3) 让负 @2.34】（科隆受让三球），作为今日头号高价值防冷标的！"
-        },
-        ("特鲁", "勒阿"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 保级互殴与小比分共振 · 双模型一致首选【让(-1) 让负 @1.69】",
-            "quant_view": "预期总进球仅 2.15 球，高频众数落在 1:0 与 1:1；让球(-1) 让负 @1.66 覆盖率达 62.5%，防范客队抢分守平。",
-            "open_view": "【单位open 024号函】：首选让负 1.69 (信心B-)，次选平 3.25。依据：CLV客+0.0065顺资金；两队均在保级区(#17 8分 vs #18 2分)，主伤3客伤4，保级死磕双方都不敢输，平局概率极高！勒阿弗尔受让安全度高，但建议单关使用，不盲目入串。",
-            "resolution": "【双模型联合核准】：一致看好勒阿弗尔受让打出，首选锁定【让(-1) 让负 @1.69】；单场防范双方保级互殴闷平 1:1。"
-        },
-        ("毕尔", "西班"): {
-            "is_consensus": True,
-            "consensus_badge": "🟢 达成高度共识",
-            "consensus_tag": "🟢 毕尔巴鄂 7 伤爆雷 · 坚决剔除 1.33 蚊子肉，首选【让(-1) 让负 @2.67】",
-            "quant_view": "毕尔巴鄂常规主胜 1.33 触犯反蚊子肉红线；(-1) 让胜 2.25 穿盘率仅 39%，深盘极度凶险。",
-            "open_view": "【单位open 024号函】：高度认同拒买主胜！关键证据：毕尔巴鄂同样高达 7 人伤停（Guruzeta、Vivian、Paredes、Sannadi等主力后防均伤缺）；西班牙人保级死守低位大巴。1.33 配 7 个伤号性价比极差，首选【让负 @2.67】，次选主胜 1.33 小胜。",
-            "resolution": "【双模型风控铁律裁定】：全票否决 1.33 独赢入串！让球盘直接锁定西班牙人受让【让(-1) 让负 @2.67】高赔防冷！"
-        },
-        # 历史国际比赛对阵保留
-        ("科里", "桑托"): {
-            "is_consensus": False, "consensus_badge": "⚔️ 存在技术分歧", "consensus_tag": "⚔️ 1.78 伪低赔警戒 · 锁定【让(+1) 让胜 @1.75】",
-            "quant_view": "科里蒂巴受让 (+1) 让胜 @1.75 具备健康正向收益 (EV +22.8%)。", "open_view": "科里蒂巴主场保级战意强烈。", "resolution": "锁定【让(+1) 让胜 @1.75】。"
-        },
-        ("弗拉", "巴拉"): {
-            "is_consensus": False, "consensus_badge": "⚔️ 存在技术分歧", "consensus_tag": "⚔️ 严禁 @1.10 蚊子肉 · 聚焦【让(-2) 让负 @2.19】",
-            "quant_view": "(-2) 让负 @2.19 具备深度正向 EV (+28.2%)。", "open_view": "巴拉纳竞技防守反击纪律严明。", "resolution": "重仓【让(-2) 让负 @2.19】。"
-        }
-    }
+    current_match_nums = [m.get("num") for m in (matches or []) if m.get("num")]
 
-    divergences = []
-    for m in (matches or []):
-        num = m.get("num", "")
-        h = m.get("home", "")
-        a = m.get("away", "")
-        l = m.get("league", "")
-        had = m.get("had_sp", [0, 0, 0])
-        hhad = m.get("hhad_sp", ["+1", 0, 0, 0])
-        had_str = f"{had[0]} {had[1]} {had[2]}" if had[0] > 0 else "常规HAD停售"
-        match_header = f"{l} {h} vs {a} (HAD: {had_str} | 让球({hhad[0]}): {hhad[1]} {hhad[2]} {hhad[3]})"
+    # 智能缓存检查：若非强制刷新、比赛未变且模型标志为最新的云端球探模型，复用已有双模型比对
+    is_new_agent = old_dual and old_dual.get("models", {}).get("scout") == "OpenCode (云端战术球探 / 单位open)"
+    if not force and is_new_agent and current_match_nums and set(current_match_nums) == set(old_match_nums):
+        divs = old_dual.get("divergences", [])
+        if divs and len(divs) >= len(current_match_nums) * 0.8:
+            return old_dual
 
-        pair_key = (h[:2], a[:2])
-        if pair_key in curated_reviews:
-            cr = curated_reviews[pair_key]
-            divergences.append({
-                "mid": num,
-                "match": match_header,
-                "is_consensus": cr["is_consensus"],
-                "consensus_tag": cr["consensus_tag"],
-                "consensus_badge": cr["consensus_badge"],
-                "quant_view": cr["quant_view"],
-                "open_view": cr["open_view"],
-                "resolution": cr["resolution"]
-            })
-        else:
-            # 动态生成：根据实际比赛主客队、赔率与xG生成专业对抗审校
-            intel = m.get("intel", {})
-            had_pred = intel.get("had_pred", {})
-            scout_pick = had_pred.get("primary", "主胜")
-            rec_pick = m.get("recommended_pick", "胜")
-            h_xg = m.get("h_xg", 1.4)
-            a_xg = m.get("a_xg", 1.1)
-            hhad_pick = intel.get("hhad_pred", {}).get("primary", "让胜")
-            valid_sps = [s for s in had if s > 0]
-            min_sp = min(valid_sps) if valid_sps else 1.5
+    try:
+        import opencode_server_agent
+        rev = opencode_server_agent.get_live_dual_agent_review(matches)
+        if rev and rev.get("divergences"):
+            return rev
+    except Exception as e:
+        print(f"[DailyUpdater] ⚠️ opencode_server_agent 调用异常: {e}")
 
-            if min_sp < 1.40:
-                is_agree = False
-                tag = f"⚔️ 严禁 @{min_sp} 绝对蚊子肉垫脚！让球深盘防卡盘"
-                badge = "⚔️ 存在技术分歧"
-                q_view = f"常规赔率 @{min_sp} 触发系统反蚊子肉红线（<1.40禁令），二元负二项与 6x6 矩阵预期进球 {h_xg}:{a_xg}，深盘穿盘期望不足。"
-                o_view = f"{l}战术博弈：强队面临密集赛程体能考验，弱队客战多以防守大巴为主，让球({hhad[0]})盘口谨防一球分差输盘。"
-                res = f"【风控铁律一票否决】：竞彩实盘严禁 @{min_sp} 蚊子肉单赢；实战建议转向【让球({hhad[0]}) {hhad_pick}】或次选防冷。"
-            elif 1.50 <= min_sp <= 1.99 and (scout_pick not in rec_pick and rec_pick not in scout_pick):
-                is_agree = False
-                tag = f"⚔️ {min_sp} 伪低赔预警 · 深度设防让球或次选防冷"
-                badge = "⚔️ 存在技术分歧"
-                q_view = f"原始赔率 @{min_sp} 落入 1.50~1.99 典型伪低赔预警带，6x6 热力图显示平局与客不败覆盖率高，让球盘具备正向收益。"
-                o_view = f"{h}近期战绩起伏，{a}客战韧性充足，受让一球安全垫厚实，机构浅盘诱买主队意图明显。"
-                res = f"【战术警报纠偏】：坚决否决伪低赔单选，重仓布局【让球({hhad[0]}) {hhad_pick}】保驾护航。"
-            else:
-                is_agree = (scout_pick in rec_pick) or (rec_pick in scout_pick)
-                tag = f"🟢 双方高度共识：重点推荐【{rec_pick}】" if is_agree else "⚔️ 战术防冷 vs 量化EV分歧"
-                badge = "🟢 达成高度共识" if is_agree else "⚔️ 存在技术分歧"
-                q_view = f"二元负二项与 6x6 比分矩阵测算预期进球 {h_xg}:{a_xg}，胜平负量化主选【{rec_pick}】。"
-                o_view = f"战术球探综合两队近期攻防效率与战意，认可【{scout_pick}】并重点关注让球({hhad[0]}) {hhad_pick}。"
-                res = f"【双模型协同核准】：基于正向期望与基本面支撑，全票锁定【{rec_pick} / 让球{hhad_pick}】。"
+    # 保底生成
+    try:
+        import opencode_server_agent
+        divergences = opencode_server_agent.build_fallback_divergences(matches)
+    except Exception:
+        divergences = []
 
-            divergences.append({
-                "mid": num,
-                "match": match_header,
-                "is_consensus": is_agree,
-                "consensus_tag": tag,
-                "consensus_badge": badge,
-                "quant_view": q_view,
-                "open_view": o_view,
-                "resolution": res
-            })
-
-    if len(matches or []) <= 6 and any("维多利亚" in m.get("home", "") or "奥兰多" in m.get("home", "") for m in (matches or [])):
-        consensus_rules = [
-            "【风控铁律一 · 严格当日比赛即时赔率核验】：每天仅更新当天在售的正式挂牌比赛（今日4场），结合最新即时赔率，坚决拒绝提前录入次日未沉淀赔率；",
-            "【风控铁律二 · 狙击 1.50~1.99 伪低赔与受让铁盾】：美职联季后赛双方平开均势锁定辛辛那提受让不败【让(-1)让负@1.45】、巴西甲保级生死战锁定维多利亚【让(+1)让胜@1.52】；",
-            "【风控铁律三 · 黄金稳胆全量解耦】：方案一「双受让不败稳健单 @2.04」（圣保罗让负 @1.41 × 奥兰多城让负 @1.45）与方案二「保级受让与海湾人主胜单 @2.57」（维多利亚让胜 @1.52 × 西雅图主胜 @1.69），4场完全解耦零重合！"
-        ]
-        case_warning = {
-            "title": "🛡️ 双模型今日美职联与巴西甲 4 场当日实盘联合审计总警报（赔率即时对齐 · 4场完全解耦）",
-            "details": "机器全自动客观对账核验完成！今日严格聚焦官方挂牌的当日在售 4 场（巴西甲 2 场 + 美职联 2 场），拒绝提前预推次日未成熟盘口。双模型结合最新即时赔率动态落实三层防护：① 识破圣保罗虚高让步，重选弗鲁米嫩塞受让铁盾；② 锁定辛辛那提季后赛反击客不败；③ 精选输出方案一双盾单（圣保罗让负×奥兰多城让负 @2.04）与方案二解耦单（维多利亚让胜×西雅图主胜 @2.57），注额严格锁定为2的整数倍，全局SSOT绝对对齐！"
-        }
-    else:
-        consensus_rules = [
-            "【风控铁律一 · 彻底清零 <1.40 蚊子肉】：严格当日实盘核验，杜绝强队赢球输盘翻车垫脚；",
-            "【风控铁律二 · 狙击 1.50~1.99 伪低赔与让球深盘】：结合当日即时赔率，重点通过受让盘与次选防冷建立安全屏障；",
-            "【风控铁律三 · 黄金稳胆全量解耦】：两套实战方案完全解耦零重合，注额严格锁定为2的整数倍，全局SSOT绝对对齐！"
-        ]
-        case_warning = {
-            "title": f"🛡️ 双模型今日 {len(divergences)} 场当日实盘联合审计总警报（即时赔率对齐 · 严格解耦）",
-            "details": "机器全自动客观对账核验完成！严格聚焦当日挂牌比赛，结合最新即时赔率动态落实全维风控与SSOT严格对齐。"
-        }
-
-    c_count = sum(1 for d in divergences if d.get("is_consensus"))
-    d_count = len(divergences) - c_count
-    c_rate = f"{round(c_count / len(divergences) * 100, 1)}%" if divergences else "0%"
-    summary = {
-        "total_matches": len(divergences),
-        "consensus_count": c_count,
-        "divergence_count": d_count,
-        "consensus_rate": c_rate
-    }
-
+    total = len(divergences)
+    consensus_cnt = sum(1 for d in divergences if d.get("is_consensus"))
     return {
         "status": "APPROVED_WITH_DIVERGENCE_RESOLVED",
         "timestamp": dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "summary": summary,
+        "summary": {
+            "total_matches": total,
+            "consensus_count": consensus_cnt,
+            "divergence_count": total - consensus_cnt,
+            "consensus_rate": f"{round(consensus_cnt / total * 100, 1)}%" if total > 0 else "0.0%"
+        },
         "models": {
             "quant": "Antigravity (多元负二项贝叶斯模型 / 单位反重力)",
-            "scout": "OpenCode (本地战术球探 / 单位open)"
+            "scout": "OpenCode (云端战术球探 / 单位open)"
         },
-        "consensus_rules": consensus_rules,
-        "case_study_warning": case_warning,
+        "consensus_rules": [
+            "双模型共识原则：当且仅当 Antigravity 量化数学正期望与 OpenCode 战术球探（战意/伤停/打法）均给出支持时，授予【🟢 达成高度共识】重点推荐标签。",
+            "绝对反蚊子肉风控铁律：常规独赢 SP < 1.40 一律禁止进入二串一方案单赢池；若打深盘必须经过让球去水模型与战术体能排查。",
+            "分歧消解机制：当两模型发生分歧时，系统对冲降维至让球受让胜平负或首选平局防冷，杜绝单一视角盲目冒进。"
+        ],
+        "case_study_warning": {
+            "title": f"🛡️ 双模型今日 {total} 场当日实盘联合审计总警报（即时赔率对齐 · 严格解耦）",
+            "details": "机器全自动客观对账核验完成！严格聚焦当日挂牌比赛，结合最新即时赔率动态落实全维风控与SSOT严格对齐。"
+        },
         "divergences": divergences
     }
 
