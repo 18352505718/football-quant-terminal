@@ -1371,9 +1371,12 @@ def get_dual_agent_review_data(matches=None, force=False):
 
     current_match_nums = [m.get("num") for m in (matches or []) if m.get("num")]
 
-    # 智能缓存检查：若非强制刷新、比赛未变且模型标志为最新的云端球探模型，复用已有双模型比对
-    is_new_agent = old_dual and old_dual.get("models", {}).get("scout") == "OpenCode (云端战术球探 / 单位open)"
-    if not force and is_new_agent and current_match_nums and set(current_match_nums) == set(old_match_nums):
+    # 优先绝对保护：若已有单位open本尊验签回信，必须无条件保留，严禁云端代理覆盖！
+    if old_dual and old_dual.get("audit_meta", {}).get("is_unit_open_person"):
+        return old_dual
+
+    # 智能缓存检查：若非强制刷新、比赛未变，复用已有双模型比对
+    if not force and old_dual and current_match_nums and set(current_match_nums) == set(old_match_nums):
         divs = old_dual.get("divergences", [])
         if divs and len(divs) >= len(current_match_nums) * 0.8:
             return old_dual
