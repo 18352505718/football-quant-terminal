@@ -757,257 +757,92 @@ def generate_parlays_and_ren9_for_matches(matches, ren9_draw=None):
     _apply_tactical_card_sync(matches)
     match_map = {m.get("num"): m for m in matches}
 
-    # 当日实盘核心场次在售时：优先输出经双模型对抗审计与伤停排雷核准的两套完全解耦 2串1
-    if all(k in match_map for k in ["周二002", "周二003", "周二006", "周二008"]):
-        m1 = match_map["周二003"]
-        m2 = match_map["周二008"]
-        m3 = match_map["周二006"]
-        m4 = match_map["周二002"]
+    # 彻底杜绝历史跨期死代码：统一采用全动态、模型驱动的防蚊子肉 + 防伪低赔解耦筛选逻辑
+    # 通用防蚊子肉 + 防伪低赔解耦筛选逻辑（修复旧版 had[0]>=1.40 or had[2]>=1.40 漏放@1.17大Bug）
+    weekdays_cn = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+    today_prefix = weekdays_cn[dt.datetime.now().weekday()]
+    pool = [m for m in matches if m.get("num", "").startswith(today_prefix)]
+    if len(pool) < 4:
+        pool = matches
 
-        sp1 = float(m1["had_sp"][0] or 1.41)
-        sp2 = float(m2["had_sp"][0] or 1.68)
-        sp3 = float(m3["hhad_sp"][1] or 1.45)
-        sp4 = float(m4["had_sp"][0] or 1.77)
+    eligible_legs = []
+    for m in pool:
+        had = m.get("had_sp", [0, 0, 0])
+        hhad = m.get("hhad_sp", ["+1", 0, 0, 0])
+        p_h, p_d, p_a = m.get("fused_1x2", [0.34, 0.33, 0.33])
+        line_str = str(hhad[0])
+        options = []
 
-        c1_odds = round(sp1 * sp2, 2)
-        c1_prob = 0.542
-        c1_ev = round(max(0.12, c1_prob * c1_odds - 1.0), 3)
+        # 常规 HAD 仅允许选出方向赔率严格 >= 1.40 且非停售场次
+        had_primary = m.get("intel", {}).get("had_pred", {}).get("primary", "主胜")
+        if "主" in had_primary or had_primary == "胜":
+            sp_had, prob_had, label_had = had[0], p_h, "主胜"
+        elif "客" in had_primary or had_primary == "负":
+            sp_had, prob_had, label_had = had[2], p_a, "客胜"
+        else:
+            sp_had, prob_had, label_had = had[1], p_d, "平"
 
-        c2_odds = round(sp3 * sp4, 2)
-        c2_prob = 0.508
-        c2_ev = round(max(0.12, c2_prob * c2_odds - 1.0), 3)
+        if sp_had >= 1.40 and prob_had >= 0.44:
+            options.append(("had", label_had, sp_had, prob_had))
 
-        parlays = [
-            {
-                "scheme_name": "方案 1【周二当日主推 · 亚洲与欧洲黄金稳胆单】",
-                "anchor_leg": f"[{m1['num']}] {m1['home']} vs {m1['away']} 主胜 @{sp1}",
-                "edge_leg": f"[{m2['num']}] {m2['home']} vs {m2['away']} 主胜 @{sp2}",
-                "combined_odds": c1_odds,
-                "combined_prob": c1_prob,
-                "combined_ev": c1_ev,
-                "suggested_stake_pct": 0.035,
-                "notes": "双模型联合核准：全量杜绝<1.40蚊子肉！日本队旅欧全主力集结传控实力碾压主胜 @1.41 + 匈牙利主场索博斯洛伊领衔迎击客弱北爱尔兰主胜 @1.68，回报 @2.37，EV +28.5%！"
-            },
-            {
-                "scheme_name": "方案 2【周二世亚预 · 国足抢分与解耦防冷单】",
-                "anchor_leg": f"[{m3['num']}] {m3['home']} vs {m3['away']} 让球({m3['hhad_sp'][0]})-让胜 @{sp3}",
-                "edge_leg": f"[{m4['num']}] {m4['home']} vs {m4['away']} 主胜 @{sp4}",
-                "combined_odds": c2_odds,
-                "combined_prob": c2_prob,
-                "combined_ev": c2_ev,
-                "suggested_stake_pct": 0.030,
-                "notes": "4场完全解耦0重合！丹麦北欧德比主场受让不败(+1)让胜 @1.45 极速锁盾；世亚预18强赛国足主场争分战意拉满主胜 @1.77，回报 @2.57，EV +30.5%！"
-            }
-        ]
-    elif all(k in match_map for k in ["周一001", "周一002", "周一005", "周一006"]):
-        m1 = match_map["周一002"]
-        m2 = match_map["周一005"]
-        m3 = match_map["周一006"]
-        m4 = match_map["周一001"]
+        # 让球双选盾（>= 1.40）
+        hhad_primary = m.get("intel", {}).get("hhad_pred", {}).get("primary", "让胜")
+        hhad_sp_map = {"让胜": hhad[1], "让平": hhad[2], "让负": hhad[3]}
+        sp_hhad = float(hhad_sp_map.get(hhad_primary) or 0)
+        if sp_hhad >= 1.40:
+            options.append(("hhad", f"让球({line_str})-{hhad_primary}", sp_hhad, max(0.54, min(0.76, (1 / sp_hhad) * 1.05))))
 
-        sp1 = float(m1["had_sp"][2] or 1.55)
-        sp2 = float(m2["had_sp"][0] or 1.43)
-        sp3 = float(m3["hhad_sp"][3] or 1.85)
-        sp4 = float(m4["had_sp"][0] or 1.55)
+        if options:
+            options.sort(key=lambda x: x[3] * min(x[2], 2.2), reverse=True)
+            kind, label, sp_v, pr_v = options[0]
+            eligible_legs.append((pr_v, kind, m, label, sp_v))
 
-        c1_odds = round(sp1 * sp2, 2)
-        c1_prob = 0.552
-        c1_ev = round(max(0.12, c1_prob * c1_odds - 1.0), 3)
-
-        c2_odds = round(sp3 * sp4, 2)
-        c2_prob = 0.468
-        c2_ev = round(max(0.12, c2_prob * c2_odds - 1.0), 3)
-
-        parlays = [
-            {
-                "scheme_name": "方案 1【周一当日主推 · 黄金稳胆单】",
-                "anchor_leg": f"[{m1['num']}] {m1['home']} vs {m1['away']} 客胜 @{sp1}",
-                "edge_leg": f"[{m2['num']}] {m2['home']} vs {m2['away']} 主胜 @{sp2}",
-                "combined_odds": c1_odds,
-                "combined_prob": c1_prob,
-                "combined_ev": c1_ev,
-                "suggested_stake_pct": 0.035,
-                "notes": "双模型联合核准：全量杜绝<1.40蚊子肉！斯洛伐克洛博特卡坐镇硬实力碾压哈萨克斯坦客胜稳胆 @1.55 + 瑞士主场高位逼抢克制苏格兰主胜 @1.43，回报 @2.22，EV +22.5%！"
-            },
-            {
-                "scheme_name": "方案 2【周一欧国联 · 高置信解耦防冷单】",
-                "anchor_leg": f"[{m3['num']}] {m3['home']} vs {m3['away']} 让球({m3['hhad_sp'][0]})-让负 @{sp3}",
-                "edge_leg": f"[{m4['num']}] {m4['home']} vs {m4['away']} 主胜 @{sp4}",
-                "combined_odds": c2_odds,
-                "combined_prob": c2_prob,
-                "combined_ev": c2_ev,
-                "suggested_stake_pct": 0.030,
-                "notes": "4场完全解耦0重合！强强对话德国难穿盘，荷兰受让不败(+1)让负 @1.85 战术防冷价值极高；法罗群岛托尔斯港极地魔鬼主场对阵客战进球荒的摩尔多瓦主胜 @1.55，回报 @2.87，EV +34.3%！"
-            }
-        ]
-    elif all(k in match_map for k in ["周四001", "周四002", "周四003", "周四004"]):
-        m1 = match_map["周四002"]  # 圣保罗 vs 弗鲁米嫩塞
-        m2 = match_map["周四003"]  # 奥兰多城 vs 辛辛那提FC
-        m3 = match_map["周四001"]  # 维多利亚 vs 布拉干蒂诺RB
-        m4 = match_map["周四004"]  # 西雅图海湾人 vs 皇家盐湖城
-
-        sp1 = float(m1["hhad_sp"][3] or 1.41)
-        sp2 = float(m2["hhad_sp"][3] or 1.45)
-        sp3 = float(m3["hhad_sp"][1] or 1.52)
-        sp4 = float(m4["had_sp"][0] or 1.69)
-
-        c1_odds = round(sp1 * sp2, 2)
-        c1_prob = 0.582
-        c1_ev = round(max(0.12, c1_prob * c1_odds - 1.0), 3)
-
-        c2_odds = round(sp3 * sp4, 2)
-        c2_prob = 0.512
-        c2_ev = round(max(0.12, c2_prob * c2_odds - 1.0), 3)
-
-        parlays = [
-            {
-                "scheme_name": "方案 1【周四当日主推 · 美职联与巴西甲双盾稳健单】",
-                "anchor_leg": f"[{m1['num']}] {m1['home']} vs {m1['away']} 让球({m1['hhad_sp'][0]})-让负 @{sp1}",
-                "edge_leg": f"[{m2['num']}] {m2['home']} vs {m2['away']} 让球({m2['hhad_sp'][0]})-让负 @{sp2}",
-                "combined_odds": c1_odds,
-                "combined_prob": c1_prob,
-                "combined_ev": c1_ev,
-                "suggested_stake_pct": 0.035,
-                "notes": "双模型结合即时赔率联合核准：圣保罗豪门对决防客不败(-1)让负 @1.41 + 奥兰多城与辛辛那提五五开均势锁定(-1)让负 @1.45，双受让铁盾组合，标称赔率 @2.04，EV +18.7%！"
-            },
-            {
-                "scheme_name": "方案 2【周四当日精选 · 保级战意与主胜解耦单】",
-                "anchor_leg": f"[{m3['num']}] {m3['home']} vs {m3['away']} 让球({m3['hhad_sp'][0]})-让胜 @{sp3}",
-                "edge_leg": f"[{m4['num']}] {m4['home']} vs {m4['away']} 主胜 @{sp4}",
-                "combined_odds": c2_odds,
-                "combined_prob": c2_prob,
-                "combined_ev": c2_ev,
-                "suggested_stake_pct": 0.030,
-                "notes": "4场完全解耦0重合！维多利亚生死保级主场受让(+1)让胜 @1.52 + 西雅图海湾人主场季后赛威慑力主胜 @1.69，标称赔率 @2.57，EV +31.6%！"
-            }
-        ]
-    elif any("科里蒂巴" in m.get("home", "") for m in matches) and all(k in match_map for k in ["周三001", "周三002", "周四003", "周四002"]):
-        m1 = match_map["周三001"]
-        m2 = match_map["周三002"]
-        m3 = match_map["周四003"]
-        m4 = match_map["周四002"]
-
-        sp1 = float(m1["hhad_sp"][1] or 1.75)
-        sp2 = float(m2["hhad_sp"][3] or 2.19)
-        sp3 = float(m3["hhad_sp"][3] or 1.45)
-        sp4 = float(m4["hhad_sp"][3] or 1.48)
-
-        c1_odds = round(sp1 * sp2, 2)
-        c1_prob = 0.547
-        c1_ev = round(max(0.12, c1_prob * c1_odds - 1.0), 3)
-
-        c2_odds = round(sp3 * sp4, 2)
-        c2_prob = 0.449
-        c2_ev = round(max(0.12, c2_prob * c2_odds - 1.0), 3)
-
-        parlays = [
-            {
-                "scheme_name": "方案 1【周三当日主推 · 巴西甲双盾稳胆单】",
-                "anchor_leg": f"[{m1['num']}] {m1['home']} vs {m1['away']} 让球({m1['hhad_sp'][0]})-让胜 @{sp1}",
-                "edge_leg": f"[{m2['num']}] {m2['home']} vs {m2['away']} 让球({m2['hhad_sp'][0]})-让负 @{sp2}",
-                "combined_odds": c1_odds,
-                "combined_prob": c1_prob,
-                "combined_ev": c1_ev,
-                "suggested_stake_pct": 0.035,
-                "notes": "双模型联合核准：杜绝弗拉门戈 @1.10 绝对蚊子肉陷阱！科里蒂巴主场保级受让(+1)让胜 @1.75 铁盾 + 巴拉纳竞技受让深盘(-2)让负 @2.19，全程零<1.40蚊子肉，组合标称回报 @3.83！"
-            },
-            {
-                "scheme_name": "方案 2【美职联与巴西甲 · 季后赛与豪门解耦防冷单】",
-                "anchor_leg": f"[{m3['num']}] {m3['home']} vs {m3['away']} 让球({m3['hhad_sp'][0]})-让负 @{sp3}",
-                "edge_leg": f"[{m4['num']}] {m4['home']} vs {m4['away']} 让球({m4['hhad_sp'][0]})-让负 @{sp4}",
-                "combined_odds": c2_odds,
-                "combined_prob": c2_prob,
-                "combined_ev": c2_ev,
-                "suggested_stake_pct": 0.030,
-                "notes": "4场完全解耦0重合！美职联季后赛双方2.30五五开，辛辛那提受让不败(-1)让负 @1.45；圣保罗与弗鲁米嫩塞豪门对话客队防线韧性强(-1)让负 @1.48，双受让不败组合回报 @2.15！"
-            }
-        ]
-    else:
-        # 通用防蚊子肉 + 防伪低赔解耦筛选逻辑（修复旧版 had[0]>=1.40 or had[2]>=1.40 漏放@1.17大Bug）
-        weekdays_cn = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
-        today_prefix = weekdays_cn[dt.datetime.now().weekday()]
-        pool = [m for m in matches if m.get("num", "").startswith(today_prefix)]
-        if len(pool) < 4:
-            pool = matches
-
-        eligible_legs = []
-        for m in pool:
-            had = m.get("had_sp", [0, 0, 0])
+    eligible_legs.sort(key=lambda x: x[0], reverse=True)
+    if len(eligible_legs) < 4:
+        # 放宽补充至全集确保4场不重合
+        for m in matches:
+            if any(x[2]["num"] == m["num"] for x in eligible_legs):
+                continue
             hhad = m.get("hhad_sp", ["+1", 0, 0, 0])
-            p_h, p_d, p_a = m.get("fused_1x2", [0.34, 0.33, 0.33])
-            line_str = str(hhad[0])
-            options = []
-
-            # 常规 HAD 仅允许选出方向赔率严格 >= 1.40 且非停售场次
-            had_primary = m.get("intel", {}).get("had_pred", {}).get("primary", "主胜")
-            if "主" in had_primary or had_primary == "胜":
-                sp_had, prob_had, label_had = had[0], p_h, "主胜"
-            elif "客" in had_primary or had_primary == "负":
-                sp_had, prob_had, label_had = had[2], p_a, "客胜"
-            else:
-                sp_had, prob_had, label_had = had[1], p_d, "平"
-
-            if sp_had >= 1.40 and prob_had >= 0.44:
-                options.append(("had", label_had, sp_had, prob_had))
-
-            # 让球双选盾（>= 1.40）
-            hhad_primary = m.get("intel", {}).get("hhad_pred", {}).get("primary", "让胜")
-            hhad_sp_map = {"让胜": hhad[1], "让平": hhad[2], "让负": hhad[3]}
-            sp_hhad = float(hhad_sp_map.get(hhad_primary) or 0)
-            if sp_hhad >= 1.40:
-                options.append(("hhad", f"让球({line_str})-{hhad_primary}", sp_hhad, max(0.54, min(0.76, (1 / sp_hhad) * 1.05))))
-
-            if options:
-                options.sort(key=lambda x: x[3] * min(x[2], 2.2), reverse=True)
-                kind, label, sp_v, pr_v = options[0]
-                eligible_legs.append((pr_v, kind, m, label, sp_v))
-
-        eligible_legs.sort(key=lambda x: x[0], reverse=True)
-        if len(eligible_legs) < 4:
-            # 放宽补充至全集确保4场不重合
-            for m in matches:
-                if any(x[2]["num"] == m["num"] for x in eligible_legs):
-                    continue
-                hhad = m.get("hhad_sp", ["+1", 0, 0, 0])
-                for idx, lbl in [(1, "让胜"), (3, "让负")]:
-                    if hhad[idx] >= 1.40:
-                        eligible_legs.append((0.50, "hhad", m, f"让球({hhad[0]})-{lbl}", hhad[idx]))
-                        break
-                if len(eligible_legs) >= 4:
+            for idx, lbl in [(1, "让胜"), (3, "让负")]:
+                if hhad[idx] >= 1.40:
+                    eligible_legs.append((0.50, "hhad", m, f"让球({hhad[0]})-{lbl}", hhad[idx]))
                     break
+            if len(eligible_legs) >= 4:
+                break
 
-        l1 = eligible_legs[0]
-        l2 = eligible_legs[1]
-        l3 = eligible_legs[2] if len(eligible_legs) > 2 else l1
-        l4 = eligible_legs[3] if len(eligible_legs) > 3 else l2
+    l1 = eligible_legs[0]
+    l2 = eligible_legs[1]
+    l3 = eligible_legs[2] if len(eligible_legs) > 2 else l1
+    l4 = eligible_legs[3] if len(eligible_legs) > 3 else l2
 
-        c1_odds = round(l1[4] * l2[4], 2)
-        c1_prob = round(l1[0] * l2[0], 3)
-        c2_odds = round(l3[4] * l4[4], 2)
-        c2_prob = round(l3[0] * l4[0], 3)
+    c1_odds = round(l1[4] * l2[4], 2)
+    c1_prob = round(l1[0] * l2[0], 3)
+    c2_odds = round(l3[4] * l4[4], 2)
+    c2_prob = round(l3[0] * l4[0], 3)
 
-        parlays = [
-            {
-                "scheme_name": "方案 1【今日主推稳健单】",
-                "anchor_leg": f"[{l1[2]['num']}] {l1[2]['home']} vs {l1[2]['away']} {l1[3]} @{l1[4]}",
-                "edge_leg": f"[{l2[2]['num']}] {l2[2]['home']} vs {l2[2]['away']} {l2[3]} @{l2[4]}",
-                "combined_odds": c1_odds,
-                "combined_prob": c1_prob,
-                "combined_ev": round(max(0.08, c1_prob * c1_odds - 1.0), 3),
-                "suggested_stake_pct": 0.035,
-                "notes": "模型严选实盘组合，严格剔除 <1.40 蚊子肉并锁定高胜率方向"
-            },
-            {
-                "scheme_name": "方案 2【高置信解耦备选单】",
-                "anchor_leg": f"[{l3[2]['num']}] {l3[2]['home']} vs {l3[2]['away']} {l3[3]} @{l3[4]}",
-                "edge_leg": f"[{l4[2]['num']}] {l4[2]['home']} vs {l4[2]['away']} {l4[3]} @{l4[4]}",
-                "combined_odds": c2_odds,
-                "combined_prob": c2_prob,
-                "combined_ev": round(max(0.08, c2_prob * c2_odds - 1.0), 3),
-                "suggested_stake_pct": 0.030,
-                "notes": "完全解耦第二单（4场0重合），风险分散"
-            }
-        ]
+    parlays = [
+        {
+            "scheme_name": "方案 1【今日主推稳健单】",
+            "anchor_leg": f"[{l1[2]['num']}] {l1[2]['home']} vs {l1[2]['away']} {l1[3]} @{l1[4]}",
+            "edge_leg": f"[{l2[2]['num']}] {l2[2]['home']} vs {l2[2]['away']} {l2[3]} @{l2[4]}",
+            "combined_odds": c1_odds,
+            "combined_prob": c1_prob,
+            "combined_ev": round(max(0.08, c1_prob * c1_odds - 1.0), 3),
+            "suggested_stake_pct": 0.035,
+            "notes": "模型严选实盘组合，严格剔除 <1.40 蚊子肉并锁定高胜率方向"
+        },
+        {
+            "scheme_name": "方案 2【高置信解耦备选单】",
+            "anchor_leg": f"[{l3[2]['num']}] {l3[2]['home']} vs {l3[2]['away']} {l3[3]} @{l3[4]}",
+            "edge_leg": f"[{l4[2]['num']}] {l4[2]['home']} vs {l4[2]['away']} {l4[3]} @{l4[4]}",
+            "combined_odds": c2_odds,
+            "combined_prob": c2_prob,
+            "combined_ev": round(max(0.08, c2_prob * c2_odds - 1.0), 3),
+            "suggested_stake_pct": 0.030,
+            "notes": "完全解耦第二单（4场0重合），风险分散"
+        }
+    ]
 
     ren9 = _build_dynamic_ren9(matches, ren9_draw=ren9_draw)
     return parlays, ren9
@@ -1028,6 +863,274 @@ def _grade_hhad_result(score_str, line_str):
         return f"让平 ({line_str})"
     else:
         return f"让负 ({line_str})"
+
+
+
+def _parse_parlay_leg_text(leg_str):
+    """从 '[周二004] 加拉塔萨雷 vs 阿斯顿维拉 让球(+1)-让胜 @1.54' 或类似推荐文本中提取结构化字段"""
+    if not leg_str:
+        return {"num": "", "home": "", "away": "", "pick_display": "", "is_hhad": False, "choice": "", "line": "+1", "sp": 1.85}
+    
+    m = re.search(r'\[(?P<num>[^\]]+)\]\s*(?P<home>\S+)\s*vs\s*(?P<away>\S+)\s*(?P<pick>.+?)\s*@(?P<sp>[0-9\.]+)', str(leg_str))
+    if m:
+        num = m.group("num").strip()
+        home = m.group("home").strip()
+        away = m.group("away").strip()
+        pick_raw = m.group("pick").strip()
+        sp = float(m.group("sp"))
+    else:
+        m2 = re.search(r'\[(?P<num>[^\]]+)\]\s*(?P<team>[^@]+?)\s*(?P<pick>让球[^\s@]+|[主客]胜|平|让[胜平负])\s*@(?P<sp>[0-9\.]+)', str(leg_str))
+        if m2:
+            num = m2.group("num").strip()
+            home = m2.group("team").strip()
+            away = ""
+            pick_raw = m2.group("pick").strip()
+            sp = float(m2.group("sp"))
+        else:
+            return {"num": "", "home": "", "away": "", "pick_display": str(leg_str), "is_hhad": False, "choice": "", "line": "+1", "sp": 1.85}
+
+    is_hhad = "让" in pick_raw
+    line = "+1"
+    line_m = re.search(r'让球\(([\+\-]?[0-9]+)\)', pick_raw)
+    if line_m:
+        line = line_m.group(1)
+    
+    if is_hhad:
+        if "让负" in pick_raw:
+            choice = "让负"
+        elif "让平" in pick_raw:
+            choice = "让平"
+        else:
+            choice = "让胜"
+    else:
+        if "主" in pick_raw or pick_raw == "胜":
+            choice = "主胜"
+        elif "平" in pick_raw:
+            choice = "平局"
+        elif "客" in pick_raw or pick_raw == "负":
+            choice = "客胜"
+        else:
+            choice = "主胜"
+
+    return {
+        "num": num,
+        "home": home,
+        "away": away,
+        "pick_display": f"{pick_raw} @{sp}",
+        "is_hhad": is_hhad,
+        "choice": choice,
+        "line": line,
+        "sp": sp
+    }
+
+
+def _evaluate_single_leg(leg_info, match_row):
+    """基于真实完场比分与盘口规则核验单腿是否命中"""
+    num = leg_info.get("num", "")
+    choice = leg_info.get("choice", "主胜")
+    is_hhad = leg_info.get("is_hhad", False)
+    line_str = leg_info.get("line", "+1")
+
+    if not match_row:
+        return {
+            "hit": False,
+            "finished": False,
+            "score": "-",
+            "actual": "待完场",
+            "comment": "⏳ 赛事未完场或无官方赛果数据"
+        }
+
+    score = str(match_row.get("score", "-")).strip()
+    half_score = str(match_row.get("half_score", "-")).strip()
+
+    if ":" not in score:
+        return {
+            "hit": False,
+            "finished": False,
+            "score": score,
+            "actual": "待完场",
+            "comment": "⏳ 赛事进行中/未出赛果"
+        }
+
+    try:
+        hg, ag = [int(x.strip()) for x in score.split(":")]
+    except Exception:
+        return {
+            "hit": False,
+            "finished": False,
+            "score": score,
+            "actual": "比分异常",
+            "comment": "⚠️ 比分数据格式异常"
+        }
+
+    # 常规胜平负判定
+    if hg > ag:
+        actual_had = "主胜"
+        actual_had_label = "主胜 (3)"
+    elif hg == ag:
+        actual_had = "平局"
+        actual_had_label = "平局 (1)"
+    else:
+        actual_had = "客胜"
+        actual_had_label = "客胜 (0)"
+
+    # 让球胜平负判定
+    try:
+        line_val = int(str(line_str).replace("+", "").strip())
+    except Exception:
+        line_val = 1
+    diff = hg + line_val - ag
+    if diff > 0:
+        actual_hhad = "让胜"
+    elif diff == 0:
+        actual_hhad = "让平"
+    else:
+        actual_hhad = "让负"
+
+    home_name = match_row.get("home") or leg_info.get("home", "")
+    away_name = match_row.get("away") or leg_info.get("away", "")
+
+    if is_hhad:
+        hit = (choice == actual_hhad)
+        actual_str = f"{home_name} {score} {away_name} (让球{line_str}: {actual_hhad})"
+        if hit:
+            comment = f"✅ 让球盘【{choice}】顺利打出（完场 {score}）"
+        else:
+            comment = f"❌ 未中：推荐【{choice}】，实际让球为【{actual_hhad}】（完场 {score}，盘口{line_str}）"
+    else:
+        hit = (choice == actual_had)
+        actual_str = f"{home_name} {score} {away_name} ({actual_had_label})"
+        if hit:
+            comment = f"✅ 主推【{choice}】精准命中（完场 {score}）"
+        else:
+            comment = f"❌ 未中：推荐【{choice}】，实际赛果为【{actual_had_label}】（完场 {score}）"
+
+    score_display = f"{score} (半场 {half_score})" if half_score != "-" else score
+    return {
+        "hit": hit,
+        "finished": True,
+        "score": score_display,
+        "actual": actual_str,
+        "comment": comment
+    }
+
+
+def _evaluate_parlays_review(yesterday_parlays, match_rows, target_prefix, old_cache=None):
+    """
+    对昨日真实推荐的 2串1 方案进行严格客观对账（绝不事后拼凑，真实判定红黑单）
+    """
+    match_map = {m.get("num"): m for m in match_rows}
+    parlays_review = []
+
+    # 1. 优先对账昨日真实记录的推荐方案 (SSOT 原生核验)
+    if yesterday_parlays and len(yesterday_parlays) > 0:
+        for idx, parlay in enumerate(yesterday_parlays):
+            scheme_name = parlay.get("scheme_name", f"昨日{target_prefix} 方案 {idx+1} 核验")
+            anchor_str = parlay.get("anchor_leg", "")
+            edge_str = parlay.get("edge_leg", "")
+            comb_odds = float(parlay.get("combined_odds") or 0.0)
+
+            leg1_parsed = _parse_parlay_leg_text(anchor_str)
+            leg2_parsed = _parse_parlay_leg_text(edge_str)
+
+            leg1_match = match_map.get(leg1_parsed.get("num"))
+            leg2_match = match_map.get(leg2_parsed.get("num"))
+
+            leg1_eval = _evaluate_single_leg(leg1_parsed, leg1_match)
+            leg2_eval = _evaluate_single_leg(leg2_parsed, leg2_match)
+
+            hit1 = leg1_eval["hit"]
+            hit2 = leg2_eval["hit"]
+            fin1 = leg1_eval["finished"]
+            fin2 = leg2_eval["finished"]
+
+            if not fin1 or not fin2:
+                verdict = "⏳ 赛事进行中/待完场"
+                verdict_badge = "PENDING"
+                analysis = f"【实盘客观对账】方案包含未完场赛事，等待官方赛果回填（理论组合回报 @{comb_odds} 倍）。"
+            elif hit1 and hit2:
+                verdict = "✅ 2/2 全红收米"
+                verdict_badge = "HIT"
+                analysis = f"【实盘客观对账】两腿全部精准命中！实际回报 @{comb_odds} 倍，全红收米达成！"
+            elif hit1 or hit2:
+                hit_leg = leg1_parsed["num"] if hit1 else leg2_parsed["num"]
+                miss_leg = leg2_parsed["num"] if hit1 else leg1_parsed["num"]
+                verdict = "❌ 1/2 单腿打出 (黑单)"
+                verdict_badge = "MISS"
+                analysis = f"【实盘客观对账】单腿命中（{hit_leg}打出），遗憾 {miss_leg} 跑偏，实战单未中。"
+            else:
+                verdict = "❌ 0/2 未中 (黑单)"
+                verdict_badge = "MISS"
+                analysis = "【实盘客观对账】两腿均未跑出，实战单黑单。"
+
+            parlays_review.append({
+                "name": scheme_name,
+                "combined_odds": comb_odds,
+                "verdict": verdict,
+                "verdict_badge": verdict_badge,
+                "legs": [
+                    {
+                        "title": f"[{leg1_parsed['num']}] {leg1_parsed['home']} vs {leg1_parsed['away']}",
+                        "match": f"[{leg1_parsed['num']}] {leg1_parsed['home']} vs {leg1_parsed['away']}",
+                        "pick": leg1_parsed["pick_display"],
+                        "score": leg1_eval["score"],
+                        "actual": leg1_eval["actual"],
+                        "hit": hit1,
+                        "comment": leg1_eval["comment"]
+                    },
+                    {
+                        "title": f"[{leg2_parsed['num']}] {leg2_parsed['home']} vs {leg2_parsed['away']}",
+                        "match": f"[{leg2_parsed['num']}] {leg2_parsed['home']} vs {leg2_parsed['away']}",
+                        "pick": leg2_parsed["pick_display"],
+                        "score": leg2_eval["score"],
+                        "actual": leg2_eval["actual"],
+                        "hit": hit2,
+                        "comment": leg2_eval["comment"]
+                    }
+                ],
+                "analysis": analysis
+            })
+        return parlays_review
+
+    # 2. 兜底回退：若昨日确实未归档推单（如系统初次初始化），按昨日前两场常规主推客观核验，绝不造假挑红单！
+    if len(match_rows) >= 2:
+        l1, l2 = match_rows[0], match_rows[1]
+        h1 = bool(l1.get("is_had_hit", False))
+        h2 = bool(l2.get("is_had_hit", False))
+        sp1 = l1.get("sp", 1.85)
+        sp2 = l2.get("sp", 1.85)
+        comb_sp = round(sp1 * sp2, 2)
+        v_text = "✅ 2/2 全红收米" if (h1 and h2) else ("❌ 1/2 单腿打出 (黑单)" if (h1 or h2) else "❌ 0/2 未中 (黑单)")
+        v_badge = "HIT" if (h1 and h2) else "MISS"
+        parlays_review.append({
+            "name": f"昨日{target_prefix}焦点场次真实核验 (按原盘)",
+            "combined_odds": comb_sp,
+            "verdict": v_text,
+            "verdict_badge": v_badge,
+            "legs": [
+                {
+                    "title": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
+                    "match": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
+                    "pick": f"{l1['pred_had']} @{sp1}",
+                    "score": f"{l1['score']} (半场 {l1.get('half_score', '-')})",
+                    "actual": f"{l1['home']} {l1['score']} {l1['away']} ({l1.get('actual_had', '-')})",
+                    "hit": h1,
+                    "comment": f"✅ 命中（完场 {l1['score']}）" if h1 else f"❌ 未中：推荐【{l1['pred_had']}】，实际为【{l1.get('actual_had', '-')}】（完场 {l1['score']}）"
+                },
+                {
+                    "title": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
+                    "match": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
+                    "pick": f"{l2['pred_had']} @{sp2}",
+                    "score": f"{l2['score']} (半场 {l2.get('half_score', '-')})",
+                    "actual": f"{l2['home']} {l2['score']} {l2['away']} ({l2.get('actual_had', '-')})",
+                    "hit": h2,
+                    "comment": f"✅ 命中（完场 {l2['score']}）" if h2 else f"❌ 未中：推荐【{l2['pred_had']}】，实际为【{l2.get('actual_had', '-')}】（完场 {l2['score']}）"
+                }
+            ],
+            "analysis": f"昨日{target_prefix}推单未建立归档，按前二场主选客观对账：{v_text}。"
+        })
+
+    return parlays_review
 
 
 def build_yesterday_review(yest_results=None, old_cache=None, ren9_draw=None):
@@ -1175,159 +1278,18 @@ def build_yesterday_review(yest_results=None, old_cache=None, ren9_draw=None):
             if "客" in pick: return sp_arr[2] or 2.10
         return 1.85
 
-    # 动态构建真实 2串1 凯利实战对账单（严格基于昨日真实完场赛事，绝不造假或假借无关队伍）
-    hit_rows = [m for m in match_rows if m.get("is_had_hit")]
-    sec_rows = [m for m in match_rows if m.get("is_sec_hit")]
-    hhad_hit_rows = [m for m in match_rows if m.get("is_hhad_hit")]
-
-    # 1. 稳胆 2串1 对账
-    if len(hit_rows) >= 2:
-        l1, l2 = hit_rows[0], hit_rows[1]
-        sp1 = _get_had_sp(l1, l1.get("pred_had", "主胜"))
-        sp2 = _get_had_sp(l2, l2.get("pred_had", "主胜"))
-        comb_sp = round(sp1 * sp2, 2)
-        parlays_review.append({
-            "name": f"昨日{target_prefix}黄金稳胆 2串1 核验",
-            "combined_odds": comb_sp,
-            "verdict": "✅ 2/2 全红收米",
-            "verdict_badge": "HIT",
-            "legs": [
-                {
-                    "title": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
-                    "match": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
-                    "pick": f"{l1['pred_had']} @{sp1}",
-                    "score": f"{l1['score']} (半场 {l1['half_score']})",
-                    "actual": f"{l1['home']} {l1['score']} {l1['away']} ({l1['actual_had']})",
-                    "hit": True,
-                    "comment": f"✅ 模型主推{l1['pred_had']}精准打出，收官比分 {l1['score']}！"
-                },
-                {
-                    "title": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
-                    "match": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
-                    "pick": f"{l2['pred_had']} @{sp2}",
-                    "score": f"{l2['score']} (半场 {l2['half_score']})",
-                    "actual": f"{l2['home']} {l2['score']} {l2['away']} ({l2['actual_had']})",
-                    "hit": True,
-                    "comment": f"✅ 模型主推{l2['pred_had']}稳定跑出，完场 {l2['score']}！"
-                }
-            ],
-            "analysis": f"【实盘客观对账】昨日{target_prefix}精选稳胆组合两场全部打出正路红单，组合收益率达 {comb_sp} 倍！"
-        })
-    elif len(match_rows) >= 2:
-        l1, l2 = match_rows[0], match_rows[1]
-        h1 = l1.get("is_had_hit") or l1.get("is_sec_hit")
-        h2 = l2.get("is_had_hit") or l2.get("is_sec_hit")
-        sp1 = _get_had_sp(l1, l1.get("pred_had", "主胜"))
-        sp2 = _get_had_sp(l2, l2.get("pred_had", "主胜"))
-        comb_sp = round(sp1 * sp2, 2)
-        v_text = "✅ 2/2 全红收米" if (h1 and h2) else ("⚠️ 1/2 单腿打出" if (h1 or h2) else "❌ 0/2 未中")
-        v_badge = "HIT" if (h1 and h2) else ("PARTIAL" if (h1 or h2) else "MISS")
-        parlays_review.append({
-            "name": f"昨日{target_prefix}核心 2串1 核验",
-            "combined_odds": comb_sp,
-            "verdict": v_text,
-            "verdict_badge": v_badge,
-            "legs": [
-                {
-                    "title": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
-                    "match": f"[{l1['num']}] {l1['home']} vs {l1['away']}",
-                    "pick": f"{l1['pred_had']} @{sp1}",
-                    "score": f"{l1['score']} (半场 {l1['half_score']})",
-                    "actual": f"{l1['actual_had']}",
-                    "hit": bool(h1),
-                    "comment": f"{'✅ 命中' if h1 else '❌ 未中'}（完场 {l1['score']}）"
-                },
-                {
-                    "title": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
-                    "match": f"[{l2['num']}] {l2['home']} vs {l2['away']}",
-                    "pick": f"{l2['pred_had']} @{sp2}",
-                    "score": f"{l2['score']} (半场 {l2['half_score']})",
-                    "actual": f"{l2['actual_had']}",
-                    "hit": bool(h2),
-                    "comment": f"{'✅ 命中' if h2 else '❌ 未中'}（完场 {l2['score']}）"
-                }
-            ],
-            "analysis": f"昨日{target_prefix}核心稳胆核验完成。"
-        })
-
-    # 2. 战术防冷/高赔 2串1 对账
-    # 优先选取次选防平命中、或主推平局/让球冷门打出的场次
-    cold_candidates = sec_rows + [m for m in hit_rows if "平" in m.get("actual_had", "") or "平" in m.get("pred_had", "")] + hhad_hit_rows
-    seen_nums = {parlays_review[0]["legs"][0]["title"][:7], parlays_review[0]["legs"][1]["title"][:7]} if parlays_review else set()
-    unique_cold = [c for c in cold_candidates if c["num"] not in seen_nums]
-
-    if len(unique_cold) >= 2:
-        c1, c2 = unique_cold[0], unique_cold[1]
-        sp1 = _get_had_sp(c1, c1.get("pred_had_sec") if c1.get("is_sec_hit") else c1.get("pred_had", "平"))
-        sp2 = _get_had_sp(c2, c2.get("pred_had_sec") if c2.get("is_sec_hit") else c2.get("pred_had", "平"))
-        comb_sp = round(sp1 * sp2, 2)
-        p1_desc = f"次选防平 @{sp1}" if c1.get("is_sec_hit") else f"{c1.get('pred_had')} @{sp1}"
-        p2_desc = f"次选防平 @{sp2}" if c2.get("is_sec_hit") else f"{c2.get('pred_had')} @{sp2}"
-        parlays_review.append({
-            "name": f"昨日{target_prefix}解耦防冷 2串1 对账",
-            "combined_odds": comb_sp,
-            "verdict": "✅ 2/2 全红满额收米",
-            "verdict_badge": "HIT",
-            "legs": [
-                {
-                    "title": f"[{c1['num']}] {c1['home']} vs {c1['away']}",
-                    "match": f"[{c1['num']}] {c1['home']} vs {c1['away']}",
-                    "pick": p1_desc,
-                    "score": f"{c1['score']} (半场 {c1['half_score']})",
-                    "actual": f"{c1['home']} {c1['score']} {c1['away']} ({c1['actual_had']})",
-                    "hit": True,
-                    "comment": f"✅ 模型战术防冷精准捕捉平局冷门，高赔打出！"
-                },
-                {
-                    "title": f"[{c2['num']}] {c2['home']} vs {c2['away']}",
-                    "match": f"[{c2['num']}] {c2['home']} vs {c2['away']}",
-                    "pick": p2_desc,
-                    "score": f"{c2['score']} (半场 {c2['half_score']})",
-                    "actual": f"{c2['home']} {c2['score']} {c2['away']} ({c2['actual_had']})",
-                    "hit": True,
-                    "comment": f"✅ 严密防范冷门平局，{c2['score']} 顺利爆冷收米！"
-                }
-            ],
-            "analysis": f"【防冷客观对账】昨日两场焦点战役次选防平/让球防冷双双大红，组合标称赔率高达 @{comb_sp}！"
-        })
-    elif len(match_rows) >= 4:
-        c1, c2 = match_rows[2], match_rows[3]
-        h1 = c1.get("is_had_hit") or c1.get("is_sec_hit")
-        h2 = c2.get("is_had_hit") or c2.get("is_sec_hit")
-        sp1 = _get_had_sp(c1, c1.get("pred_had", "主胜"))
-        sp2 = _get_had_sp(c2, c2.get("pred_had", "主胜"))
-        comb_sp = round(sp1 * sp2, 2)
-        v_text = "✅ 2/2 全红收米" if (h1 and h2) else ("⚠️ 1/2 单腿打出" if (h1 or h2) else "❌ 0/2 未中")
-        v_badge = "HIT" if (h1 and h2) else ("PARTIAL" if (h1 or h2) else "MISS")
-        parlays_review.append({
-            "name": f"昨日{target_prefix}解耦防冷 2串1 对账",
-            "combined_odds": comb_sp,
-            "verdict": v_text,
-            "verdict_badge": v_badge,
-            "legs": [
-                {
-                    "title": f"[{c1['num']}] {c1['home']} vs {c1['away']}",
-                    "match": f"[{c1['num']}] {c1['home']} vs {c1['away']}",
-                    "pick": f"{c1['pred_had']} @{sp1}",
-                    "score": f"{c1['score']} (半场 {c1['half_score']})",
-                    "actual": f"{c1['actual_had']}",
-                    "hit": bool(h1),
-                    "comment": f"{'✅ 命中' if h1 else '❌ 未中'}（完场 {c1['score']}）"
-                },
-                {
-                    "title": f"[{c2['num']}] {c2['home']} vs {c2['away']}",
-                    "match": f"[{c2['num']}] {c2['home']} vs {c2['away']}",
-                    "pick": f"{c2['pred_had']} @{sp2}",
-                    "score": f"{c2['score']} (半场 {c2['half_score']})",
-                    "actual": f"{c2['actual_had']}",
-                    "hit": bool(h2),
-                    "comment": f"{'✅ 命中' if h2 else '❌ 未中'}（完场 {c2['score']}）"
-                }
-            ],
-            "analysis": f"昨日{target_prefix}防冷单核验。"
-        })
-
+    # 严格对账昨日真实推荐的 2串1 方案（杜绝事后拼凑，真实判定红黑单）
     yesterday_date_str = (now_cn.date() - dt.timedelta(days=1)).strftime("%Y-%m-%d")
+    parlay_hist = (old_cache or {}).get("parlay_history", {}) or {}
+    yesterday_parlays = parlay_hist.get(yesterday_date_str)
+    if not yesterday_parlays:
+        old_date = (old_cache or {}).get("today_date")
+        if old_date == yesterday_date_str or (old_date and old_date != now_cn.date().isoformat()):
+            yesterday_parlays = (old_cache or {}).get("active_parlays", [])
+
+    parlays_review = _evaluate_parlays_review(yesterday_parlays, match_rows, target_prefix, old_cache=old_cache)
+
+
 
     # 判断昨日是否为竞彩单场日（周一至周四通常无传统足彩14场任九开奖）
     # 若无开奖，则 legs 置空，清晰呈现上期官方开奖池数据，绝不张冠李戴往期英超/德甲虚构数据
@@ -1657,6 +1619,7 @@ def run_update_now():
         yest_review = old_cache.get("yesterday_review", {})
 
     pred_history = dict(old_cache.get("prediction_history", {}) or {})
+    parlay_history = dict(old_cache.get("parlay_history", {}) or {})
 
     if current_matches is None:
         # 网络超时或海外节点受限：完整保留既有在售赛事、2串1、半全场、任九与双模型数据，绝不覆盖清零！
@@ -1675,6 +1638,7 @@ def run_update_now():
             "active_ren9": old_cache.get("active_ren9", {}),
             "dual_agent_review": old_cache.get("dual_agent_review") or get_dual_agent_review_data(old_active),
             "prediction_history": pred_history,
+            "parlay_history": parlay_history,
             "status_msg": old_cache.get("status_msg") or (
                 f"今日竞彩官方在售共 {len(old_active)} 场（已通过云端预计算缓存稳定同步）"
                 if old_active else "等待体彩数据源同步中..."
@@ -1702,6 +1666,13 @@ def run_update_now():
             for k_old in list(pred_history.keys())[:-60]:
                 pred_history.pop(k_old, None)
 
+        # 归档今日推荐 2串1 方案，供次日严格对账
+        if parlays:
+            parlay_history[now_cn.date().isoformat()] = parlays
+        if len(parlay_history) > 30:
+            for k_old_p in list(parlay_history.keys())[:-30]:
+                parlay_history.pop(k_old_p, None)
+
         cache_data = {
             "last_update_time": now_cn.strftime("%Y-%m-%d %H:%M:%S"),
             "today_date": now_cn.date().isoformat(),
@@ -1715,6 +1686,7 @@ def run_update_now():
             "active_ren9": ren9,
             "dual_agent_review": dual_review,
             "prediction_history": pred_history,
+            "parlay_history": parlay_history,
             "status_msg": f"今日竞彩官方正式在售共 {len(current_matches)} 场（含双模型12场审计 & {ren9.get('issue', '26163期')}任九），已全量同步上架！"
         }
     else:
@@ -1734,6 +1706,7 @@ def run_update_now():
             "active_ren9": old_cache.get("active_ren9", {}),
             "dual_agent_review": old_cache.get("dual_agent_review") or get_dual_agent_review_data(old_active),
             "prediction_history": pred_history,
+            "parlay_history": parlay_history,
             "status_msg": (
                 "中国竞彩官方每日 09:00~11:30 为清算换日停售期；今日全天新排期将于 11:30 官方放盘后秒级全自动上架！"
                 if is_settlement else f"当前官方在售 {len(current_matches)} 场，延续展示最新核准方案。"
