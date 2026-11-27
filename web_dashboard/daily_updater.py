@@ -252,8 +252,30 @@ def diagnose_connectivity():
 
 
 
+def _load_local_prep_map():
+    """安全加载本地 OpenCode prep_*.json（用于伤停与 CLV 风控熔断；云端无盘时返回空字典）"""
+    edge_dir = r"G:\BaiduSyncdisk\ai\足球分析\edge"
+    if not os.path.exists(edge_dir):
+        return {}
+    try:
+        files = [f for f in os.listdir(edge_dir) if f.startswith("prep_") and f.endswith(".json")]
+        if not files:
+            return {}
+        files.sort(key=lambda x: os.path.getmtime(os.path.join(edge_dir, x)), reverse=True)
+        with open(os.path.join(edge_dir, files[0]), "r", encoding="utf-8") as fp:
+            raw = json.load(fp)
+        if isinstance(raw, dict):
+            return raw
+        if isinstance(raw, list):
+            return {item.get("num"): item for item in raw if isinstance(item, dict) and item.get("num")}
+    except Exception:
+        pass
+    return {}
+
+
 def build_quant_data_for_matches(matches):
     """为新抓取的比赛建立负二项分布概率、6x6比分热力图、让球期望与半全场对齐模型"""
+    prep_map = _load_local_prep_map()
     enriched = []
     for m in matches:
         had = m["had_sp"]
@@ -411,6 +433,36 @@ def build_quant_data_for_matches(matches):
         ttg_main = max(1, round(exp_total))
         ttg_sec = max(1, ttg_main - 1 if exp_total >= 2.2 else ttg_main + 1)
 
+        # P1 风控门控：胶着盘观望门槛 (<45%) + 高伤停/逆CLV预警
+        extra_tags = []
+        extra_notes = []
+        high_injury_risk = False
+        if h_sp > 0 and a_sp > 0 and max_p < 0.45:
+            conf_level = "⚖️ 胶着观望 (<45%)"
+            rec_pick = f"观望(防{had_second})"
+            extra_tags.append("⚖️ 胶着观望")
+            extra_notes.append(f"胶着盘熔断：最高概率仅 {int(max_p*100)}% (<45%)，不强推单边胜负。")
+
+        prep_item = prep_map.get(m["num"], {})
+        inj_pair = prep_item.get("inj", [0, 0])
+        if isinstance(inj_pair, list) and len(inj_pair) >= 2:
+            side_inj = inj_pair[0] if ("胜" in had_primary) else (inj_pair[1] if "客" in had_primary else max(inj_pair))
+            if side_inj >= 5:
+                high_injury_risk = True
+                extra_tags.append("🏥 高伤停预警")
+                extra_notes.append(f"伤停熔断：我方支持侧伤停 {side_inj} 人 (>=5)，严禁纳入 2串1 稳胆！")
+
+        clv_info = prep_item.get("clv", {})
+        if isinstance(clv_info, dict):
+            clv_h = clv_info.get("clv_home", 0) or 0
+            clv_a = clv_info.get("clv_away", 0) or 0
+            if ("主" in had_primary and clv_a >= 0.015) or ("客" in had_primary and clv_h >= 0.015):
+                extra_tags.append("📉 逆CLV资金警示")
+                extra_notes.append(f"资金逆向提示：聪明钱 CLV(主{clv_h:+.4f}/客{clv_a:+.4f}) 与当前模型方向相反，谨防冷门。")
+
+        if extra_notes:
+            blackbox_note = " | ".join(extra_notes) + " | " + blackbox_note
+
         enriched.append({
             "num": m["num"],
             "league": league,
@@ -419,6 +471,7 @@ def build_quant_data_for_matches(matches):
             "kickoff": m["kickoff"],
             "fused_1x2": [p_h, p_d, p_a],
             "recommended_pick": rec_pick,
+            "high_injury_risk": high_injury_risk,
             "had_sp": m["had_sp"],
             "hhad_sp": m["hhad_sp"],
             "official_bqc_sp": official_bqc_sp,
@@ -427,7 +480,7 @@ def build_quant_data_for_matches(matches):
             "a_xg": a_xg,
             "intel": {
                 "headline": f"【{league}】{m['home']} vs {m['away']} | {risk_tag}",
-                "intel_tags": [risk_tag, "🎯 负二项校准", "⚡ 双模型复核"],
+                "intel_tags": [risk_tag, "🎯 负二项校准", "⚡ 双模型复核"] + extra_tags,
                 "story": f"{league_ctx}；模型测算预期进球 {h_xg} : {a_xg}（公允概率 主胜{round(p_h*100,1)}% / 平{round(p_d*100,1)}% / 客胜{round(p_a*100,1)}%）。",
                 "blackbox_signal": blackbox_note,
                 "confidence_level": conf_level,
@@ -767,6 +820,8 @@ def generate_parlays_and_ren9_for_matches(matches, ren9_draw=None):
 
     eligible_legs = []
     for m in pool:
+        if m.get("high_injury_risk"):
+            continue
         had = m.get("had_sp", [0, 0, 0])
         hhad = m.get("hhad_sp", ["+1", 0, 0, 0])
         p_h, p_d, p_a = m.get("fused_1x2", [0.34, 0.33, 0.33])
@@ -1558,6 +1613,17 @@ def run_update_now():
         json.dump(cache_data, f, ensure_ascii=False, indent=2)
 
     print(f"日常更新缓存已成功保存至: {cache_path}")
+
+    # P0 自动钩子：本地 Windows 环境自动联动动态对账与承诺-揭示上链
+    if len(current_matches) >= 3 and os.path.exists(r"G:\BaiduSyncdisk\ai\足球分析\edge"):
+        try:
+            import opencode_bridge
+            opencode_bridge.sync_opencode_to_pipeline(push_render=True)
+            with open(cache_path, "r", encoding="utf-8") as f:
+                cache_data = json.load(f)
+        except Exception as e:
+            print(f"⚠️ 自动联动 opencode_bridge 异常（不影响主缓存）: {e}")
+
     return cache_data
 
 
